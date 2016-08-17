@@ -40,7 +40,6 @@
 10.79.31.146   api5x1  api5x1.aws.example.com
 10.79.31.59   api5x2  api5x2.aws.example.com
 10.79.11.133   api6  api6.aws.example.com
-10.79.1.125   apinav  apinav.aws.example.com
 10.79.13.134   misc1  misc1.aws.example.com
 10.79.13.27   misc2  misc2.aws.example.com
 10.79.26.132   misc1db  misc1db.aws.example.com
