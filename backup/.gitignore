@@ -1,4 +1,6 @@
 # folder to keep created backups of files during edit (suedit)
+# check /yoda/bin/backup
+
 *
 !.gitkeep
 !.gitignore
