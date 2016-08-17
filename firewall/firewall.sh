@@ -2,6 +2,7 @@
 
 # Made by noah with help from many security websites
 
+LAN_NETMASK="172.16.0.0/12"
 DEFAULT_POLICY="DROP"
 
 PORTS_PRIVATE="53,111,825,841,871,889,2049"
@@ -19,8 +20,6 @@ HOSTNAME=$(/bin/hostname)
 FROM_WORLD="-i eth0"
 FROM_LAN="-i eth1"
 ANYWHERE="0.0.0.0/0"
-LAN_NETMASK="172.16.0.0/12"
-
 
 WAN_IP=""
 SAFETY="yes"
