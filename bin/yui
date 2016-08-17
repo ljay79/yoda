@@ -1,0 +1,23 @@
+#!/bin/bash
+
+JAVA="/usr/bin/java"
+YUI="/usr/bin/java -jar /usr/YUI/build/yuicompressor"
+YUI_OPTS="--preserve-semi --disable-optimizations"
+YUIJS="$YUI ${YUI_OPTS} --type=js"
+YUICSS="$YUI ${YUI_OPTS} --type=css"
+FILE="$1"
+
+if [ ! -f /usr/bin/java ]; then
+	echo "Install Java"
+	exit 1
+fi
+
+if [ "x$FILE" = "x" ]; then
+	exit 255
+fi
+
+if [[ "$FILE" = *.js ]]; then
+    exec $YUIJS $@
+else
+    exec $YUICSS $@
+fi

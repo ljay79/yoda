@@ -1,0 +1,52 @@
+#!/bin/bash
+# Backup <file/folder> - Makes emergency backup of file or .tar of folder, stored in /backup
+
+if [ $# -eq 0 ]; then
+	echo '-NoahScript-'
+	echo 'Backup shit to /backup with directory structure and easy rollback.'
+	echo '[Usage]: backup <files...>'
+	exit 1
+fi
+
+if [ "x$1" = "x-q" ]; then
+	QUIET="1"
+	shift
+else
+	QUICK="0" 
+fi
+
+until [ -z "$1" ]
+do
+	FILE=`basename $1`
+	DIRNAME=`dirname $1`
+	if [ "$DIRNAME" = "." ]; then
+		DIRNAME=`/bin/pwd`
+	fi
+	if [ -d "${DIRNAME}/${FILE}" ]; then
+		/bin/tar -c -p -z -v  "${DIRNAME}/${FILE}" >| "${DIRNAME}/${FILE}.tar.gz"
+		RET=$?
+		if [ "$RET" != "0" ]; then
+			exit $RET
+		fi
+		/bin/cp -pvfr --strip-trailing-slashes --parents -t "/backup" "${DIRNAME}/${FILE}.tar.gz"
+		/bin/rm -f "${DIRNAME}/${FILE}.tar.gz"
+		if [ "$QUIET" = "0" ]; then 
+			echo "${DIRNAME}/${FILE}.tar.gz of folder backed up"
+		fi
+		shift
+		continue
+	fi
+	if [ ! -f "${DIRNAME}/${FILE}" ]; then 
+		if [ "$QUIET" = "0" ]; then
+			echo "Nothing to backup";
+		fi
+		shift
+		continue
+	fi 
+	REAL_PATH=$(/usr/bin/readlink -e -q -s -n "${DIRNAME}/${FILE}")
+	/bin/cp -pvfr --strip-trailing-slashes --parents -t "/backup" "$REAL_PATH"
+	RET=$?
+	shift
+done
+exit $RET
+

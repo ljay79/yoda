@@ -1,0 +1,9 @@
+#!/bin/bash
+# redhatversion
+
+source /yoda/bin/inc/init
+
+cat /etc/redhat-release | grep -P -o '(\d\.\d)'
+
+
+exit 0

@@ -1,0 +1,21 @@
+#!/bin/bash
+# Preg_replace on every line in a file
+
+if [ $# -lt 3 ]; then
+ echo 'search_replace [search] [replace] [files . . .]'
+ exit 1
+fi
+SEARCH=$1
+shift
+REPLACE=$1
+shift
+PWD=`pwd`
+CMD="/usr/bin/perl -pi -w -e"
+until [ -z "$1" ]
+do
+  echo "Replacing $SEARCH to $REPLACE on $1"
+  $CMD "s/${SEARCH}/${REPLACE}/g;" "$1"
+  shift
+done
+exit 0
+

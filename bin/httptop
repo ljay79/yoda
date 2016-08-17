@@ -1,0 +1,15 @@
+#!/bin/bash
+
+PREFORK=$(apachectl -l | grep -c 'prefork')
+
+while [ 1 ]; do
+
+	echo -e "\f"
+	if [ "$PREFORK" = "1" ]; then
+    apachectl status | tail -n 16 | head -n11
+	else 
+  	apachectl status | tail -n 23 | head -n17
+	fi
+	sleep 0.75
+
+done

@@ -1,0 +1,14 @@
+#!/bin/bash
+# remember <server> to install ssh keys to stop password prompts
+
+if [ ! -f  ~/.ssh/id_rsa ]; then
+	/usr/bin/ssh-keygen -t rsa -b 1024 -q -N '' -f ~/.ssh/id_rsa
+fi
+
+if [ "x$1" != "x" ]; then
+	cp -pfv ~/.ssh/id_rsa.pub  ~/.ssh/identity
+	/usr/bin/ssh-copy-id -i $1
+else
+	echo "Remember me on <hostname> and stop password prompts."
+	echo "$0 <[user@]server>"
+fi

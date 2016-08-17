@@ -1,0 +1,6 @@
+#!/bin/bash
+find /www -name "errors.log" -exec rm -fv {} \;
+find /www -name "errors.htm" -exec rm -fv {} \;
+find /www -name "debug.htm" -exec rm -fv {} \;
+find /www -name "error_log" -exec rm -fv {} \;
+

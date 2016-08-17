@@ -1,0 +1,13 @@
+#!/bin/bash
+# Text message NOAH
+
+source /yoda/bin/inc/init
+
+test -z "$1" && Usage "$1" '<message>'
+
+echo "$@"
+#echo "$@" | /bin/mail -s "SERVERS" 4802368117@tmomail.net
+echo "$1" | /bin/mail -s "SERVERS" 7192333724@txt.att.net
+
+# Noah is not anymore, use Rick's 
+

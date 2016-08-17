@@ -1,0 +1,127 @@
+#!/bin/bash
+#
+# "harvestlog" function library
+#
+# Jens Rosemeier
+# 2012-04-18
+#
+
+
+function setCommands()
+{
+    # have ssh bin available, set in ini or default
+    if [[ "$INI__SSH" = "" || ! -f $INI__SSH ]]; then
+        SSH=$(which ssh)
+    else
+        SSH=$INI__SSH
+    fi
+    SSH_ARGS=$INI__SSH_ARGS
+
+    # have scp bin available, set in ini or default
+    if [[ "$INI__SCP" = "" || ! -f $INI__SCP ]]; then
+        SCP=$(which scp)
+    else
+        SCP=$INI__SCP
+    fi
+    SCP_ARGS=$INI__SCP_ARGS
+
+    # Clear command, clear file contents
+    CLEAR_CMD="cat /dev/null >| "
+}
+
+#############################
+# Main harvest function.
+# Parses harvest configuration and then process the harvesting.
+function harvest()
+{
+    local server=$1
+    local harvestcfg=$2
+    local timeintv="none"
+    local logtype fpath fprefix fext
+    local fileappendix=$logdate"_"`date +%H%M`
+
+    echo "`date '+%Y-%m-%d %H:%M:%S'`	START	$server	$harvestcfg"
+
+    tmp=( ${harvestcfg[*]//;/ } )
+    tmpLength=${#tmp[@]}
+
+    case $tmpLength in
+        2)
+            logtype=${tmp[0]}
+            fpath=${tmp[1]}
+            fpath=${fpath%/*}"/"
+            xbase=$(basename ${tmp[1]})
+            fpref=${xbase%.*}
+            fext=${xbase##*.}
+        ;;
+        3)
+            logtype=${tmp[0]}
+            timeintv="${tmp[2]}"
+            fpath=${tmp[1]}
+            fpath=${fpath%/*}"/"
+            xbase=$(basename ${tmp[1]})
+            fpref=${xbase%.*}
+            fext=${xbase##*.}
+        ;;
+        *)
+            return 1
+        ;;
+    esac
+
+    if [ "$fpref" = "$fext" ]; then
+        # no extentions on filename
+        fext=""
+    else
+        fext="."$fext
+    fi
+
+    # set destination directory
+    month=`date +%Y%m`
+    destination_dir=$INI__archiv_dir"/"$project"/"$mode"/"$pcat"/"$logtype"/"$month"/"
+
+    # create new archiv folder structure (if not already exists)
+    $SSH ${SSH_ARGS} $INI__archiv_server mkdir -p $destination_dir
+
+    local origfile=$fpath$fpref$fext
+    local newfile=$fpref"-"$fileappendix$fext
+
+    # check if remote file exists
+    if ! $SSH ${SSH_ARGS} $server 'ls "'$origfile'" >&/dev/null'; then
+        echo "`date '+%Y-%m-%d %H:%M:%S'`	ERROR	File '"$origfile"' does not exists on server '"$server"'!"
+        return 1
+    fi
+    
+    # copy orig log into daily log
+    $SSH ${SSH_ARGS} $server 'cp "'$origfile'" "'$fpath$newfile'"'
+    # check if remote file exists
+    if ! $SSH ${SSH_ARGS} $server 'ls "'$fpath$newfile'" >&/dev/null'; then
+	   echo "`date '+%Y-%m-%d %H:%M:%S'`	ERROR	Could not copy file '"$origfile"' to '"$fpath$newfile"' on server '"$server"'!"
+	   return 1
+    else
+	   # clear orig logfile
+	   echo "`date '+%Y-%m-%d %H:%M:%S'`	INFO	Clear original file '"$origfile"'"
+	   $SSH ${SSH_ARGS} $server 'cat /dev/null >| '$origfile
+    fi
+
+    # download $newfile
+    $SCP ${SCP_ARGS} $server:$fpath$newfile /tmp/$newfile
+    if [ ! -e /tmp/$newfile ]; then
+	   echo "`date '+%Y-%m-%d %H:%M:%S'`	ERROR	Could not download (scp) '"$server:$newfile"'!"
+	   return 1
+    else
+	   # delete downloaded file on remote server
+	   $SSH ${SSH_ARGS} $server 'rm "'$fpath$newfile'"'
+    fi
+
+    # transfer $newfile to archiv
+    $SCP ${SCP_ARGS} /tmp/$newfile $INI__archiv_server:$destination_dir$newfile
+    if ! $SSH ${SSH_ARGS} $INI__archiv_server 'ls "'$destination_dir$newfile'" >&/dev/null'; then
+	   echo "`date '+%Y-%m-%d %H:%M:%S'`	ERROR	Could not copy file '"/tmp/$newfile"' to '"$destination_dir$newfile"' on server '"$INI__archiv_server"'!"
+	   return 1
+    else
+	   rm /tmp/$newfile
+	   $SSH ${SSH_ARGS} $INI__archiv_server 'chown www:www "'$destination_dir$newfile'"; chmod 554 "'$destination_dir$newfile'"'
+    fi
+
+    echo "`date '+%Y-%m-%d %H:%M:%S'`	SUCCESS	$server	$fpath$origfile to $INI__archiv_server	$destination_dir$newfile"
+}

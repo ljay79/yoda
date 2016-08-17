@@ -1,0 +1,212 @@
+#!/bin/bash
+# 1-click copy of database table from server A to server B
+
+source /yoda/bin/inc/init
+
+ARGV="$@"
+SERVER=`/bin/hostname -s`
+WHICH='which --skip-alias'
+MYSQLDUMP=$($WHICH mysqldump)
+MYSQL=$($WHICH mysql)
+MYSQLCHECK=$($WHICH mysqlcheck)
+DBUSER='-ucopytable'
+DBPASS="--password=copytable"
+FROMSERVER="localhost"
+OPTIMIZE_AFTER="1"
+DUMPOPTIONS="--skip-opt --skip-events --add-drop-table --add-locks --create-options --skip-complete-insert --extended-insert --disable-keys --comments --quick --lock-tables --no-create-db --set-charset --max_allowed_packet=16M"
+TMP_FOLDER="$HOME"
+NO_ZBACKUP="0"
+
+
+if [ "x$ARGV" = "x" ] ; then
+		mymsg 'Hot-copy database tables between databases and/or different hosts'
+    mymsg2 'Usage' 'copytable <from-database> <from-table (or all)> <to-host> [to-database] [to-table]'
+		mymsg2 'Ex' 'copytable Mall user_table db6'
+		mymsg2 'Usage2' 'copytable -h db5 MyDB MyTable'
+    mymsg2 '--skip-triggers' '(default) Do not copy any table triggers.'
+		mymsg2 '--triggers' 'With Triggers'
+		mymsg2 '-h <host>' 'From host (instead of localhost)'
+    exit 1
+fi
+EXTRA=""
+
+if [ -f /yoda/etc/copytable.conf ]; then
+	source /yoda/etc/copytable.conf
+fi
+
+if [ ! -d "$TMP_FOLDER" ]; then
+	mymsg "Note: Invalid tmp folder"
+	TMP_FOLDER="/tmp"
+fi
+
+if [ "$1" = "-q" ]; then
+	shift
+	OPTIMIZE_AFTER="0"
+fi
+
+if [ "$1" = "--no-backup" ]; then
+	NO_ZBACKUP="1"
+	shift
+fi
+
+if [ "$1" = "-h" ]; then
+	shift
+	FROMSERVER="$1"
+	shift
+fi 
+
+if [ "$1" = '--triggers' ]; then
+	TRIGGERS="--triggers"
+	echo "(TRIGGERS)"
+	shift
+elif [ "$1" = "--skip-triggers" -o "$1" = "-nt" -o "$1" = "--no-triggers" ]; then
+  TRIGGERS="--skip-triggers"
+  echo "(NO TRIGGERS)"
+  shift
+else
+  TRIGGERS="--skip-triggers"
+  echo "(NO TRIGGERS)"
+fi
+
+
+NOW=`date +%N`
+FROMDB=$1
+
+if [ "x$3" = "x" ]; then
+	TOHOST="localhost"
+else
+	TOHOST=$3
+fi
+
+if [ "x$4" = "x" ] ; then
+   TODB=$1
+else
+   TODB=$4
+fi
+
+
+if [ "$2" = "all" ]; then
+   exit
+   FROMTABLE=""
+else
+   FROMTABLE=$2   
+fi
+
+if [ "x$5" = "x" ] ; then
+   NEWTABLE="$FROMTABLE"
+   else
+   NEWTABLE="$5"
+fi
+
+TMPTABLE="${FROMTABLE}_copy"
+      
+PROTO=""
+if [ "$FROMSERVER" = "localhost" ]; then
+   PROTO="--protocol=SOCKET"
+fi
+
+TMPFILE="${TMP_FOLDER}/copytable.${NOW}.sql"
+	
+
+DUMP="${MYSQLDUMP} -h $FROMSERVER ${DBUSER} ${DBPASS} $EXTRA $TRIGGERS $PROTO $DUMPOPTIONS $FROMDB $FROMTABLE"
+
+#echo $DUMP | more
+
+IMPORT="${MYSQL} -h${TOHOST} ${DBUSER} ${DBPASS} --max_allowed_packet=32M --quick --show-warnings $EXTRA $TODB"
+
+echo " "
+mymsg "${WHITE}Copying database table ${FROMTABLE}..."
+sleep 1
+mymsg "${GREEN}FROM: ${YELLOW}${FROMSERVER}${NC}://${BLUE}${FROMDB}${NC}.${WHITE}${FROMTABLE}"
+mymsg "${GREEN}TO: ${YELLOW}${TOHOST}${NC}://${BLUE}${TODB}${NC}.${WHITE}${NEWTABLE}"
+sleep 4
+echo "$FROMSERVER.$FROMDB.$FROMTABLE   ->   $TOHOST.$TODB.$NEWTABLE . . ." >> /tmp/copytable.log
+echo ""
+mymsg "${blue}Dumping $FROMTABLE from $FROMDB to tmp file ($TMPFILE). . ." 
+
+logger -t 'copytable' "STARTED copying table, $FROMSERVER.$FROMDB.$FROMTABLE, to $TOHOST.$TODB.$NEWTABLE"
+
+$DUMP > $TMPFILE
+
+if [ ! "$?" = "0" ]; then 
+ rm -f $TMPFILE
+ echo "ERROR"
+ exit 1
+fi
+
+mymsg "${blue}Fixing tmp file . . ."
+
+/yoda/bin/search_replace \`${FROMTABLE}\` \`${TMPTABLE}\` $TMPFILE
+STREXISTS=`cat $TMPFILE | grep "$TMPTABLE" | wc -l`
+if [ "$STREXISTS" = "0" ]; then
+  myerror "String replacement failed"
+  exit 1
+fi
+
+if [ ! "$FROMDB" = "$TODB" ]; then
+	/yoda/bin/search_replace \`${FROMDB}\` \`${TODB}\` $TMPFILE
+fi
+
+if [ ! "$?" = "0" ]; then
+ rm -f $TMPFILE
+ echo "ERROR"
+  exit 1
+fi
+  
+  
+
+mymsg "${blue}Importing to $TMPTABLE on $TODB . . ."
+
+$IMPORT < $TMPFILE
+
+if [ ! "$?" = "0" ]; then
+  rm -f $TMPFILE
+  echo "ERROR"
+  echo "ERROR IMPORTING $TMPTABLE" >> /tmp/copytable.log
+  exit 1
+fi
+    
+rm -f $TMPFILE
+
+if [ "$OPTIMIZE_AFTER" = "1" ]; then
+	mymsg "${blue}Optimizing and analyzing new table...";
+	MYSQLCHECK="$MYSQLCHECK -h${TOHOST} ${DBUSER} ${DBPASS} --quick"
+	$MYSQLCHECK --repair ${DBUSER} ${DBPASS} ${TODB} ${TMPTABLE} 1>/dev/null
+	RET=$?
+	if [ ! "$RET" = "0" ]; then
+	 myerror "ERROR"
+	 exit 1
+	fi
+ 
+	$MYSQLCHECK --analyze ${DBUSER} ${DBPASS} $TODB $TMPTABLE 1>/dev/null
+	$MYSQLCHECK --optimize ${DBUSER} ${DBPASS} $TODB $TMPTABLE 1>/dev/null
+
+fi
+
+mymsg "${blue}Renaming to real table . . ."
+
+
+echo "drop table if exists zbackup__${NEWTABLE}" | ${MYSQL} -q -s -s -h${TOHOST} ${DBUSER} ${DBPASS} $TODB
+echo "alter table $NEWTABLE rename zbackup__${NEWTABLE}"  | ${MYSQL} -q -s -h${TOHOST} ${DBUSER} ${DBPASS} $TODB
+echo "alter table $TMPTABLE rename $NEWTABLE"  | ${MYSQL} -q -s -h${TOHOST} ${DBUSER} ${DBPASS} $TODB
+
+if [ ! "$?" = "0" ]; then
+ echo "ERROR"
+ echo "ERROR TRYING TO RENAME $TMPTABLE TO $NEWTABLE" >> /tmp/copytable.log
+ exit 1
+fi
+
+logger -t 'copytable' "COMPLETED copying table, $FROMSERVER.$FROMDB.$FROMTABLE, to $TOHOST.$TODB.$NEWTABLE"
+
+if [ "$NO_ZBACKUP" = "1" ]; then
+	echo "drop table if exists zbackup__${NEWTABLE}" | ${MYSQL} -q -s -s -h${TOHOST} ${DBUSER} ${DBPASS} $TODB
+fi
+
+
+ROWSA=$(echo "select count(*) from $FROMTABLE" | ${MYSQL} -q -s -h${FROMSERVER} ${DBUSER} ${DBPASS} $FROMDB)
+ROWSB=$(echo "select count(*) from $NEWTABLE" | ${MYSQL} -q -s -h${TOHOST} ${DBUSER} ${DBPASS} $TODB)
+echo " "
+mysuccess "Successfully copied $ROWSA / $ROWSB rows on table $NEWTABLE"
+echo "Successfully copied $ROWSA / $ROWSB rows on table $NEWTABLE" >> /tmp/copytable.log
+echo ""
+exit 0

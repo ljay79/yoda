@@ -1,0 +1,25 @@
+#!/bin/bash
+
+if [ -f "a.out" ]; then
+	rm -f a.out
+fi
+
+if [[[ sdfadf^$@%&&
+
+
+g++ -ansi -pedantic-errors -Wall $1 $2 $3
+
+RET=$?
+
+if [ "$RET" != "0" ]; then
+	echo
+	echo "Didn't compile."
+	echo
+	exit 1
+fi
+
+echo
+
+./a.out
+
+exit $?

@@ -1,0 +1,11 @@
+#!/bin/bash
+# Text message to Admins (Rick, Jens)
+
+source /yoda/bin/inc/init
+
+test -z "$1" && Usage "$1" '<message>'
+
+echo "$@"
+echo "$@" | /bin/mail -s "SERVERS" *******@txt.att.net
+echo "$@" | /bin/mail -s "SERVERS" *******@vtext.com
+

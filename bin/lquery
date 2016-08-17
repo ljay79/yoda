@@ -1,0 +1,30 @@
+#!/bin/bash
+# 1-click execute SQL statement on localhost
+#
+# usage {-v dbname [-p <password>]}
+# usage {dbname [-p <password>]}
+# usage {dbname}
+###########
+
+VERB="no";
+
+if [ "$1" = "-v" ]; then
+    VERB="yes"
+    shift
+fi
+
+DB=$1
+shift
+
+PASS=""
+if [ "$1" = "-p" ]; then
+    PASS=" --password=$2"
+    shift
+    shift
+fi
+
+if [ "$VERB" = "yes" ]; then
+    echo "$*"
+fi
+
+echo "$*" | mysql -q -s -hlocalhost -uroot $PASS $DB

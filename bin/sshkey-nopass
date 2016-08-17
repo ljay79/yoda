@@ -1,0 +1,6 @@
+#!/bin/bash
+# generates a new ssh key pair without pass-phrase for server-server auth only
+
+if [ ! -f  ~/.ssh/id_rsa ]; then
+	/usr/bin/ssh-keygen -t rsa -b 1024 -q -N '' -f ~/.ssh/id_rsa
+fi

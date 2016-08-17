@@ -1,0 +1,5 @@
+#!/bin/bash
+# Like "whereis" but better. Find the .h file
+
+
+ls -lR /usr/include | grep -i "$@"

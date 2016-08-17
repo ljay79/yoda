@@ -1,0 +1,13 @@
+#!/bin/bash
+# Find the linux command for anything...
+
+if [ ! -f /yoda/misc/howdoi.db ]; then
+	echo "I have to make the howdoi database first..."
+	echo
+	/yoda/bin/makehowdoidb
+	echo
+fi
+
+cat /yoda/misc/howdoi.db | grep -i --color=always "$*"
+
+exit 0

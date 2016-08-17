@@ -1,0 +1,1933 @@
+netstat              (8)  - Print network connections, routing tables, interface statistics, masquerade connections, and multicast memberships
+cat                  (1)  - concatenate files and print on the standard output
+cat                  (1p)  - concatenate and print files
+ping6 [ping]         (8)  - send ICMP ECHO_REQUEST to network hosts
+sed                  (1)  - stream editor for filtering and transforming text
+sed                  (1p)  - stream editor
+sed                 (rpm) - A GNU stream text editor.
+dbus-uuidgen         (1)  - Utility to generate UUIDs
+dbus-daemon          (1)  - Message bus daemon
+mount                (2)  - mount and unmount filesystems
+mount                (8)  - mount a file system
+mount.cifs [mount]   (8)  - mount using the Common Internet File System (CIFS)
+mount.ecryptfs [mount] (8)  - eCryptfs mount helper
+mount.ecryptfs_private [mount] (1)  - eCryptfs private mount helper
+mount.nfs [mount]    (8)  - mount a Network File System
+mount.nfs4 [mount]   (8)  - mount a Network File System
+echo                 (1)  - display a line of text
+echo                 (1p)  - write arguments to standard output
+echo [builtins]      (1)  - bash built-in commands, see bash(1)
+echo [curs_inopts]   (3x)  - curses input options
+dbus-cleanup-sockets (1)  - clean up leftover sockets in a directory
+touch                (1)  - change file timestamps
+touch                (1p)  - change file access and modification times
+ipcalc               (1)  - perform simple manipulation of IP addresses
+cut                  (1)  - remove sections from each line of files
+cut                  (1p)  - cut out selected fields of each line of a file
+raw                  (7)  - Linux IPv4 raw sockets
+raw                  (8)  - bind a Linux raw character device
+raw [curs_inopts]    (3x)  - curses input options
+nice                 (1)  - run a program with modified scheduling priority
+nice                 (1p)  - invoke a utility with an altered nice value
+nice                 (2)  - change process priority
+nice                 (3p)  - change the nice value of a process
+dmesg                (8)  - print or control the kernel ring buffer
+dumpkeys             (1)  - dump keyboard translation tables
+cpio                 (1)  - copy files to and from archives
+cpio                (rpm) - A GNU archiving program.
+cpio.h [cpio]        (0p)  - cpio archive values
+tar                  (1)  - The GNU version of the tar archiving utility
+tar                 (rpm) - A GNU file archiving program
+tar.h [tar]          (0p)  - extended tar definitions
+basename             (1)  - strip directory and suffix from filenames
+basename             (1p)  - return non-directory portion of a pathname
+basename             (3)  - Parse pathname components
+basename             (3p)  - return the last component of a pathname
+sleep                (1)  - delay for a specified amount of time
+sleep                (1p)  - suspend execution for an interval
+sleep                (3)  - Sleep for the specified number of seconds
+sleep                (3p)  - suspend execution for an interval of time
+tracepath            (8)  - traces path to a network host discovering MTU along this path
+gettext              (1)  - translate message
+gettext             (rpm) - GNU libraries and utilities for producing multi-lingual messages
+gunzip [gzip]        (1)  - compress or expand files
+dbus-monitor         (1)  - debug probe to print message bus messages
+link                 (1)  - call the link function to create a link to a file
+link                 (1p)  - call link function
+link                 (2)  - make a new name for a file
+link                 (3p)  - link to a file
+chmod                (1)  - change file access permissions
+chmod                (1p)  - change the file modes
+chmod                (2)  - change permissions of a file
+chmod                (3p)  - change mode of a file
+dbus-send            (1)  - Send a message to a message bus
+setserial            (8)  - get/set Linux serial port information
+setserial           (rpm) - A utility for configuring serial ports.
+uname                (1)  - print system information
+uname                (1p)  - return system name
+uname                (2)  - get name and information about current kernel
+uname                (3p)  - get the name of the current system
+traceroute           (8)  - print the route packets trace to network host
+traceroute          (rpm) - Traces the route taken by packets over an IPv4/IPv6 network
+unicode_start        (1)  - put keyboard and console in unicode mode
+loadkeys             (1)  - load keyboard translation tables
+pwd                  (1)  - print name of current/working directory
+pwd                  (1p)  - return working directory name
+pwd [builtins]       (1)  - bash built-in commands, see bash(1)
+pwd.h [pwd]          (0p)  - password structure
+setfont              (8)  - load EGA/VGA console screen font
+login                (1)  - sign on
+login                (3)  - write utmp and wtmp entries
+login.defs [login]   (5)  - shadow password suite configuration
+unlink               (1)  - call the unlink function to remove the specified file
+unlink               (1p)  - call the unlink function
+unlink               (2)  - delete a name and possibly the file it refers to
+unlink               (3p)  - remove a directory entry
+mktemp               (1)  - make temporary filename (unique)
+mktemp               (3)  - make a unique temporary filename
+mktemp               (3p)  - make a unique filename (LEGACY)
+mktemp              (rpm) - A small utility for safely making /tmp files.
+ln                   (1)  - make links between files
+ln                   (1p)  - link files
+tracepath6 [tracepath] (8)  - traces path to a network host discovering MTU along this path
+bash                 (1)  - GNU Bourne-Again SHell
+bash                (rpm) - The GNU Bourne Again shell (bash) version 3.2
+bash [builtins]      (1)  - bash built-in commands, see bash(1)
+rmdir                (1)  - remove empty directories
+rmdir                (1p)  - remove directories
+rmdir                (2)  - delete a directory
+rmdir                (3p)  - remove a directory
+doexec               (1)  - run an executable with an arbitrary argv[0]
+cp                   (1)  - copy files and directories
+cp                   (1p)  - copy files
+df                   (1)  - report file system disk space usage
+df                   (1p)  - report free disk space
+tcsh                 (1)  - C shell with file name completion and command line editing
+tcsh                (rpm) - An enhanced version of csh, the C shell.
+umount               (8)  - unmount file systems
+umount [mount]       (2)  - mount and unmount filesystems
+umount.cifs [umount] (8)  - for normal, non-root users, to unmount their own Common Internet File System (CIFS) mounts
+umount.ecryptfs_private [umount] (1)  - eCryptfs private unmount helper
+umount.nfs [umount]  (8)  - unmount a Network File System
+umount.nfs4 [umount] (8)  - unmount a Network File System
+arch                 (1)  - print machine architecture
+false                (1)  - do nothing, unsuccessfully
+false                (1p)  - return false value
+more                 (1)  - file perusal filter for crt viewing
+more                 (1p)  - display files on a page-by-page basis
+rm                   (1)  - remove files or directories
+rm                   (1p)  - remove directory entries
+stty                 (1)  - change and print terminal line settings
+stty                 (1p)  - set the options for a terminal
+stty [unimplemented] (2)  - unimplemented system calls
+gzip                 (1)  - compress or expand files
+gzip                (rpm) - The GNU data compression program.
+mkdir                (1)  - make directories
+mkdir                (1p)  - make directories
+mkdir                (2)  - create a directory
+mkdir                (3p)  - make a directory
+dd                   (1)  - convert and copy a file
+dd                   (1p)  - convert and copy a file
+mv                   (1)  - move (rename) files
+mv                   (1p)  - move files
+kbd_mode             (1)  - report or set the keyboard mode
+chgrp                (1)  - change group ownership
+chgrp                (1p)  - change the file group ownership
+rpm                  (8)  - RPM Package Manager
+rpm                 (rpm) - The RPM package management system
+rpm-build           (rpm) - Scripts and executable programs used to build packages
+rpm-devel           (rpm) - Development files for manipulating RPM packages
+rpm-libs            (rpm) - Libraries for manipulating RPM packages
+rpm-python          (rpm) - Python bindings for apps which will manipulate RPM packages
+ping                 (8)  - send ICMP ECHO_REQUEST to network hosts
+mountpoint           (1)  - see if a directory is a mountpoint
+vi                   (1p)  - screen-oriented (visual) display editor
+ed                   (1)  - text editor
+ed                   (1p)  - edit text
+ed                  (rpm) - The GNU line editor.
+kill                 (1)  - terminate a process
+kill                 (1p)  - terminate or signal processes
+kill                 (2)  - send signal to a process
+kill                 (3p)  - send a signal to a process or a group of processes
+kill [builtins]      (1)  - bash built-in commands, see bash(1)
+igawk                (1)  - gawk with include files
+sync                 (1)  - flush file system buffers
+sync                 (2)  - commit buffer cache to disk
+sync                 (3p)  - schedule file system updates
+sync                 (8)  - synchronize data on disk with memory
+sort                 (1)  - sort lines of text files
+sort                 (1p)  - sort, merge, or sequence check text files
+sort                 (3pm)  - perl pragma to control sort() behaviour
+taskset              (1)  - retrieve or set a processes's CPU affinity
+chown                (1)  - change file owner and group
+chown                (1p)  - change the file ownership
+chown                (2)  - change ownership of a file
+chown                (3p)  - change owner and group of a file
+unicode_stop         (1)  - revert keyboard and console from unicode mode
+hostname             (1)  - show or set the system's host name
+mknod                (1)  - make block or character special files
+mknod                (2)  - create a special or ordinary file
+mknod                (3p)  - make a directory, a special file, or a regular file
+true                 (1)  - do nothing, successfully
+true                 (1p)  - return true value
+Date::Manip          (3pm)  - date manipulation routines
+Date::Manip::DM5abbrevs (3pm)  - A list of all timezone abbreviations
+date                 (1)  - print or set the system date and time
+date                 (1p)  - write the date and time
+zcat                 (1p)  - expand and concatenate data
+zcat [gzip]          (1)  - compress or expand files
+ls                   (1)  - list directory contents
+ls                   (1p)  - list directory contents
+usleep               (1)  - sleep some number of microseconds
+usleep               (3)  - suspend execution for microsecond intervals
+usleep               (3p)  - suspend execution for an interval
+grep                 (1)  - print lines matching a pattern
+grep                 (1p)  - search a file for a pattern
+grep                (rpm) - The GNU versions of grep pattern matching utilities.
+su                   (1)  - run a shell with substitute user and group IDs
+Env                  (3pm)  - perl module that imports environment variables as scalars or arrays
+env                  (1)  - run a program in a modified environment
+env                  (1p)  - set the environment for command invocation
+mail                 (1)  - send and receive mail
+ps                   (1)  - report a snapshot of the current processes
+ps                   (1p)  - report process status
+gawk                 (1)  - pattern scanning and processing language
+gawk                (rpm) - The GNU version of the awk text processing utility.
+gawk [pgawk]         (1)  - pattern scanning and processing language
+fipscheck           (rpm) - A library for integrity verification of FIPS validated modules
+fipscheck-lib       (rpm) - Library files for fipscheck
+logger               (1)  - a shell command interface to the syslog(3) system log module
+logger               (1p)  - log messages
+keyctl               (1)  - Key management facility control
+keyctl               (2)  - Manipulate the kernel's key management facility
+fdisk                (8)  - Partition table manipulator for Linux
+fsck                 (8)  - check and repair a Linux file system
+quotaon              (8)  - turn filesystem quotas on and off
+ip6tables            (8)  - IPv6 packet filter administration
+MAKEDEV              (8)  - create devices
+MAKEDEV             (rpm) - A program used for creating device files in /dev.
+accton               (8)  - turns process accounting on or off
+ppp-watch            (8)  - daemon to make PPP interfaces act more like other interfaces
+dosfsck              (8)  - check and repair MS-DOS file systems
+grub-install         (8)  - install GRUB on your drive
+blockdev             (8)  - call block device ioctls from the command line
+ip                   (7)  - Linux IPv4 protocol implementation
+ip                   (8)  - show / manipulate routing, devices, policy routing and tunnels
+ypbind               (8)  - NIS binding process
+ypbind              (rpm) - The NIS daemon which binds NIS clients to an NIS domain.
+e2label              (8)  - Change the label on an ext2/ext3 filesystem
+unix_chkpwd          (8)  - helper binary that verifies the password of the current user
+adsl-status          (8)  - Shell script to report on status of PPPoE link
+consoletype          (1)  - print type of the console connected to standard input
+setkey               (3p)  - set encoding key (CRYPT)
+setkey               (8)  - manually manipulate the IPsec SA/SP database
+setkey [encrypt]     (3)  - encrypt 64-bit messages
+udevtrigger          (8)  - request kernel devices events for coldplug
+microcode_ctl        (8)  - microcode utility for Intel IA32 processors
+microcode_ctl       (rpm) - Tool to update x86/x86-64 CPU microcode.
+pam_tally            (8)  - The login counter (tallying) module
+multipathd           (8)  - multipath daemon
+shutdown             (2)  - shut down part of a full-duplex connection
+shutdown             (3p)  - shut down socket send and receive operations
+shutdown             (8)  - bring the system down
+tc                   (8)  - show / manipulate traffic control settings
+nameif               (8)  - name network interfaces based on MAC addresses
+rmmod                (8)  - simple program to remove a module from the Linux Kernel
+restore              (8)  - restore files or file systems from backups made with dump
+mount.nfs [mount]    (8)  - mount a Network File System
+swapon               (2)  - start/stop swapping to file/device
+swapon               (8)  - enable/disable devices and files for paging and swapping
+resize2fs            (8)  - ext2/ext3 file system resizer
+getkey               (1)  - wait until a key is pressed
+autrace              (8)  - a program similar to strace
+cryptsetup           (8)  - setup cryptographic volumes for dm-crypt (including LUKS extension)
+cryptsetup-luks     (rpm) - A utility for setting up encrypted filesystems
+mdadm                (8)  - manage MD devices aka Linux Software RAID
+mdadm               (rpm) - mdadm controls Linux md devices (software RAID arrays)
+mdadm.conf [mdadm]   (5)  - configuration for management of Software RAID with mdadm
+restorecon           (8)  - restore file(s) default SELinux security contexts
+udevd                (8)  - event managing daemon
+e2image              (8)  - Save critical ext2/ext3 filesystem metadata to a file
+udevsettle           (8)  - wait until queued kernel/udev events are handled
+losetup              (8)  - set up and control loop devices
+fixfiles             (8)  - fix file SELinux security contexts
+ausearch             (8)  - a tool to query audit daemon logs
+ausearch-expression  (5)  - audit search expression format
+dmraid               (8)  - discover, configure and activate software (ATA)RAID
+dmraid              (rpm) - dmraid (Device-mapper RAID tool and library)
+dmraid-events       (rpm) - dmevent_tool (Device-mapper event tool) and DSO
+netplugd             (8)  - network cable hotplug management daemon
+fstab-decode         (8)  - run a command with fstab-encoded arguments
+rngd                 (8)  - Check and feed random data from hardware device to kernel random device
+initlog              (1)  - log messages and events to the system logger
+mkfs                 (8)  - build a Linux file system
+rpc.statd [statd]    (8)  - NSM status monitor
+iwgetid              (8)  - Report ESSID, NWID or AP/Cell Address of wireless network
+partx                (8)  - telling the kernel about presence and numbering of on-disk partitions
+runuser              (1)  - run a shell with substitute user and group IDs, similar to su, but will not run PAM hooks
+hwclock              (8)  - query and set the hardware clock (RTC)
+pam_timestamp_check  (8)  - check or clear authentication timestamps
+dosfslabel           (8)  - set or get a MS-DOS filesystem label
+dmsetup              (8)  - low level logical volume management
+iwpriv               (8)  - configure optionals (private) parameters of a wireless network interface
+mii-tool             (8)  - view, manipulate media-independent interface status
+fuser                (1)  - identify processes using files or sockets
+fuser                (1p)  - list process IDs of all processes that have one or more files open
+auditd               (8)  - The Linux Audit daemon
+auditd.conf [auditd] (5)  - audit daemon configuration file
+grub-terminfo        (8)  - Generate a terminfo command from a terminfo name
+dumpe2fs             (8)  - dump ext2/ext3 filesystem information
+lsmod                (8)  - program to show the status of modules in the Linux Kernel
+dhcp6c               (8)  - DHCPv6 client daemon
+dhcp6c.conf [dhcp6c] (5)  - configuration file of the DHCPv6 client daemon, dhcp6c
+parted              (rpm) - The GNU disk partition manipulation program
+arping               (8)  - send ARP REQUEST to a neighbour host
+modprobe             (8)  - program to add and remove modules from the Linux Kernel
+modprobe.conf [modprobe] (5)  - Configuration file/directory for modprobe
+modprobe.d [modprobe] (5)  - Configuration file/directory for modprobe
+kudzu                (8)  - detects and configures new and/or changed hardware on a system
+kudzu               (rpm) - The Red Hat Linux hardware probing tool.
+kudzu-devel         (rpm) - Development files needed for hardware probing using kudzu.
+ctrlaltdel           (8)  - set the function of the Ctrl-Alt-Del combination
+install-info         (1)  - update info/dir entries
+pccardctl            (8)  - PCMCIA card control utility
+ifenslave            (8)  - Attach and detach slave network devices to a bonding device
+grub-md5-crypt       (8)  - Encrypt a password in MD5 format
+umount.nfs4 [umount] (8)  - unmount a Network File System
+delpart              (8)  - simple wrapper around the del partition ioctl
+mgetty               (8)  - smart modem getty
+mgetty              (rpm) - A getty replacement for use with data and fax modems.
+mount.ecryptfs [mount] (8)  - eCryptfs mount helper
+grubby               (8)  - command line tool for configuring grub, lilo, and elilo
+CBQ [tc-cbq-details] (8)  - Class Based Queueing
+CBQ [tc-cbq]         (8)  - Class Based Queueing
+badblocks            (8)  - search a device for bad blocks
+insmod               (8)  - simple program to insert a module into the Linux Kernel
+mount.nfs4 [mount]   (8)  - mount a Network File System
+portmap              (8)  - DARPA port to RPC program number mapper
+portmap             (rpm) - A program which manages RPC connections.
+mdmpd                (8)  - daemon to monitor MD multipath devices
+nologin              (5)  - prevent non-root users from logging into the system
+nologin              (8)  - politely refuse a login
+setpci               (8)  - configure PCI devices
+dhclient             (8)  - Dynamic Host Configuration Protocol Client
+dhclient            (rpm) - Provides the dhclient ISC DHCP client daemon and dhclient-script.
+dhclient-script      (8)  - DHCP client network configuration script
+dhclient.conf [dhclient] (5)  - DHCP client configuration file
+dhclient.leases [dhclient] (5)  - DHCP client lease database
+dhclient-script      (8)  - DHCP client network configuration script
+umount.nfs [umount]  (8)  - unmount a Network File System
+pppoe-relay          (8)  - user-space PPPoE relay agent
+service              (8)  - run a System V init script
+adsl-start           (8)  - Shell script to bring up a PPPoE link
+findfs               (8)  - Find a filesystem by label or UUID
+adsl-connect         (8)  - Shell script to manage a PPPoE link
+rmt                  (8)  - remote magtape protocol module
+rmt                 (rpm) - Provides certain programs with access to remote tape devices
+mii-diag             (8)  - Network adapter control and monitoring
+iwevent              (8)  - Display Wireless Events generated by drivers and setting changes
+iwlist               (8)  - Get more detailed wireless information from a wireless interface
+rdisc                (8)  - network router discovery daemon
+multipath            (8)  - Device mapper target autoconfig
+multipath.conf [multipath] (5)  - multipath daemon configuration file
+setfiles             (8)  - set file SELinux security contexts
+depmod               (8)  - program to generate modules.dep and map files
+depmod.conf [depmod] (5)  - Configuration file/directory for depmod
+depmod.d [depmod]    (5)  - Configuration file/directory for depmod
+ifcfg-ppp0 [pppoe]   (5)  - Configuration file used by adsl-start(8), adsl-stop(8), adsl-status(8) and adsl-connect(8)
+iptables-save        (8)  - Save IP Tables
+grub                 (8)  - the grub shell
+grub                (rpm) - GRUB - the Grand Unified Boot Loader.
+grub-install         (8)  - install GRUB on your drive
+grub-md5-crypt       (8)  - Encrypt a password in MD5 format
+grub-terminfo        (8)  - Generate a terminfo command from a terminfo name
+auditctl             (8)  - a utility to assist controlling the kernel's audit system
+mkswap               (8)  - set up a Linux swap area
+sfdisk               (8)  - Partition table manipulator for Linux
+ether-wake           (8)  - A tool to send a Wake-On-LAN Magic Packet
+sln                  (8)  - static ln
+mkinitrd             (8)  - creates initial ramdisk images for preloading modules
+mkinitrd            (rpm) - Creates an initial ramdisk image for preloading modules.
+partprobe            (8)  - inform the OS of partition table changes
+sysctl               (2)  - read/write system parameters
+sysctl               (8)  - configure kernel parameters at runtime
+sysctl.conf [sysctl] (5)  - sysctl(8) preload/configuration file
+iptables-restore     (8)  - Restore IP Tables
+tune2fs              (8)  - adjust tunable filesystem parameters on ext2/ext3 filesystems
+quotacheck           (8)  - scan a filesystem for disk usage, create, check and repair quota files
+nash                 (8)  - script interpretor to interpret linuxrc images
+nash                (rpm) - nash shell
+dhcdbd              (rpm) - DHCP D-BUS daemon (dhcdbd) controls dhclient sessions with D-BUS, stores and presents DHCP options.
+mingetty             (8)  - minimal getty for consoles
+mingetty            (rpm) - A compact getty program for virtual consoles only.
+pppoe                (8)  - user-space PPPoE client
+pppoe-relay          (8)  - user-space PPPoE relay agent
+pppoe-server         (8)  - user-space PPPoE server
+pppoe-sniff          (8)  - examine network for non-standard PPPoE frames
+modinfo              (8)  - program to show information about a Linux Kernel module
+dump                 (8)  - ext2/3 filesystem backup
+dump                (rpm) - Programs for backing up and restoring ext2/ext3 filesystems
+adsl-stop            (8)  - Shell script to shut down a PPPoE link
+blkid                (8)  - command-line utility to locate/print block device attributes
+klogd                (8)  - Kernel Log Daemon
+netreport            (1)  - request notification of network interface changes
+iwconfig             (8)  - configure a wireless network interface
+pam_console_apply    (8)  - set or revoke permissions for users at the system console
+pppoe-sniff          (8)  - examine network for non-standard PPPoE frames
+rpc.lockd [lockd]    (8)  - start kernel lockd process
+plipconfig           (8)  - fine tune PLIP device parameters
+debugfs              (8)  - ext2/ext3 file system debugger
+pivot_root           (2)  - change the root file system
+pivot_root           (8)  - change the root file system
+ifconfig             (8)  - configure a network interface
+route                (8)  - show / manipulate the IP routing table
+slattach             (8)  - attach a network interface to a serial line
+aureport             (8)  - a tool that produces summary reports of audit daemon logs
+chkconfig            (8)  - updates and queries runlevel information for system services
+chkconfig           (rpm) - A system tool for maintaining the /etc/rc*.d hierarchy.
+ethtool              (8)  - Display or change ethernet card settings
+ethtool             (rpm) - Ethernet settings tool for PCI ethernet cards
+kpartx               (8)  - Create device maps from partition tables
+kpartx              (rpm) - Partition device manager for device-mapper devices.
+iptables             (8)  - administration tool for IPv4 packet filtering and NAT
+iptables            (rpm) - Tools for managing Linux kernel packet filtering capabilities.
+iptables-ipv6       (rpm) - IPv6 support for iptables.
+iptables-restore     (8)  - Restore IP Tables
+iptables-save        (8)  - Save IP Tables
+mke2fs               (8)  - create an ext2/ext3 filesystem
+mke2fs [mkfs]        (8)  - create an ext2/ext3 filesystem
+mke2fs.conf [mke2fs] (5)  - Configuration file for mke2fs
+update-pciids        (8)  - download new version of the PCI ID list
+vconfig              (8)  - VLAN (802.1q) configuration program
+vconfig             (rpm) - Linux 802.1q VLAN configuration utility
+pppoe-server         (8)  - user-space PPPoE server
+genhostid            (1)  - generate and set a hostid for the current host
+agetty               (8)  - alternative Linux getty
+mkdosfs              (8)  - create an MS-DOS file system under Linux
+adsl-setup           (8)  - Shell script to configure Roaring Penguin PPPoE client
+extlinux             (1)  - install the SYSLINUX bootloader on a ext2/ext3 filesystem
+lsusb                (8)  - list USB devices
+request-key          (8)  - Handle key instantiation callback requests from the kernel
+request-key.conf [request-key] (5)  - Instantiation handler configuration file
+lspci                (8)  - list all PCI devices
+ifrename             (8)  - rename network interfaces based on various static criteria
+audispd              (8)  - an event multiplexor
+audispd.conf [audispd] (5)  - the audit event dispatcher configuration file
+init                 (8)  - process control initialization
+logsave              (8)  - save the output of a command in a logfile
+mkbootdisk           (8)  - creates a stand-alone boot floppy for the running system
+mkbootdisk          (rpm) - Creates a boot floppy disk for booting a system.
+arp                  (7)  - Linux ARP kernel module
+arp                  (8)  - manipulate the system ARP cache
+dmeventd             (8)  - Device-mapper event daemon
+halt                 (8)  - stop the system
+addpart              (8)  - simple wrapper around the add partition ioctl
+hdparm               (8)  - get/set hard disk parameters
+hdparm              (rpm) - A utility for displaying and/or setting hard disk parameters.
+iwspy                (8)  - Get wireless statistics from specific nodes
+e2fsck               (8)  - check a Linux ext2/ext3 file system
+e2fsck [fsck]        (8)  - check a Linux ext2/ext3 file system
+e2fsck.conf [e2fsck] (5)  - Configuration file for e2fsck
+sgpio                (1)  - captive backplane LED control utility
+sgpio               (rpm) - SGPIO captive backplane tool
+mount.ecryptfs_private [mount] (1)  - eCryptfs private mount helper
+dmevent_tool         (8)  - A utility used to load a DSO into dmeventd and (un)register devices with it for monitoring
+mount.cifs [mount]   (8)  - mount using the Common Internet File System (CIFS)
+umount.cifs [umount] (8)  - for normal, non-root users, to unmount their own Common Internet File System (CIFS) mounts
+iscsiadm             (8)  - open-iscsi administration utility
+iscsid               (8)  - Open-iSCSI daemon
+dfutool              (1)  - Device Firmware Upgrade utility
+procmail             (1)  - autonomous mail processor
+procmail            (rpm) - The procmail mail processing program.
+volname              (1)  - return volume name
+zipcloak [zip]       (1)  - package and compress (archive) files
+getfacl              (1)  - get file access control lists
+talk                 (1)  - talk to another user
+talk                 (1p)  - talk to another user
+talk                (rpm) - Talk client for one-on-one Internet chatting.
+lppasswd             (1)  - add, change, or delete digest passwords
+chrt                 (1)  - manipulate real-time attributes of a process
+cksum                (1)  - checksum and count the bytes in a file
+cksum                (1p)  - write file checksums and sizes
+shred                (1)  - overwrite a file to hide its contents, and optionally delete it
+sdptool              (1)  - control and interrogate SDP servers
+funzip               (1)  - filter for extracting from a ZIP archive in a pipe
+tsort                (1)  - perform topological sort
+tsort                (1p)  - topological sort
+at                   (1)  - queue, examine or delete jobs for later execution
+at                   (1p)  - execute commands at a later time
+at                  (rpm) - Job spooling tools.
+at-spi              (rpm) - Assistive Technology Service Provider Interface
+at.allow [at]        (5)  - determine who can submit jobs via at or batch
+at.deny [at]         (5)  - determine who can submit jobs via at or batch
+bzdiff               (1)  - compare bzip2 compressed files
+free                 (1)  - Display amount of free and used memory in the system
+free                 (3p)  - free allocated memory
+free [malloc]        (3)  - Allocate and free dynamic memory
+grodvi               (1)  - convert groff output to TeX dvi format
+ttmkfdir            (rpm) - Utility to create fonts.scale files for truetype fonts
+fax2ps               (1)  - convert a TIFF facsimile to compressed (tm
+sum                  (1)  - checksum and count the blocks in a file
+whereis              (1)  - locate the binary, source, and manual page files for a command
+soelim               (1)  - interpret .so requests in groff input
+tiff2ps              (1)  - convert a TIFF image to (tm
+lss16toppm           (1)  - Convert an LSS-16 image to PPM
+isosize              (8)  - outputs the length of a iso9660 file system
+lsattr               (1)  - list file attributes on a Linux second extended file system
+a2p                  (1)  - Awk to Perl translator
+lwp-mirror           (1)  - Simple mirror utility
+rev                  (1)  - reverse lines of a file
+chcat                (8)  - change file SELinux security category
+checkmodule          (8)  - SELinux policy module compiler
+lpoptions            (1)  - display or set printer options and defaults
+crontab              (1)  - maintain crontab files for individual users (ISC Cron V4.1)
+crontab              (1p)  - schedule periodic background work
+crontab              (5)  - tables for driving cron (ISC Cron V4.1)
+sesearch             (1)  - SELinux policy query tool
+sha1sum              (1)  - compute and check SHA1 message digest
+tailf                (1)  - follow the growth of a log file
+msgmerge             (1)  - merge message catalog and template
+faillog              (5)  - login failure logging file
+faillog              (8)  - display faillog records or set login failure limits
+quota                (1)  - display disk usage and limits
+quota               (rpm) - System administration tools for monitoring users' disk usage.
+ptx                  (1)  - produce a permuted index of file contents
+pod2usage            (1)  - print usage messages from embedded pod docs in files
+pod2usage() [Pod::Usage] (3pm)  - print a usage message from embedded pod documentation
+run-with-aspell      (1)  - script to help use GNU Aspell as an ispell replacement
+diff                 (1)  - find differences between two files
+diff                 (1p)  - compare two files
+diff-jars            (1)  - output the differences between two JAR files
+tload                (1)  - graphic representation of system load average
+fonttosfnt           (1x)  - Wrap a bitmap font in a sfnt (TrueType) wrapper
+patch                (1)  - apply a diff file to an original
+patch                (1p)  - apply changes to files
+patch               (rpm) - The GNU patch command, for modifying/upgrading files.
+fc-cache             (1)  - build font information cache files
+xmlwf                (1)  - Determines if an XML document is well-formed
+sha256sum            (1)  - compute and check SHA256 message digest
+Locale::Constants    (3pm)  - constants for Locale codes
+Locale::Country      (3pm)  - ISO codes for country identification (ISO 3166)
+Locale::Currency     (3pm)  - ISO three letter codes for currency identification (ISO 4217)
+Locale::Language     (3pm)  - ISO two letter codes for language identification (ISO 639)
+Locale::Maketext     (3pm)  - framework for localization
+Locale::Script       (3pm)  - ISO codes for script identification (ISO 15924)
+locale               (1)  - Get locale - specific information
+locale               (1p)  - get locale - specific information
+locale               (3pm)  - Perl pragma to use and avoid POSIX locales for built-in operations
+locale               (5)  - Describes a locale definition file
+locale               (7)  - Description of multi-language support
+locale.h [locale]    (0p)  - category macros
+podchecker           (1)  - check the syntax of POD format documentation files
+podchecker() [Pod::Checker] (3pm)  - check pod documents for syntax errors
+base64               (1)  - base64 encode/decode data and print to standard output
+mtools               (1)  - utilities to access DOS disks in Unix
+mtools              (rpm) - Programs for accessing MS-DOS disks without mounting the disks.
+mtools.conf [mtools] (5)  - mtools configuration files
+bzip2recover [bzip2] (1)  - recovers data from damaged bzip2 files
+rcp                  (1)  - remote file copy
+msgunfmt             (1)  - uncompile message catalog from binary format
+splain               (1)  - produce verbose warning diagnostics
+splain [diagnostics] (3pm)  - produce verbose warning diagnostics
+rename               (1)  - Rename files
+rename               (2)  - change the name or location of a file
+rename               (3p)  - rename a file
+tty                  (1)  - print the file name of the terminal connected to standard input
+tty                  (1p)  - return user's terminal name
+tty                  (4)  - controlling terminal
+tty ioctl [tty_ioctl] (4)  - ioctls for terminals and serial lines
+vmstat               (8)  - Report virtual memory statistics
+split                (1)  - split a file into pieces
+split                (1p)  - split files into pieces
+audit2allow          (1)  - generate SELinux policy allow rules from logs of denied operations
+tfmtodit             (1)  - create font files for use with groff -Tdvi
+tiffsplit            (1)  - split a multi-image TIFF into single-image TIFF files
+newgrp               (1)  - log in to a new group
+newgrp               (1p)  - change to a new group
+tiff2pdf             (1)  - convert a TIFF image to a PDF document
+strings              (1)  - print the strings of printable characters in files
+strings              (1p)  - find printable strings in files
+strings.h [strings]  (0p)  - string operations
+whatis               (1)  - search the whatis database for complete words
+gprof                (1)  - display call graph profile data
+dirname              (1)  - strip non-directory suffix from file name
+dirname              (1p)  - return the directory portion of a pathname
+dirname              (3p)  - report the parent directory name of a file pathname
+dirname [basename]   (3)  - Parse pathname components
+nohup                (1)  - run a command immune to hangups, with output to a non-tty
+nohup                (1p)  - invoke a utility immune to hangups
+pal2rgb              (1)  - convert a palette color TIFF image to a full color image
+finger               (1)  - user information lookup program
+finger              (rpm) - The finger client.
+msgcmp               (1)  - compare message catalog and template
+msgconv              (1)  - character set conversion for message catalog
+ipcrm                (1p)  - remove an XSI message queue, semaphore set, or shared memory segment identifier
+ipcrm                (8)  - remove a message queue, semaphore set or shared memory id
+Getopt::Long         (3pm)  - Extended processing of command line options
+getopt               (1)  - parse command options (enhanced)
+getopt               (3)  - Parse command-line options
+getopt               (3p)  - command option parsing
+getopt [Getopt::Std] (3pm)  - Process single-character switches with switch clustering
+ddate                (1)  - converts Gregorian dates to Discordian dates
+nl                   (1)  - number lines of files
+nl                   (1p)  - line numbering filter
+nl [curs_outopts]    (3x)  - curses output options
+pl2pm                (1)  - Rough tool to translate Perl4 .pl files to Perl5 .pm modules
+afs5log              (1)  - AFS token initializer
+fold                 (1)  - wrap each input line to fit in specified width
+fold                 (1p)  - filter for folding lines
+dir                  (1)  - list directory contents
+lftp                 (1)  - Sophisticated file transfer program
+lftp                (rpm) - Sophisticated file transfer program
+lftp.conf [lftp]     (5)  - the global configuration file for lftp
+man                  (1)  - format and display the on-line manual pages
+man                  (1p)  - display system documentation
+man                  (7)  - macros to format man pages
+man                 (rpm) - A set of documentation tools: man, apropos and whatis.
+man-pages           (rpm) - Man (manual) pages from the Linux Documentation Project.
+man.config [man]     (5)  - configuration data for man
+batch                (1p)  - schedule commands to be executed in a batch queue
+batch [at]           (1)  - queue, examine or delete jobs for later execution
+Test                 (3pm)  - provides a simple framework for writing test scripts
+Test::Builder        (3pm)  - Backend for building test libraries
+Test::Builder::Module (3pm)  - Base class for test modules
+Test::Builder::Tester (3pm)  - test testsuites that have been built with Test::Builder
+Test::Builder::Tester::Color (3pm)  - turn on colour in Test::Builder::Tester
+Test::Harness        (3pm)  - Run Perl standard test scripts with statistics
+Test::Harness::Assert (3pm)  - simple assert
+Test::Harness::Iterator (3pm)  - Internal Test::Harness Iterator
+Test::Harness::Point (3pm)  - object for tracking a single test point
+Test::Harness::Straps (3pm)  - detailed analysis of test results
+Test::Harness::TAP   (3pm)  - Documentation for the TAP format
+Test::More           (3pm)  - yet another framework for writing test scripts
+Test::Simple         (3pm)  - Basic utilities for writing tests
+Test::Tutorial       (3pm)  - A tutorial about writing really basic tests
+test                 (1)  - check file types and compare values
+test                 (1p)  - evaluate expression
+test [builtins]      (1)  - bash built-in commands, see bash(1)
+fc-match             (1)  - match available fonts
+pinky                (1)  - lightweight finger
+htmlview            (rpm) - Launcher of Preferred Web Browser
+curl                 (1)  - transfer a URL
+curl                (rpm) - A utility for getting files from remote servers (FTP, HTTP, and others).
+curl-config          (1)  - Get information about a libcurl installation
+curl-devel          (rpm) - Files needed for building applications with libcurl.
+tbl                  (1)  - format tables for troff
+sediff               (1)  - SELinux policy difference tool
+ypchfn [yppasswd]    (1)  - change your password in the NIS database
+cjpeg                (1)  - compress an image file to a JPEG file
+setterm              (1)  - set terminal attributes
+setterm [curs_terminfo] (3x)  - curses interfaces to terminfo database
+diff3                (1)  - find differences between three files
+runcon               (1)  - run command with specified SELinux security context
+who                  (1)  - show who is logged on
+who                  (1p)  - display who is on the system
+zforce               (1)  - force a '.gz' extension on all gzip files
+nc                   (1)  - arbitrary TCP and UDP connections and listens
+nc                  (rpm) - Reads and writes data across network connections using TCP or UDP.
+mesg                 (1)  - control write access to your terminal
+mesg                 (1p)  - permit or deny messages
+sechecker            (1)  - SELinux policy checking tool
+whiptail             (1)  - display dialog boxes from shell scripts
+which                (1)  - shows the full path of (shell) commands
+which               (rpm) - Displays where a particular program in your path is located.
+ppm2tiff             (1)  - create a TIFF file from PPM, PGM and PBM image files
+grolbp               (1)  - groff driver for Canon CAPSL printers (LBP-4 and LBP-8 series laser printers)
+msgcomm              (1)  - match two message catalogs
+rsync                (1)  - a fast, versatile, remote (and local) file-copying tool
+rsync               (rpm) - Program for synchronizing files over a network
+yes                  (1)  - output a string repeatedly until killed
+perldoc              (1)  - Look up Perl documentation in Pod format
+hal-set-property     (1)  - set a property on a device object
+xgettext             (1)  - extract gettext strings from source
+colcrt               (1)  - filter nroff output for CRT previewing
+mkmanifest           (1)  - makes list of file names and their DOS 8+3 equivalent
+tiffdither           (1)  - convert a greyscale image to bilevel using dithering
+mkudffs              (8)  - create an UDF filesystem
+ecryptfs-manager     (8)  - eCryptfs key manager
+pktsetup             (8)  - set up and tear down packet device associations
+udevtest             (8)  - simulate a udev run and print the action to the console
+amtu                 (8)  - Abstract Machine Test Utility (AMTU)
+amtu                (rpm) - Abstract Machine Test Utility (AMTU)
+zipsplit [zip]       (1)  - package and compress (archive) files
+chcon                (1)  - change file SELinux security context
+lchsh                (1)  - Change login shell
+namei                (1)  - follow a pathname until a terminal point is found
+mkfontdir            (1x)  - create an index of X font files in a directory
+nslookup             (1)  - query Internet name servers interactively
+pwdx                 (1)  - report current working directory of a process
+attr                 (1)  - extended attributes on XFS filesystem objects
+attr                 (5)  - Extended attributes
+attr                (rpm) - Utilities for managing filesystem extended attributes.
+ypmatch              (1)  - print the values of one or more keys from a NIS map
+ftp                  (1)  - Internet file transfer program
+ftp                 (rpm) - The standard UNIX FTP (File Transfer Protocol) client.
+size                 (1)  - list section sizes and total size
+djpeg                (1)  - decompress a JPEG file to an image file
+msguniq              (1)  - unify duplicate translations in message catalog
+lessecho             (1)  - expand metacharacters
+objcopy              (1)  - copy and translate object files
+addftinfo            (1)  - add information to troff font files for use with groff
+flock                (1)  - Manage locks from shell scripts
+flock                (2)  - apply or remove an advisory lock on an open file
+pod2text             (1)  - Convert POD data to formatted ASCII text
+lchfn                (1)  - Change finger information
+perlcc               (1)  - generate executables from Perl programs
+lockfile             (1)  - conditional semaphore-file creator
+mkfifo               (1)  - make FIFOs (named pipes)
+mkfifo               (1p)  - make FIFO special files
+mkfifo               (3)  - make a FIFO special file (a named pipe)
+mkfifo               (3p)  - make a FIFO special file
+rdjpgcom             (1)  - display text comments from a JPEG file
+crash                (8)  - Analyze Linux crash data or a live system
+crash               (rpm) - crash utility for live systems; netdump, diskdump, kdump, LKCD or mcore dumpfiles
+pic                  (1)  - compile pictures for troff or TeX
+aspell-import        (1)  - import old personal dictionaries into GNU Aspell
+tiffset              (1)  - set a field in a TIFF header
+hal-find-by-capability (1)  - find device objects by capability matching
+lwp-request          (1)  - Simple command line user agent
+lwp-request [GET]    (1)  - Simple command line user agent
+lwp-request [HEAD]   (1)  - Simple command line user agent
+lwp-request [POST]   (1)  - Simple command line user agent
+zdiff                (1)  - compare compressed files
+pstree               (1)  - display a tree of processes
+ypchsh [yppasswd]    (1)  - change your password in the NIS database
+renice               (8)  - alter priority of running processes
+CPAN                 (3pm)  - query, download and build perl modules from CPAN sites
+CPAN::FirstTime      (3pm)  - Utility for CPAN::Config file Initialization
+CPAN::Nox            (3pm)  - Wrapper around CPAN.pm without using any XS module
+cpan                 (1)  - easily interact with CPAN from the command line
+info                 (1)  - read Info documents
+info                 (5)  - readable online documentation
+info                (rpm) - A stand-alone TTY-based reader for GNU texinfo documentation.
+rdate                (1)  - get the time via the network
+rdate               (rpm) - Tool for getting the date/time from a remote machine.
+irpsion5             (8)  - IrDA connectivity to a Psion V PDA
+hexdump              (1)  - ascii, decimal, hexadecimal, octal dump
+msgfmt               (1)  - compile message catalog to binary format
+word-list-compress   (1)  - word list compressor/decompressor for GNU Aspell
+dos2unix             (1)  - DOS/MAC to UNIX text file format converter
+dos2unix            (rpm) - Text file format converter
+dos2unix [mac2unix]  (1)  - DOS/MAC to UNIX text file format converter
+groffer              (1)  - display groff files and man~pages on X and tty
+pfbtops              (1)  - translate a PostScript font in .pfb format to ASCII
+bzgrep               (1)  - search possibly bzip2 compressed files for a regular expression
+pathchk              (1)  - check whether file names are valid or portable
+pathchk              (1p)  - check pathnames
+sprof                (1)  - Read and display shared object profiling data
+mcookie              (1)  - generate magic cookies for xauth
+getfattr             (1)  - get extended attributes of filesystem objects
+solterm              (1)  - An IPMI Serial over LAN program
+tiffcp               (1)  - copy (and possibly convert) a TIFF file
+libnetcfg            (1)  - configure libnet
+vimtutor             (1)  - the Vim tutor
+iconv                (1)  - Convert encoding of given files from one encoding to another
+iconv                (1p)  - codeset conversion
+iconv                (3)  - perform character set conversion
+iconv                (3p)  - codeset conversion function
+iconv.h [iconv]      (0p)  - codeset conversion facility
+pcretest             (1)  - a program for testing Perl-compatible regular expressions
+sha224sum            (1)  - compute and check SHA224 message digest
+pgrep                (1)  - look up or signal processes based on name and other attributes
+checkpolicy          (8)  - SELinux policy compiler
+checkpolicy         (rpm) - SELinux policy compiler
+gethostip            (1)  - convert an IP address into various formats
+pcregrep             (1)  - a grep with Perl-compatible regular expressions
+expr                 (1)  - evaluate expressions
+expr                 (1p)  - evaluate arguments as an expression
+wrjpgcom             (1)  - insert text comments into a JPEG file
+lwp-download         (1)  - Fetch large files from the web
+eqn2graph            (1)  - convert an EQN equation into a cropped image
+fgconsole            (1)  - print the number of the active VT
+zip                  (1)  - package and compress (archive) files
+zip                 (rpm) - A file compression and packaging utility compatible with PKZIP.
+openssl              (1ssl)  - OpenSSL command line tool
+openssl             (rpm) - The OpenSSL toolkit
+openssl-devel       (rpm) - Files for development of applications which will use OpenSSL
+wc                   (1)  - print the number of newlines, words, and bytes in files
+wc                   (1p)  - word, line, and byte or character count
+ipmilan              (8)  - IPMI LAN to System Interface Converter
+tzselect             (8)  - select a time zone
+systool              (1)  - view system device information by bus, class, and topology
+setarch              (8)  - change reported architecture in new program environment and set personality flags
+setarch             (rpm) - Personality setter
+secon                (1)  - See an SELinux context, from a file, program or user input
+mapscrn              (8)  - load screen output mapping table
+File::Basename       (3pm)  - Parse file paths into directory, filename and suffix
+File::Compare        (3pm)  - Compare files or filehandles
+File::Copy           (3pm)  - Copy files or filehandles
+File::DosGlob        (3pm)  - DOS like globbing and then some
+File::Find           (3pm)  - Traverse a directory tree
+File::Glob           (3pm)  - Perl extension for BSD glob routine
+File::GlobMapper     (3pm)  - Extend File Glob to Allow Input and Output Files
+File::Listing        (3pm)  - parse directory listing
+File::Path           (3pm)  - create or remove directory trees
+File::Spec           (3pm)  - portably perform operations on file names
+File::Spec::Cygwin   (3pm)  - methods for Cygwin file specs
+File::Spec::Epoc     (3pm)  - methods for Epoc file specs
+File::Spec::Functions (3pm)  - portably perform operations on file names
+File::Spec::Mac      (3pm)  - File::Spec for Mac OS (Classic)
+File::Spec::OS2      (3pm)  - methods for OS/2 file specs
+File::Spec::Unix     (3pm)  - File::Spec for Unix, base for other File::Spec modules
+File::Spec::VMS      (3pm)  - methods for VMS file specs
+File::Spec::Win32    (3pm)  - methods for Win32 file specs
+File::Temp           (3pm)  - return name and handle of a temporary file safely
+File::stat           (3pm)  - by-name interface to Perl(aqs built-in stat() functions
+file                 (1)  - determine file type
+file                 (1p)  - determine file type
+file                (rpm) - A utility for determining file types.
+refer                (1)  - preprocess bibliographic references for groff
+sqlite3              (1)  - A command line interface for SQLite version 3
+csplit               (1)  - split a file into sections determined by context lines
+csplit               (1p)  - split files based on context
+dircolors            (1)  - color setup for ls
+troff                (1)  - the troff processor of the groff text formatting system
+lesskey              (1)  - specify key bindings for less
+zcmp [zdiff]         (1)  - compare compressed files
+ac                   (1)  - print statistics about users' connect time
+tiff2rgba            (1)  - convert a TIFF image to RGBA color space
+c++filt              (1)  - Demangle C++ and Java symbols
+printenv             (1)  - print all or part of environment
+rpm2cpio             (8)  - Extract cpio archive from RPM Package Manager (RPM) package
+ssh-add              (1)  - adds RSA or DSA identities to the authentication agent
+paps                 (1)  - UTF-8 to PostScript converter using Pango
+paps                (rpm) - Plain Text to PostScript converter
+Time::HiRes          (3pm)  - High resolution alarm, sleep, gettimeofday, interval timers
+Time::Local          (3pm)  - efficiently compute time from local and GMT time
+Time::gmtime         (3pm)  - by-name interface to Perl(aqs built-in gmtime() function
+Time::localtime      (3pm)  - by-name interface to Perl(aqs built-in localtime() function
+Time::tm             (3pm)  - internal object used by Time::gmtime and Time::localtime
+time                 (1)  - time a simple command or give resource usage
+time                 (1p)  - time a simple command
+time                 (2)  - get time in seconds
+time                 (3p)  - get time
+time                 (7)  - overview of time
+time                (rpm) - A GNU utility for monitoring a program's use of system resources.
+time.conf [time]     (5)  - configuration file for the pam_time module
+time.h [time]        (0p)  - time types
+bzip2                (1)  - a block-sorting file compressor, v1.0.3
+bzip2               (rpm) - A file compression utility.
+bzip2-devel         (rpm) - Header files and libraries for developing apps which will use bzip2.
+bzip2-libs          (rpm) - Libraries for applications using bzip2
+install              (1)  - copy files and set attributes
+install-catalog      (8)  - Manage a SGML or XML centralized catalog
+install-info         (1)  - update info/dir entries
+unzipsfx             (1)  - self-extracting stub for prepending to ZIP archives
+gconftool-2          (1)  - GNOME configuration tool
+rmcp_ping            (1)  - IPMI RMCP Ping program
+pmap                 (1)  - report memory map of a process
+showconsolefont      (8)  - Show the current EGA/VGA console screen font
+podselect            (1)  - print selected sections of pod documentation on standard output
+podselect() [Pod::Select] (3pm)  - extract selected sections of POD from input
+hal-find-by-property (1)  - find device objects by property matching
+pax                  (1)  - read and write file archives and copy directory hierarchies
+pax                  (1p)  - portable archive interchange
+pax                 (rpm) - POSIX File System Archiver
+write                (1)  - send a message to another user
+write                (1p)  - write to another user
+write                (2)  - write to a file descriptor
+write                (3p)  - write on a file
+vdir                 (1)  - list directory contents
+setleds              (1)  - set the keyboard leds
+join                 (1)  - join lines of two files on a common field
+join                 (1p)  - relational database operator
+perlivp              (1)  - Perl Installation Verification Procedure
+uniq                 (1)  - report or omit repeated lines
+uniq                 (1p)  - report or filter out repeated lines in a file
+bdftopcf             (1x)  - convert X font from Bitmap Distribution Format to Portable Compiled Format
+sftp                 (1)  - secure file transfer program
+sftp-server          (8)  - SFTP server subsystem
+nano                 (1)  - Nano's ANOther editor, an enhanced free Pico clone
+nano                (rpm) - A small text editor
+hpftodit             (1)  - create font description files for use with groff -Tlj4
+ssh-agent            (1)  - authentication agent
+h2ph                 (1)  - convert .h C header files to .ph Perl header files
+slabtop              (1)  - display kernel slab cache information in real time
+uuidgen              (1)  - command-line utility to create a new UUID value
+bmp2tiff             (1)  - create a TIFF file from a Microsoft Windows Device Independent Bitmap image file
+jwhois               (1)  - client for the whois service
+jwhois              (rpm) - Internet whois/nicname client.
+dprofpp              (1)  - display perl profile data
+tiffdump             (1)  - print verbatim information about TIFF files
+ranlib               (1)  - generate index to archive
+chvt                 (1)  - change foreground virtual terminal
+pr                   (1)  - convert text files for printing
+pr                   (1p)  - print files
+loadunimap           (8)  - load the kernel unicode-to-font mapping table
+ld                   (1)  - The GNU linker
+ld                   (8)  - linux.so* - dynamic linker/loader
+ld.so [ld]           (8)  - linux.so* - dynamic linker/loader
+M4 [m4]              (1)  - manual page for M4 1.4.5
+m4                   (1p)  - macro processor (DEVELOPMENT)
+m4                  (rpm) - The GNU macro processor.
+psed                 (1)  - a stream editor
+psed [s2p]           (1)  - a stream editor
+fax2tiff             (1)  - create a TIFF Class F fax file from raw fax data
+cupstestdsc          (1)  - test conformance of postscript files
+comm                 (1)  - compare two sorted files line by line
+comm                 (1p)  - select or reject lines common to two files
+xmlcatalog           (1)  - Command line tool to parse and manipulate XML or SGML catalog files
+ipmi_ui              (1)  - Crude interface to an IPMI system
+watch                (1)  - execute a program periodically, showing output fullscreen
+perlbug              (1)  - how to submit bug reports on Perl
+tree                 (1)  - list contents of directories in a tree - like format
+tree                (rpm) - A utility which displays a tree view of the contents of directories.
+chsh                 (1)  - change your login shell
+ypwhich              (1)  - return name of NIS server or map master
+showkey              (1)  - examine the codes sent by the keyboard
+openipmicmd          (1)  - An IPMI Command Interface
+openipmish           (1)  - Shell interface to an IPMI system
+floppy               (8)  - format floppy disks
+zgrep                (1)  - search possibly compressed files for a regular expression
+hcitool              (1)  - configure Bluetooth connections
+ionice               (1)  - get/set program io scheduling class and priority
+xxd                  (1)  - make a hexdump or do the reverse
+pkcs11_inspect       (1)  - print certificate contents
+ras2tiff             (1)  - create a TIFF file from a Sun rasterfile
+msginit              (1)  - initialize a message catalog
+pstruct              (1)  - Dump C structures as generated from cc -g -S stabs
+pstruct [c2ph]       (1)  - Dump C structures as generated from cc -g -S stabs
+msgfilter            (1)  - edit translations of message catalog
+tack                 (1)  - terminfo action checker
+cdrwtool             (1)  - perform various actions on a CD-R, CD-RW, and DVD-R
+nroff                (1)  - emulate nroff command with groff
+yppasswd             (1)  - change your password in the NIS database
+w                    (1)  - Show who is logged on and what they are doing
+msgcat               (1)  - combines several message catalogs
+semodule_package     (8)  - Create a SELinux policy module package
+passwd               (1)  - update user's authentication tokens
+passwd               (5)  - password file
+passwd              (rpm) - The passwd utility for setting/changing passwords using PAM
+passwd [sslpasswd]   (1ssl)  - compute password hashes
+lshal                (1)  - list HAL devices
+tail                 (1)  - output the last part of files
+tail                 (1p)  - copy the last part of a file
+neqn                 (1)  - format equations for ascii output
+envsubst             (1)  - substitutes environment variables in shell format strings
+on_ac_power          (1)  - test whether the computer is running on line power
+chattr               (1)  - change file attributes on a Linux second extended file system
+setkeycodes          (8)  - load kernel scancode-to-keycode mapping table entries
+formail              (1)  - mail (re)formatter
+snice [skill]        (1)  - send a signal or report process status
+tset                 (1)  - terminal initialization
+tiff2bw              (1)  - convert a color TIFF image to greyscale
+dig                  (1)  - DNS lookup utility
+dc                   (1)  - an arbitrary precision calculator
+whoami               (1)  - print effective userid
+addr2line            (1)  - convert addresses into file names and line numbers
+zipinfo              (1)  - list detailed information about a ZIP archive
+xmllint              (1)  - command line XML tool
+znew                 (1)  - recompress .Z files to .gz files
+factor               (1)  - factor numbers
+killall              (1)  - kill processes by name
+xargs                (1)  - build and execute command lines from standard input
+xargs                (1p)  - construct argument lists and invoke utility
+script               (1)  - make typescript of terminal session
+execstack            (8)  - tool to set, clear, or query executable stack flag of ELF binaries and shared libraries
+setfacl              (1)  - set file access control lists
+tiffcmp              (1)  - compare two TIFF files
+syslinux             (1)  - install the SYSLINUX bootloader on a FAT filesystem
+syslinux            (rpm) - Kernel bootloader for FAT or ISO9660 filesystems or PXE networks
+lwp-rget             (1)  - Retrieve web documents recursively
+head                 (1)  - output the first part of files
+head                 (1p)  - copy the first part of files
+host                 (1)  - DNS lookup utility
+host.conf [host]     (5)  - resolver configuration file
+readlink             (1)  - display value of a symbolic link
+readlink             (2)  - read value of a symbolic link
+readlink             (3p)  - read the contents of a symbolic link
+ucs2any              (1x)  - generate BDF fonts containing subsets of ISO 10646-1 codepoints
+sdiff                (1)  - find differences between two files and merge interactively
+eqn                  (1)  - format equations for troff
+tac                  (1)  - concatenate and print files in reverse
+chfn                 (1)  - change your finger information
+groff                (1)  - front-end for the groff document formatting system
+groff                (7)  - a short reference for the GNU roff language
+groff               (rpm) - A document formatting system.
+column               (1)  - columnate lists
+pod2latex            (1)  - convert pod documentation to latex format
+last                 (1)  - show listing of last logged in users
+gtk-update-icon-cache (1)  - Icon theme caching utility
+nm-tool              (1)  - utility to report NetworkManager state
+setsid               (2)  - creates a session and sets the process group ID
+setsid               (3p)  - create session and set process group ID
+setsid               (8)  - run a program in a new session
+setmetamode          (1)  - define the keyboard meta key handling
+tee                  (1)  - read from standard input and write to standard output and files
+tee                  (1p)  - duplicate standard input
+tee                  (2)  - duplicating pipe content
+bc                   (1)  - An arbitrary precision calculator language
+bc                   (1p)  - arbitrary-precision arithmetic language
+bc                  (rpm) - GNU's bc (a numeric processing language) and dc (a calculator).
+ssh                  (1)  - OpenSSH SSH client (remote login program)
+ssh [slogin]         (1)  - OpenSSH SSH client (remote login program)
+ssh-add              (1)  - adds RSA or DSA identities to the authentication agent
+ssh-agent            (1)  - authentication agent
+ssh-copy-id          (1)  - install your identity.pub in a remote machine's authorized_keys
+ssh-keygen           (1)  - authentication key generation, management and conversion
+ssh-keyscan          (1)  - gather ssh public keys
+ssh-keysign          (8)  - ssh helper program for hostbased authentication
+rfcomm               (1)  - RFCOMM configuration utility
+symlinks             (8)  - symbolic link maintenance utility
+symlinks            (rpm) - A utility which maintains a system's symbolic links.
+mbchk                (1)  - check the format of a Multiboot kernel
+consolehelper        (8)  - A wrapper that helps console users run system programs
+grotty               (1)  - groff driver for typewriter-like devices
+unix2dos             (1)  - UNIX to DOS text file format converter
+unix2dos            (rpm) - unix2dos - UNIX to DOS text file format converter
+ar                   (1)  - create, modify, and extract from archives
+ar                   (1p)  - create and maintain library archives
+raw2tiff             (1)  - create a TIFF file from a raw data
+fmt                  (1)  - simple optimal text formatter
+man2html             (1)  - format a manual page in html
+tiffinfo             (1)  - print information about TIFF files
+lookbib              (1)  - search bibliographic databases
+ecryptfsd            (8)  - user-space eCryptfs daemon
+xsubpp               (1)  - compiler to convert Perl XS code into C code
+sha384sum            (1)  - compute and check SHA384 message digest
+ciptool              (1)  - Bluetooth Common ISDN Access Profile (CIP)
+tr                   (1)  - translate or delete characters
+tr                   (1p)  - translate characters
+cal                  (1)  - displays a calendar
+cal                  (1p)  - print a calendar
+gpg                  (1)  - encryption and signing tool
+gpg-pubkey          (rpm) - gpg(Dag Wieers (Dag Apt Repository v1.0) <dag@wieers.com>)
+gpg-pubkey          (rpm) - gpg(Dell Computer Corporation (Linux Systems Group) <linux-security@dell.com>)
+gpg-pubkey          (rpm) - gpg(Red Hat, Inc. (release key) <security@redhat.com>)
+gpg-pubkey          (rpm) - gpg(libsmbios (This key is used to sign all libsmbios tarballs) <libsmbios-devel@lists.us.dell.com>)
+conman               (1)  - ConMan client
+conman              (rpm) - ConMan - The Console Manager
+conman.conf [conman] (5)  - ConMan daemon configuration file
+ecryptfs-wrap-passphrase (1)  - wrap an eCryptfs mount passphrase
+perl                 (1)  - Practical Extraction and Report Language
+perl                (rpm) - The Perl programming language
+perl-Compress-Bzip2 (rpm) - Interface to the bzip2 compression library
+perl-Compress-Raw-Bzip2 (rpm) - Low-Level Interface to bzip2 compression library
+perl-Compress-Raw-Zlib (rpm) - Low-Level Interface to zlib compression library
+perl-Convert-ASN1   (rpm) - Convert between perl data structures and ASN.1 encoded packets
+perl-Crypt-DES      (rpm) - Crypt-DES module for perl
+perl-Crypt-PasswdMD5 (rpm) - Provides interoperable MD5-based crypt() functions
+perl-DBI            (rpm) - Database independent interface for Perl
+perl-Date-Manip     (rpm) - Date manipulation routines
+perl-Digest-HMAC    (rpm) - Digest-HMAC Perl module
+perl-Digest-SHA1    (rpm) - Digest-SHA1 Perl module
+perl-HTML-Parser    (rpm) - Perl module that implements a HTML parser class
+perl-HTML-Tagset    (rpm) - Data tables useful in parsing HTML
+perl-HTML-Template  (rpm) - HTML Templates for CGI scripts
+perl-IO-Compress    (rpm) - IO Interface to compressed data files/buffers
+perl-Net-SNMP       (rpm) - Net-SNMP Perl module
+perl-Net-Server     (rpm) - Perl module that implements an extensible, general Perl server engine
+perl-Socket6        (rpm) - IPv6 related part of the C socket.h defines and structure manipulators
+perl-String-CRC32   (rpm) - Perl interface for cyclic redundency check generation
+perl-TermReadKey    (rpm) - Perl module for simple terminal control
+perl-URI            (rpm) - A Perl module implementing URI parsing and manipulation
+perl-libwww-perl    (rpm) - A Perl interface to the World-Wide Web
+perl-rrdtool        (rpm) - Perl RRDtool bindings
+head                 (1)  - output the first part of files
+head                 (1p)  - copy the first part of files
+bdftruncate          (1x)  - generate truncated BDF font from ISO 10646-1-encoded BDF font
+ldd                  (1)  - print shared library dependencies
+less                 (1)  - opposite of more
+less                 (3pm)  - perl pragma to request less of something from the compiler
+less                (rpm) - A text file browser similar to more, but better.
+grn                  (1)  - groff preprocessor for gremlin files
+scp                  (1)  - secure copy (remote file copy program)
+pklogin_finder       (1)  - maps certificates into a user
+apropos              (1)  - search the whatis database for strings
+infokey              (1)  - compile customizations for Info
+objdump              (1)  - display information from object files
+indxbib              (1)  - make inverted index for bibliographic databases
+l2ping               (1)  - Send L2CAP echo request and receive answer
+rgb2ycbcr            (1)  - convert non-YCbCr TIFF images to a YCbCr TIFF image
+printf               (1)  - format and print data
+printf               (1p)  - write formatted output
+printf               (3)  - formatted output conversion
+printf               (3p)  - print formatted output
+printf [builtins]    (1)  - bash built-in commands, see bash(1)
+nm                   (1)  - list symbols from object files
+nm                   (1p)  - write the name list of an object file (DEVELOPMENT)
+nm-tool              (1)  - utility to report NetworkManager state
+dund                 (1)  - BlueZ Bluetooth dial-up networking daemon
+python               (1)  - an interpreted, interactive, object-oriented programming language
+python              (rpm) - An interpreted, interactive, object-oriented programming language.
+python-ctypes       (rpm) - Advanced Foreign Function Interface for Python
+python-devel        (rpm) - The libraries and header files needed for Python development.
+python-dmidecode    (rpm) - Python module to access DMI data
+python-elementtree  (rpm) - Fast XML parser and writer
+python-iniparse     (rpm) - Python Module for Accessing and Modifying Configuration Data in INI files
+python-ldap         (rpm) - An object-oriented API to access LDAP directory servers.
+python-libs         (rpm) - The libraries for python runtime
+python-numeric      (rpm) - Numerical Extension to Python
+python-setuptools   (rpm) - Download, build, install, upgrade, and uninstall Python packages
+python-smbios       (rpm) - Python interface to Libsmbios C library
+python-sqlite       (rpm) - Python bindings for sqlite.
+python-urlgrabber   (rpm) - A high-level cross-protocol url-grabber
+fc-cat               (1)  - read font information cache files
+fc-list              (1)  - list available fonts
+id                   (1)  - print user identity
+id                   (1p)  - return user identity
+ypcat                (1)  - print values of all keys in a NIS database
+mev                  (1)  - a program to report mouse events
+h2xs                 (1)  - convert .h C header files to Perl extensions
+getkeycodes          (8)  - print kernel scancode-to-keycode mapping table
+ppmtolss16           (1)  - Convert a PPM to an LSS16 image
+Wget [wget]          (1)  - The non-interactive network downloader
+wget                (rpm) - A utility for retrieving files using the HTTP or FTP protocols.
+semodule_expand      (8)  - Expand a SELinux policy module package
+acpi_listen          (8)  - ACPI event listener
+msgattrib            (1)  - attribute matching and manipulation on message catalog
+stat                 (1)  - display file or file system status
+stat                 (2)  - get file status
+stat                 (3p)  - get file status
+chage                (1)  - change user password expiry information
+telnet               (1)  - user interface to the TELNET protocol
+telnet              (rpm) - The client program for the telnet remote login protocol.
+expand               (1)  - convert tabs to spaces
+expand               (1p)  - convert tabs to spaces
+hidd                 (1)  - Bluetooth HID daemon
+top                  (1)  - display Linux tasks
+zipgrep              (1)  - search files in a ZIP archive for lines matching a pattern
+col                  (1)  - filter reverse line feeds from input
+semodule_deps        (8)  - show the dependencies between SELinux policy packages
+ssh-keygen           (1)  - authentication key generation, management and conversion
+ecryptfs-add-passphrase (1)  - add an eCryptfs mount passphrase to the kernel keyring
+install-catalog      (8)  - Manage a SGML or XML centralized catalog
+fdformat             (8)  - Low-level formats a floppy disk
+seq                  (1)  - print a sequence of numbers
+sudo                 (8)  - execute a command as another user
+sudo                (rpm) - Allows restricted root access for specified users.
+sudo [sudoedit]      (8)  - execute a command as another user
+ecryptfs-unwrap-passphrase (1)  - unwrap an eCryptfs mount passphrase from file
+tput                 (1)  - initialize a terminal or query terminfo database
+tput                 (1p)  - change terminal characteristics
+zmore                (1)  - file perusal filter for crt viewing of compressed text
+rsh                  (1)  - remote shell
+rsh                 (rpm) - Clients for remote access commands (rsh, rlogin, rcp).
+rsh [ksh93]          (1)  - shell, the standard/restricted command and programming language
+ngettext             (1)  - translate message and choose plural form
+ul                   (1)  - do underlining
+users                (1)  - print the user names of users currently logged in to the current host
+pand                 (1)  - BlueZ Bluetooth PAN daemon
+jpegtran             (1)  - lossless transformation of JPEG files
+msggrep              (1)  - pattern matching on message catalog
+uptime               (1)  - Tell how long the system has been running
+paste                (1)  - merge lines of files
+paste                (1p)  - merge corresponding or subsequent lines of files
+AS [as]              (1)  - the portable GNU assembler
+locate               (1)  - find files by name
+vim                  (1)  - Vi IMproved, a programmers text editor
+vim-common          (rpm) - The common files needed by any version of the VIM editor.
+vim-enhanced        (rpm) - A version of the VIM editor which includes recent enhancements.
+vim-minimal         (rpm) - A minimal version of the VIM editor.
+bzmore               (1)  - file perusal filter for crt viewing of bzip2 compressed text
+getconf              (1p)  - get configuration values
+pod2man              (1)  - Convert POD data to formatted *roff input
+ssh-copy-id          (1)  - install your identity.pub in a remote machine's authorized_keys
+zless                (1)  - file perusal filter for crt viewing of compressed text
+toe                  (1m)  - table of (terminfo) entries
+tic                  (1m)  - the terminfo entry-description compiler
+gpm-root             (1)  - a default handler for gpm, used to draw menus on the root window
+udevinfo             (8)  - query device information from the udev database
+pkill [pgrep]        (1)  - look up or signal processes based on name and other attributes
+ipcs                 (1p)  - report XSI interprocess communication facilities status
+ipcs                 (8)  - provide information on ipc facilities
+gzexe                (1)  - compress executable files in place
+localedef            (1)  - compile locale definition files
+localedef            (1p)  - define locale environment
+rdist                (1)  - remote file distribution client program
+rdist               (rpm) - Maintains identical copies of files on multiple machines.
+msgexec              (1)  - process translations of message catalog
+lastcomm             (1)  - print out information about previously executed commands
+strip                (1)  - Discard symbols from object files
+strip                (1p)  - remove unnecessary information from executable files (DEVELOPMENT)
+msgen                (1)  - create English message catalog
+semodule_link        (8)  - Link SELinux policy module packages together
+logname              (1)  - print user's login name
+logname              (1p)  - return the user's login name
+cupstestppd          (1)  - test conformance of ppd files
+md5sum               (1)  - compute and check MD5 message digest
+ecryptfs-rewrap-passphrase (1)  - unwrap an eCryptfs wrapped passphrase, rewrap it with a new passphrase, and write it back to file
+lastlog              (8)  - reports the most recent login of all users or of a given user
+openvt               (1)  - start a program on a new virtual terminal (VT)
+chacl                (1)  - change the access control list of a file or directory
+lkbib                (1)  - search bibliographic databases
+instmodsh            (1)  - A shell to examine installed modules
+gpgv                 (1)  - signature verification tool
+colrm                (1)  - remove columns from a file
+skill                (1)  - send a signal or report process status
+find2perl            (1)  - translate find command lines to Perl code
+rexec                (3)  - return stream to a remote command
+make                 (1)  - GNU make utility to maintain groups of programs
+make                 (1p)  - maintain, update, and regenerate groups of programs (DEVELOPMENT)
+make                (rpm) - A GNU tool which simplifies the build process for users.
+deallocvt            (1)  - deallocate unused virtual consoles
+du                   (1)  - estimate file space usage
+du                   (1p)  - estimate file space usage
+od                   (1)  - dump files in octal and other formats
+od                   (1p)  - dump files in various formats
+c2ph                 (1)  - Dump C structures as generated from cc -g -S stabs
+c2ph [pstruct]       (1)  - Dump C structures as generated from cc -g -S stabs
+mkfontscale          (1x)  - create an index of scalable font files for X
+hostid               (1)  - print the numeric identifier for the current host
+tiffmedian           (1)  - apply the median cut algorithm to data in a TIFF file
+grops                (1)  - PostScript driver for groff
+pinfo                (1)  - curses based lynx-style info browser
+pinfo               (rpm) - An info file viewer.
+hal-get-property     (1)  - get a property from a device object
+getent               (1)  - get entries from administrative database
+gendiff              (1)  - utility to aid in error-free diff file generation
+ecryptfs-insert-wrapped-passphrase-into-keyring (1)  - unwrap a wrapped passphrase from file and insert into the kernel keyring
+unexpand             (1)  - convert spaces to tabs
+unexpand             (1p)  - convert spaces to tabs
+sha512sum            (1)  - compute and check SHA512 message digest
+psfxtable            (1)  - handle Unicode character tables for console fonts
+pic2graph            (1)  - convert a PIC diagram into a cropped image
+readelf              (1)  - Displays information about ELF files
+gif2tiff             (1)  - create a TIFF file from a GIF87 format image file
+cmp                  (1)  - compare two files
+cmp                  (1p)  - compare two files
+groups               (1)  - print the groups a user is in
+setfattr             (1)  - set extended attributes of filesystem objects
+xfs                  (1x)  - X font server
+zipnote [zip]        (1)  - package and compress (archive) files
+clear                (1)  - clear the terminal screen
+clear [curs_clear]   (3x)  - clear all or part of a curses window
+rngtest              (1)  - Check the randomness of data using FIPS 140-2 tests
+thumbnail            (1)  - create a TIFF file with thumbnail images
+find                 (1)  - search for files in a directory hierarchy
+find                 (1p)  - find files
+ssh-keyscan          (1)  - gather ssh public keys
+emacspeak           (rpm) - emacspeak -- The Complete Audio Desktop
+nsupdate             (1)  - Dynamic DNS update utility
+unzip                (1)  - list, test and extract compressed files in a ZIP archive
+unzip               (rpm) - A utility for unpacking zip files.
+look                 (1)  - display lines beginning with a given string
+look [Search::Dict]  (3pm)  - search for key in dictionary file
+sudoedit             (8)  - execute a command as another user
+sudoedit [sudo]      (8)  - execute a command as another user
+rlogin               (1)  - remote login
+grolj4               (1)  - groff driver for HP Laserjet 4 family
+infocmp              (1m)  - compare or print out terminfo descriptions
+aspell               (1)  - interactive spell checker
+aspell              (rpm) - A spelling checker.
+aspell-en           (rpm) - English dictionaries for Aspell.
+aspell-import        (1)  - import old personal dictionaries into GNU Aspell
+yum                  (8)  - Yellowdog Updater Modified
+yum                 (rpm) - RPM installer/updater
+yum [yum-shell]      (8)  - Yellowdog Updater Modified shell
+yum-dellsysid       (rpm) - YUM plugin to retrieve the Dell System ID
+yum-groups-manager   (1)  - create and edit yum's group metadata
+yum-metadata-parser (rpm) - A fast metadata parser for yum
+yum-protectbase     (rpm) - Yum plugin to protect packages from certain repositories.
+yum-rhn-plugin      (rpm) - RHN support for yum
+yum-security        (rpm) - Yum plugin to enable security filters
+yum-updatesd         (8)  - Update notifier daemon
+yum-updatesd        (rpm) - Update notification daemon
+yum-updatesd.conf [yum-updatesd] (5)  - Configuration file for yum-updatesd(8)
+yum-utils            (1)  - tools for manipulating repositories and extended package management
+yum-utils           (rpm) - Utilities based around the yum package manager
+yum.conf [yum]       (5)  - Configuration file for yum(8)
+pod2html             (1)  - convert .pod files to .html files
+gpasswd              (1)  - administer the /etc/group file
+numactl              (8)  - Control NUMA policy for processes or shared memory
+numactl             (rpm) - library for tuning for Non Uniform Memory Access machines
+seinfo               (1)  - SELinux policy query tool
+gencat               (1p)  - generate a formatted message catalog
+lftpget              (1)  - get a file with lftp(1)
+ntpstat              (8)  - show network time synchronisation status
+ecryptfs-mount-private (1)  - interactive eCryptfs private mount wrapper script
+ecryptfs-setup-private (1)  - setup an eCryptfs private directory
+ecryptfs-umount-private (1)  - eCryptfs private unmount wrapper script
+aulastlog            (8)  - a program similar to lastlog
+ausyscall            (8)  - a program that allows mapping syscall names and numbers
+RSA_SecurID_getpasswd (1)  - get the one-use password from a RSA sid-800 token
+sha512hmac           (8)  - compute and check HMAC values
+cpp                  (1)  - The C Preprocessor
+cpp                 (rpm) - The C Preprocessor.
+fipscheck           (rpm) - A library for integrity verification of FIPS validated modules
+fipscheck-lib       (rpm) - Library files for fipscheck
+ecryptfs-generate-tpm-key (1)  - generate an eCryptfs key for TPM hardware
+ecryptfs-rewrite-file (1)  - force a file to be rewritten (reencrypted) in the lower filesystem
+pdffonts             (1)  - Portable Document Format (PDF) font analyzer (version 3.00)
+pdfimages            (1)  - Portable Document Format (PDF) image extractor (version 3.00)
+pdfinfo              (1)  - Portable Document Format (PDF) document information extractor (version 3.00)
+pdftops              (1)  - Portable Document Format (PDF) to PostScript converter (version 3.00)
+pdftotext            (1)  - Portable Document Format (PDF) to text converter (version 3.00)
+sfcbmof              (1)  - MOF compile for the Small-Footprint CIM Broker (sfcb)
+sfcbrepos            (1)  - Script to rebuild the Small-Footprint CIM Broker (sfcb) class repository
+sfcbstage            (1)  - Script to copy provider MOF and registration files to the Small-Footprint CIM Broker (sfcb) staging area
+sfcbstage [sfcbunstage] (1)  - Script to remove provider MOF and registration files from the Small-Footprint CIM Broker (sfcb) staging area
+sfcbuuid             (1)  - Script to create a universally unique identifier for the installed Small-Footprint CIM Broker (sfcb)
+xsltproc             (1)  - command line XSLT processor
+sensors              (1)  - print sensors information
+sensors-detect       (8)  - detect hardware monitoring chips
+sensors.conf [sensors] (5)  - libsensors configuration file
+mib2c-update         (1)  - script to merge custom code into updated mib2c code
+pkg-config           (1)  - Return metainformation about installed libraries
+glib-genmarshal      (1)  - C code marshaller generation utility for GLib closures
+xmlsec1              (1)  - sign, verify, encrypt and decrypt XML documents
+xmlsec1             (rpm) - Library providing support for "XML Signature" and "XML Encryption" standards
+xmlsec1-config       (1)  - detail installed version of xmlsec library
+xmlsec1-devel       (rpm) - Libraries, includes, etc. to develop applications with XML Digital Signatures and XML Encryption support.
+update-mime-database (1)  - a program to build the Shared MIME-Info database cache
+glib-gettextize      (1)  - gettext internationalization utility
+glib-mkenums         (1)  - C language enum description generation utility
+gobject-query        (1)  - display a tree of types
+esdsample            (1)  - The Enlightened Sound Daemon
+esd                  (1)  - The Enlightened Sound Daemon
+esd-config           (1)  - The Enlightened Sound Daemon
+esdcat               (1)  - The Enlightened Sound Daemon
+esdctl               (1)  - The Enlightened Sound Daemon
+esddsp               (1)  - attempt to reroute audio device to esd
+esddsp [esdplay]     (1)  - attempt to reroute audio device to esd
+esdfilt              (1)  - The Enlightened Sound Daemon
+esdloop              (1)  - The Enlightened Sound Daemon
+esdmon               (1)  - The Enlightened Sound Daemon
+esdrec               (1)  - The Enlightened Sound Daemon
+ccmakedep            (1x)  - create dependencies in makefiles using a C compiler
+cleanlinks           (1x)  - remove dangling symbolic links and empty directories
+gccmakedep           (1x)  - create dependencies in makefiles using 'gcc -M'
+imake                (1x)  - C preprocessor interface to the make utility
+imake               (rpm) - imake source code configuration and build system
+lndir                (1x)  - create a shadow directory of symbolic links to another directory tree
+makedepend           (1x)  - create dependencies in makefiles
+makeg                (1x)  - make a debuggable executable
+mergelib             (1x)  - merge one library into another
+mkdirhier            (1x)  - makes a directory hierarchy
+mkhtmlindex          (1x)  - generate index files for HTML man pages
+revpath              (1x)  - generate a relative path that can be used to undo a change-directory
+xmkmf                (1x)  - create a Makefile from an Imakefile
+mkxauth              (1x)  - create and merge .Xauthority files
+xauth                (1x)  - X authority file utility
+iceauth              (1x)  - ICE authority file utility
+sessreg              (1x)  - manage utmp/wtmp entries for non-init clients
+showrgb              (1x)  - uncompile an rgb color-name database
+xcmsdb               (1x)  - Device Color Characterization utility for X Color Management System
+xgamma               (1x)  - Alter a monitor's gamma correction through the X server
+xhost                (1x)  - server access control program for X
+xmodmap              (1x)  - utility for modifying keymaps and pointer button mappings in X
+Xrandr               (3x)  - X Resize, Rotate and Reflection extension
+xrandr               (1x)  - primitive command line interface to RandR extension
+xrdb                 (1x)  - X server resource database utility
+xrefresh             (1x)  - refresh all or part of an X screen
+xset                 (1x)  - user preference utility for X
+xsetmode             (1x)  - set the mode for an X Input device
+xsetpointer          (1x)  - set an X Input device as the main pointer
+xsetroot             (1x)  - root window parameter setting utility for X
+xstdcmap             (1x)  - X standard colormap utility
+xtrapchar [xtrap]    (1x)  - XTrap sample clients
+xtrapin [xtrap]      (1x)  - XTrap sample clients
+xtrapinfo [xtrap]    (1x)  - XTrap sample clients
+xtrapout [xtrap]     (1x)  - XTrap sample clients
+xtrapproto [xtrap]   (1x)  - XTrap sample clients
+xtrapreset [xtrap]   (1x)  - XTrap sample clients
+xtrapstats [xtrap]   (1x)  - XTrap sample clients
+xvidtune             (1x)  - video mode tuner for Xorg
+startx               (1x)  - initialize an X session
+xinit                (1x)  - X Window System initializer
+gdb                  (1)  - The GNU Debugger
+gdb                 (rpm) - A GNU source-level debugger for C, C++, Java and other languages
+gdbserver            (1)  - Remote Server for the GNU Debugger
+gstack               (1)  - print a stack trace of a running process
+cvsbug               (8)  - send problem report (PR) about CVS to a central support site
+cvs                  (1)  - Concurrent Versions System
+cvs                  (5)  - Concurrent Versions System support files
+cvs                 (rpm) - A version control system.
+splint               (1)  - A tool for statically checking C programs
+splint              (rpm) - An implementation of the lint program
+ctags                (1)  - Generate tag files for source code
+ctags                (1p)  - create a tags file (DEVELOPMENT, FORTRAN)
+ctags               (rpm) - A C programming language indexing and/or cross-reference tool.
+ctags [etags]        (1)  - generate tag file for Emacs, vi
+doxygen              (1)  - documentation system for various programming languages
+doxygen             (rpm) - A documentation system for C/C++.
+doxytag              (1)  - generates a tag file and/or a search index for a set of HTML files
+dehtmldiff           (1)  - get usable diff from an HTML page
+editdiff [rediff]    (1)  - fix offsets and counts of a hand-edited diff
+espdiff              (1)  - apply the appropriate transformation to a set of patches
+filterdiff           (1)  - extract or exclude diffs from a diff file
+fixcvsdiff           (1)  - fix problematic diff files
+interdiff            (1)  - show differences between two diff files
+recountdiff          (1)  - recompute patch counts and offsets
+rediff               (1)  - fix offsets and counts of a hand-edited diff
+splitdiff            (1)  - separate out incremental patches
+unwrapdiff           (1)  - demangle word-wrapped patches
+cscope               (1)  - interactively examine a C program
+cscope              (rpm) - C source code tree search and browse tool
+ident                (1)  - identify RCS keyword strings in files
+ci                   (1)  - check in RCS revisions
+co                   (1)  - check out RCS revisions
+rcs                  (1)  - change RCS file attributes
+rcs                 (rpm) - Revision Control System (RCS) file version management tools.
+rcsclean             (1)  - clean up working files
+merge                (1)  - three-way file merge
+rcsmerge             (1)  - merge RCS revisions
+rcsdiff              (1)  - compare RCS revisions
+makeinfo             (1)  - translate Texinfo documents
+rlog                 (1)  - print log messages and other information about RCS files
+cg_annotate          (1)  - post-processing tool for Cachegrind
+flex                 (1)  - fast lexical analyzer generator
+flex                (rpm) - A tool for creating scanners (text pattern recognizers).
+bison                (1)  - GNU Project parser generator (yacc replacement)
+bison               (rpm) - A GNU general-purpose parser generator.
+yacc                 (1)  - an LALR(1) parser generator
+yacc                 (1p)  - yet another compiler compiler (DEVELOPMENT)
+callgrind_annotate   (1)  - post-processing tool for the Callgrind
+callgrind_control    (1)  - observe and control programs being run by Callgrind
+ms_print             (1)  - post-processing tool for Massif
+valgrind             (1)  - a suite of tools for debugging and profiling programs
+valgrind            (rpm) - Tool for finding memory management bugs in programs
+opannotate           (1)  - produce source or assembly annotated with profile data
+oparchive            (1)  - produce archive of oprofile data for offline analysis
+opcontrol            (1)  - control OProfile profiling
+opgprof              (1)  - produce gprof-format profile data
+ophelp               (1)  - list OProfile events
+opimport             (1)  - converts sample database files
+opreport             (1)  - produce symbol or binary image summaries
+as86                 (1)  - Assembler for 8086..80386 processors
+bcc                  (1)  - Bruce's C compiler
+ld86                 (1)  - Linker for as86(1)
+indent               (1)  - changes the appearance of a C program by inserting or deleting whitespace
+indent              (rpm) - A GNU program for formatting C code.
+diffstat             (1)  - make histogram from diff-output
+diffstat            (rpm) - A utility which provides statistics based on the output of diff.
+swig                (rpm) - Connects C/C++/Objective C to some high-level programming languages.
+strace               (1)  - trace system calls and signals
+strace              (rpm) - Tracks and displays system calls associated with a running process
+ltrace               (1)  - A library call tracer
+ltrace              (rpm) - Tracks runtime library calls from dynamically linked executables.
+autoconf             (1)  - Generate configuration scripts
+autoconf            (rpm) - A GNU tool for automatically configuring source code.
+autoheader           (1)  - Create a template header for configure
+autom4te             (1)  - Generate files and scripts thanks to M4
+autoreconf           (1)  - Update generated configuration files
+autoscan             (1)  - Generate a preliminary configure.in
+autoupdate           (1)  - Update a configure.in to a newer Autoconf
+ifnames              (1)  - Extract CPP conditionals from a set of files
+compile_et           (1)  - error table compiler
+mk_cmds              (1)  - error table compiler
+automake            (rpm) - A GNU tool for automatically creating Makefiles.
+Xvfb                 (1x)  - virtual framebuffer X server for X Version 11
+staprun              (8)  - systemtap runtime
+stap-authorize-signing-cert (8)  - systemtap signing authorization utility
+gcov                 (1)  - coverage testing tool
+libtool             (rpm) - The GNU Portable Library Tool
+c99                  (1p)  - compile standard C programs
+protoize             (1)  - automatically add or remove function prototypes
+unprotoize [protoize] (1)  - automatically add or remove function prototypes
+stap                 (1)  - systemtap script translator/driver
+stap-authorize-signing-cert (8)  - systemtap signing authorization utility
+gcc                  (1)  - GNU project C and C++ compiler
+gcc                 (rpm) - Various compilers (C, C++, Objective-C, Java, ...)
+gcc [g++]            (1)  - GNU project C and C++ compiler
+gcc-c++             (rpm) - C++ support for GCC
+gcc-gfortran        (rpm) - Fortran 95 support
+gfortran             (1)  - GNU Fortran 95 compiler
+cxpm                 (1x)  - Check an XPM (X PixMap) file - XPM 1, 2, or 3
+curl-config          (1)  - Get information about a libcurl installation
+xmlsec1-config       (1)  - detail installed version of xmlsec library
+rpmgraph             (8)  - Display RPM Package Dependency Graph
+gnome-mount          (1)  - Mount drives and volumes using HAL and read settings from the GNOME desktop configuration system gconf
+gnome-mount         (rpm) - Mount replacement which uses HAL to do the mounting
+xulrunner           (rpm) - XUL Runtime for Gecko Applications
+xulrunner-devel     (rpm) - Development files for Gecko
+my_print_defaults    (1)  - display options from option files
+sxpm                 (1x)  - Show an XPM (X PixMap) file and/or convert XPM 1 or 2 files to XPM 3
+msql2mysql           (1)  - convert mSQL programs for use with MySQL
+MySQL-client        (rpm) - MySQL - Client
+MySQL-devel         (rpm) - MySQL - Development header files and libraries
+MySQL-python        (rpm) - An interface to MySQL
+MySQL-server        (rpm) - MySQL: a very fast and reliable SQL database server
+MySQL-shared        (rpm) - MySQL - Shared libraries
+mysql                (1)  - the MySQL command-line tool
+mysql.server [mysql] (1)  - MySQL server startup script
+mysql_find_rows      (1)  - extract SQL statements from files
+mysql_waitpid        (1)  - kill process and wait for its termination
+mysqlaccess          (1)  - client for checking access privileges
+mysqladmin           (1)  - client for administering a MySQL server
+mysqlbinlog          (1)  - utility for processing binary log files
+mysqlcheck           (1)  - a table maintenance program
+mysqldump            (1)  - a database backup program
+mysqlimport          (1)  - a data import program
+mysqlshow            (1)  - display database, table, and column information
+mysqlslap            (1)  - load emulation client
+mysql_config         (1)  - get compile options for compiling clients
+innochecksum         (1)  - offline InnoDB file checksum utility
+mysql_fix_extensions (1)  - normalize table file name extensions
+myisam_ftdump        (1)  - display full-text index information
+myisamchk            (1)  - MyISAM table-maintenance utility
+myisamlog            (1)  - display MyISAM log file contents
+myisampack           (1)  - generate compressed, read-only MyISAM tables
+mysqld_multi         (1)  - manage multiple MySQL servers
+mysqlbug             (1)  - generate bug report
+mysql_convert_table_format (1)  - convert tables to use a given storage engine
+mysql_fix_privilege_tables (1)  - upgrade MySQL system tables
+mysql_install_db     (1)  - initialize MySQL data directory
+mysql_secure_installation (1)  - improve MySQL installation security
+mysql_setpermission  (1)  - interactively set permissions in grant tables
+mysql_tzinfo_to_sql  (1)  - load the time zone tables
+mysql_upgrade        (1)  - check tables for MySQL upgrade
+mysql_zap            (1)  - kill processes that match a pattern
+mysqldumpslow        (1)  - Summarize slow query log files
+mysqld_safe          (1)  - MySQL server startup script
+resolve_stack_dump   (1)  - resolve numeric stack trace dump to symbols
+mysqlhotcopy         (1)  - a database backup program
+mysqltest            (1)  - program to run test cases
+perror               (1)  - explain error codes
+perror               (3)  - print a system error message
+perror               (3p)  - write error messages to standard error
+replace              (1)  - a string-replacement utility
+resolveip            (1)  - resolve host name to IP address or vice versa
+build-classpath      (1)  - build a Java CLASSPATH with the named JARs
+rssh                 (1)  - restricted secure shell allowing only scp and/or sftp
+rssh                (rpm) - Restricted shell for use with OpenSSH, allowing only scp and/or sftp
+build-jar-repository (1)  - create a symbolic link to a JAR
+diff-jars            (1)  - output the differences between two JAR files
+rebuild-jar-repository (1)  - rebuild a JAR repository based on the current JVM
+osgmlnorm            (1)  - An SGML/XML document normalizer
+gsf-office-thumbnailer (1)  - office files thumbnailer for the GNOME desktop
+onsgmls              (1)  - An SGML/XML parser and validator
+ospam                (1)  - An SGML/XML markup stream editor
+ospcat               (1)  - SGML print catalog
+ospent               (1)  - Concatenates entities in an SGML/XML document
+osx                  (1)  - An SGML to XML converter
+openjade             (1)  - apply a DSSSL stylesheet to an SGML or XML document
+openjade            (rpm) - A DSSSL implementation.
+rsvg                 (1)  - Turn SVG files into raster images
+scrollkeeper-config  (1)  - print ScrollKeeper configuration information
+setxkbmap            (1x)  - set the keyboard using the X Keyboard Extension
+xkbcomp              (1x)  - compile XKB keyboard description
+xkbevd               (1x)  - XKB event daemon
+xkbprint             (1x)  - print an XKB keyboard description
+scrollkeeper-gen-seriesid (1)  - generate a unique id for a document series for use in an OMF metadata file
+scrollkeeper-preinstall (8)  - generate on OMF file, based on an existing OMF file, which has the correct URL for a document
+scrollkeeper-rebuilddb (8)  - rebuild the scrollkeeper document catalog database
+scrollkeeper-update  (8)  - identify new, modified, or removed OMF files and update the scrollkeeper databases
+makestrs             (1x)  - makes string table C source and header(s)
+esd-config           (1)  - The Enlightened Sound Daemon
+gdk-pixbuf-csource   (1)  - C code generation utility for GdkPixbuf images
+luac                 (1)  - Lua compiler
+lua                  (1)  - Lua interpreter
+lua                 (rpm) - Lua scripting language
+ruby                 (1)  - Interpreted object-oriented scripting language
+ruby                (rpm) - An interpreter of object-oriented scripting language
+ruby-libs           (rpm) - Libraries necessary to run Ruby.
+rrdcached            (1)  - Data caching daemon for rrdtool
+snmpkey              (1)  - Create SNMPv3 security keys for the Net::SNMP module
+rrdupdate            (1)  - Store a new set of values into the RRD
+rrdcgi               (1)  - Create web pages containing RRD graphs based on templates
+rrdtool              (1)  - Round Robin Database Tool
+rrdtool             (rpm) - Round Robin Database Tool to store and display time-series data
+grmiregistry         (1)  - Remote object registry
+iostat               (1)  - Report Central Processing Unit (CPU) statistics and input/output statistics for devices and partitions
+mpstat               (1)  - Report processors related statistics
+sadf                 (1)  - Display data collected by sar in multiple formats
+sar                  (1)  - Collect, report, or save system activity information
+flvtool2            (rpm) - Manipulation tool for Macromedia Flash Video (FLV) files
+ncat                 (1)  - Concatenate and redirect sockets
+ndiff                (1)  - Utility to compare the results of Nmap scans
+nmap                 (1)  - Network exploration tool and security / port scanner
+nmap                (rpm) - Network exploration tool and security scanner
+mc                   (1)  - Visual shell for Unix-like systems
+mc                  (rpm) - User-friendly text console file manager and visual shell
+syslinux2ansi        (1)  - converts a syslinux-format screen to pc-ansi
+recode-sr-latin      (1)  - convert Serbian text from Cyrillic to Latin script
+lynx                 (1)  - a general purpose distributed information browser for the World Wide Web
+lynx                (rpm) - A text-based Web browser.
+svn                  (1)  - Subversion command line client tool
+ntlm_auth            (1)  - tool to allow external access to Winbind's NTLM authentication function
+Net::Cmd             (3pm)  - Network Command class (as used by FTP, SMTP etc)
+Net::Config          (3pm)  - Local configuration data for libnet
+Net::Domain          (3pm)  - Attempt to evaluate the current host(aqs internet name and domain
+Net::FTP             (3pm)  - FTP Client class
+Net::HTTP            (3pm)  - Low-level HTTP connection (client)
+Net::HTTP::NB        (3pm)  - Non-blocking HTTP client
+Net::NNTP            (3pm)  - NNTP Client class
+Net::Netrc           (3pm)  - OO interface to users netrc file
+Net::POP3            (3pm)  - Post Office Protocol 3 Client class (RFC1939)
+Net::Ping            (3pm)  - check a remote host for reachability
+Net::SMTP            (3pm)  - Simple Mail Transfer Protocol Client
+Net::SNMP            (3pm)  - Object oriented interface to SNMP
+Net::Server          (3pm)  - Extensible, general Perl server engine
+Net::Server::Daemonize (3pm)  - Safe fork and daemonization utilities
+Net::Server::Fork    (3pm)  - Net::Server personality
+Net::Server::HTTP    (3pm)  - very basic Net::Server based HTTP server class
+Net::Server::INET    (3pm)  - Net::Server personality
+Net::Server::MultiType (3pm)  - Net::Server personality
+Net::Server::Multiplex (3pm)  - Multiplex several connections within one process
+Net::Server::PreFork (3pm)  - Net::Server personality
+Net::Server::PreForkSimple (3pm)  - Net::Server personality
+Net::Server::Proto   (3pm)  - Net::Server Protocol compatibility layer
+Net::Server::Proto::SSL (3pm)  - Net::Server SSL protocol (deprecated - use Net::Server::Proto::SSLEAY instead)
+Net::Server::Proto::SSLEAY (3pm)  - Custom Net::Server SSL protocol handler based on Net::SSLeay directly
+Net::Server::Proto::TCP (3pm)  - Net::Server TCP protocol
+Net::Server::Proto::UDP (3pm)  - Net::Server UDP protocol
+Net::Server::Proto::UNIX (3pm)  - adp0 - Net::Server UNIX protocol
+Net::Server::SIG     (3pm)  - adpf - Safer signal handling
+Net::Server::Single  (3pm)  - Net::Server personality
+Net::Time            (3pm)  - time and daytime network client interface
+Net::hostent         (3pm)  - by-name interface to Perl(aqs built-in gethost*() functions
+Net::netent          (3pm)  - by-name interface to Perl(aqs built-in getnet*() functions
+Net::protoent        (3pm)  - by-name interface to Perl(aqs built-in getproto*() functions
+Net::servent         (3pm)  - by-name interface to Perl(aqs built-in getserv*() functions
+net                  (8)  - Tool for administration of Samba and remote CIFS servers
+net-snmp            (rpm) - A collection of SNMP protocol tools and libraries.
+net-snmp-libs       (rpm) - The NET-SNMP runtime libraries.
+net-snmp-perl       (rpm) - The perl NET-SNMP module and the mib2c tool.
+net-tools           (rpm) - Basic networking tools.
+net/if.h [if]        (0p)  - sockets local interfaces
+svndumpfilter        (1)  - Filter a subversion repository 'dumpfile'
+svnadmin             (1)  - Subversion repository administration tool
+wbemcat              (1)  - a multi-protocol CIM-XML client
+ftpcount             (1)  - show current number of connections for each proftpd server configuration
+ftpdctl              (8)  - ProFTPD control program
+ftptop               (1)  - display running status on proftpd server connections
+ftpwho               (1)  - show current process information for each FTP session
+autoexpect           (1)  - generate an Expect script from watching a session
+Dislocate [dislocate] (1)  - disconnect and reconnect processes
+kibitz               (1)  - allow two people to interact with one shell
+mkpasswd             (1)  - generate new password, optionally apply it to a user
+passmass             (1)  - change password on multiple machines
+unbuffer             (1)  - unbuffer output
+xkibitz              (1)  - allow multiple people to interact in an xterm
+expect               (1)  - programmed dialogue with interactive programs, Version 5
+expect              (rpm) - A program-script interaction and testing utility
+profiles             (1)  - A utility to report and change SIDs in registry files
+pdbedit              (8)  - manage the SAM database (Database of Samba Users)
+smbcquotas           (1)  - Set or get QUOTAs of NTFS 5 shares
+smbpasswd            (5)  - The Samba encrypted password file
+smbpasswd            (8)  - change a user's SMB password
+testparm             (1)  - check an smb.conf configuration file for internal correctness
+wbinfo               (1)  - Query information from winbind daemon
+smbcontrol           (1)  - send messages to smbd, nmbd or winbindd processes
+smbstatus            (1)  - report on current Samba connections
+tdbbackup            (8)  - tool for backing up and for validating the integrity of samba .tdb files
+tdbdump              (8)  - tool for printing the contents of a TDB file
+tdbtool              (8)  - manipulate the contents TDB files
+eventlogadm          (8)  - push records into the Samba event log store
+findsmb              (1)  - list info about machines that respond to SMB name queries on a subnet
+nmblookup            (1)  - NetBIOS over TCP/IP client used to lookup NetBIOS names
+rpcclient            (1)  - tool for executing client side MS-RPC functions
+smbcacls             (1)  - Set or get ACLs on an NT file or directory names
+smbclient            (1)  - ftp-like client to access SMB/CIFS resources on servers
+smbget               (1)  - wget-like utility for download files over SMB
+smbspool             (8)  - send a print file to an SMB printer
+smbtar               (1)  - shell script for backing up SMB/CIFS shares directly to UNIX tape drives
+smbtree              (1)  - A text based smb network browser
+dbilogstrip          (1)  - filter to normalize DBI trace logs for diff(aqing
+dbiprof              (1)  - command-line client for DBI::ProfileData
+dbiproxy             (1)  - A proxy server for the DBD::Proxy driver
+yum-groups-manager   (1)  - create and edit yum's group metadata
+reposync             (1)  - synchronize yum repositories to a local directory
+fastjar              (1)  - archive tool for Java archives
+gij                  (1)  - GNU interpreter for Java bytecode
+mytop                (1)  - display MySQL server performance info like `top'
+mytop               (rpm) - Top clone for MySQL
+gcj-dbtool           (1)  - Manipulate class file mapping databases for libgcj
+grepjar              (1)  - search files in a jar file for a pattern
+grmic                (1)  - Generate stubs for Remote Method Invocation
+jv-convert           (1)  - Convert file from one encoding to another
+animate              (1)  - animates an image or image sequence on any X server
+gjdoc                (1)  - Documentation generation framework for Java source files
+gjdoc               (rpm) - GNU Javadoc
+compare              (1)  - mathematically and visually annotate the difference between an image and its reconstruction
+composite            (1)  - overlaps one image over another
+conjure              (1)  - interprets and executes scripts written in the Magick Scripting Language (MSL)
+Convert::ASN1        (3pm)  - ASN.1 Encode/Decode library
+convert              (1)  - convert between image formats as well as resize an image, blur, crop, despeckle, dither, draw on, flip, join, re-sample, and much more
+display              (1)  - displays an image or image sequence on any X server
+identify             (1)  - describes the format and characteristics of one or more image files
+import               (1)  - saves any visible window on an X server and outputs it as an image file. You can capture a single window, the entire screen, or any rectangular portion of the screen
+mogrify              (1)  - resize an image, blur, crop, despeckle, dither, draw on, flip, join, re-sample, and much more. Mogrify overwrites the original image file, whereas, convert(1) writes to a different image file
+montage              (1)  - create a composite image by combining several separate images. The images are tiled on the composite image optionall adorned with a border, frame, image name, and more
+stream               (1)  - a lightweight tool to stream one or more pixel components of the image or portion of the image to your choice of storage formats
+Magick-config        (1)  - get information about the installed version of ImageMagick
+MagickCore-config    (1)  - get information about the installed version of ImageMagick
+Wand-config          (1)  - get information about the installed version of the Magick Wand
+MagickWand-config    (1)  - get information about the installed version of the Magick Wand
+Magick++-config      (1)  - get information about the installed version of Magick++
+svnlook              (1)  - Subversion repository examination tool
+svnserve             (8)  - Server for the 'svn' repository access method
+svnserve.conf [svnserve] (5)  - Repository configuration file for svnserve
+svnsync              (1)  - Subversion repository synchronization tool
+svnversion           (1)  - Produce a compact version number for a working copy
+neon-config          (1)  - script providing information about installed copy of neon library
+xmltest              (1)  - Test script to send CIM-XML (via wbemcat) to CIMOM and compare to known results
+lpasswd              (1)  - Change group or user password
+showmount            (8)  - show mount information for an NFS server
+pppstats             (8)  - print PPP statistics
+hcid                 (8)  - Bluetooth Host Controller Interface Daemon
+semanage             (8)  - SELinux Policy Management tool
+ypset                (8)  - bind ypbind to a particular NIS server
+udevmonitor          (8)  - print the kernel and udev event sequence to the console
+avctrl               (8)  - Bluetooth Audio/Video control utility
+grpck                (8)  - verify integrity of group files
+nhfsnums             (8)  - Convert nhfsrun output to
+smrsh                (8)  - restricted shell for sendmail
+yppoll               (8)  - return version and master server of a NIS map
+getenforce           (8)  - get the current mode of SELinux
+smartd               (8)  - SMART Disk Monitoring Daemon
+smartd.conf [smartd] (5)  - SMART Disk Monitoring Daemon Configuration File
+firstboot-tui       (rpm) - A text interface for firstboot
+saslauthd            (8)  - sasl authentication server
+stunnel              (8)  - universal SSL tunnel
+stunnel             (rpm) - An SSL-encrypting socket wrapper.
+alternatives         (8)  - maintain symbolic links determining default commands
+eject                (1)  - eject removable media
+eject               (rpm) - A program that ejects removable media using software control.
+grpunconv [pwconv]   (8)  - convert to and from shadow passwords and groups
+chat                 (8)  - Automated conversational script with a modem
+edquota              (8)  - edit user quotas
+repquota             (8)  - summarize quotas for a filesystem
+lchage               (1)  - Display or change user password policy
+setup                (2)  - setup devices and file systems, mount root file system
+setup               (rpm) - A set of system configuration and setup files.
+clockdiff            (8)  - measure clock difference between hosts
+accept               (2)  - accept a connection on a socket
+accept               (3p)  - accept a new connection on a socket
+accept/reject [accept] (8)  - accept/reject jobs sent to a destination
+makemap              (8)  - create database maps for sendmail
+yum-updatesd         (8)  - Update notifier daemon
+yum-updatesd        (rpm) - Update notification daemon
+yum-updatesd.conf [yum-updatesd] (5)  - Configuration file for yum-updatesd(8)
+usernetctl           (8)  - allow a user to manipulate a network interface if permitted
+wpa_passphrase       (8)  - Generate a WPA PSK from an ASCII passphrase for a SSID
+zdump                (8)  - time zone dumper
+mailstats            (8)  - display mail statistics
+wpa_cli              (8)  - WPA command line client
+findchip             (8)  - checks the FIR chipset
+lid                  (1)  - Display user's groups or group's users
+groupdel             (8)  - delete a group
+sa                   (8)  - summarizes accounting information
+readahead            (2)  - perform file readahead into page cache
+readahead           (rpm) - Read a preset list of files into memory.
+tcpdump              (8)  - dump traffic on a network
+tcpdump             (rpm) - A network traffic monitoring tool.
+pwck                 (8)  - verify integrity of password files
+lpmove               (8)  - move a job or all jobs to a new destination
+rpcinfo              (8)  - report RPC information
+rpc.nfsd [nfsd]      (8)  - NFS server process
+semodule             (8)  - Manage SELinux policy modules
+tcpd                 (8)  - access control facility for internet services
+quotastats           (8)  - Program to query quota statistics
+grpconv [pwconv]     (8)  - convert to and from shadow passwords and groups
+matchpathcon         (3)  - get the default SELinux security context for the specified path from the file contexts configuration
+matchpathcon         (8)  - get the default SELinux security context for the specified path from the file contexts configuration
+anacron              (8)  - runs commands periodically
+anacron             (rpm) - A cron-like program that can run jobs lost during downtime.
+readprofile          (1)  - a tool to read kernel profiling information
+groupmod             (8)  - modify a group
+sshd                 (8)  - OpenSSH SSH daemon
+rpc.gssd [gssd]      (8)  - rpcsec_gss daemon
+sestatus             (8)  - SELinux status tool
+rhnsd                (8)  - A program for querying the Red Hat Network for updates and information
+rhnsd               (rpm) - Red Hat Network query daemon
+setquota             (8)  - set disk quotas
+newusers             (8)  - update and create new users in batch
+irdadump             (8)  - monitors the IrDA traffic on one or more links
+pwconv               (8)  - convert to and from shadow passwords and groups
+useradd              (8)  - create a new user or update default new user information
+irqbalance           (1)  - distribute hardware interrupts across processors on a multiprocessor system
+irqbalance          (rpm) - IRQ balancing daemon.
+kbdrate              (8)  - reset the keyboard repeat rate and delay time
+ntsysv               (8)  - simple interface for configuring runlevels
+ntsysv              (rpm) - A tool to set the stop/start of system services in a runlevel.
+nhfsrun              (8)  - Run nhfsstone over multiple loads
+load_policy          (8)  - load a new SELinux policy into the kernel
+gpm                  (8)  - a cut and paste utility and mouse server for virtual consoles
+gpm                 (rpm) - A mouse server for the Linux console.
+gpm-devel           (rpm) - A mouse server for the Linux console.
+gpm-root             (1)  - a default handler for gpm, used to draw menus on the root window
+update-reader.conf [update-reader] (8)  - (re)generate /etc/reader.conf
+cupsd                (8)  - common unix printing system daemon
+cupsd.conf [cupsd]   (5)  - server configuration file for cups
+convertquota         (8)  - convert quota from old file format to new one
+irattach             (8)  - binds the Linux-IrDA stack to a IrDA port
+smartctl             (8)  - Control and Monitor Utility for SMART Disks
+dmidecode            (8)  - DMI table decoder
+dmidecode           (rpm) - Tool to analyse BIOS DMI data.
+rpc.idmapd [idmapd]  (8)  - NFSv4 ID <-> Name Mapper
+luseradd             (1)  - Add an user
+vipw                 (8)  - edit the password or group files
+ownership            (8)  - Compaq ownership tag retriever
+pppdump              (8)  - convert PPP record file to readable format
+rpcdebug             (8)  - set and clear NFS and RPC kernel debug flags
+rhn_register         (8)  - Connect to Red Hat Network
+sdpd                 (8)  - Bluetooth SDP daemon
+hald                 (8)  - HAL daemon
+pmap_set             (8)  - set the list of registered RPC programs
+lpinfo               (8)  - show available devices or drivers
+lusermod             (1)  - Modify an user
+makewhatis           (8)  - Create the whatis database
+pluginviewer         (8)  - list loadable SASL plugins and their properties
+getsebool            (8)  - get SELinux boolean value(s)
+rhn_check            (8)  - Check for and execute queued actions on RHN
+open_init_pty        (8)  - run an program under a psuedo terminal
+hciconfig            (8)  - configure Bluetooth devices
+chroot               (1)  - run command or interactive shell with special root directory
+chroot               (2)  - change root directory
+callback             (8)  - call a user back, presenting a login prompt
+setenforce           (8)  - modify the mode SELinux is running in
+racoon               (8)  - IKE (ISAKMP/Oakley) key management daemon
+racoon.conf [racoon] (5)  - configuration file for racoon
+luserdel             (1)  - Delete an user
+rhn-profile-sync     (8)  - Update system information on Red Hat Network
+rpc.svcgssd [svcgssd] (8)  - server-side rpcsec_gss daemon
+lsof                 (8)  - list open files
+lsof                (rpm) - A utility which lists open files on a Linux/UNIX system.
+exportfs             (8)  - maintain list of NFS exported file systems
+pwunconv [pwconv]    (8)  - convert to and from shadow passwords and groups
+restorecond          (8)  - daemon that watches for file creation and then sets the default SELinux file context
+lvm                  (8)  - LVM2 tools
+lvm.conf [lvm]       (5)  - Configuration file for LVM2
+mountstats           (8)  - Displays NFS client per-mount statistics
+lgroupdel            (1)  - Delete an user group
+vbetool              (1)  - run real-mode video BIOS code to alter hardware state
+groupadd             (8)  - create a new group
+nfsiostat            (8)  - Emulate iostat for NFS mount points using /proc/self/mountstats
+rpc.mountd [mountd]  (8)  - NFS mount daemon
+usermod              (8)  - modify a user account
+mcelog               (8)  - Print machine check log from x86-64 kernel
+mcelog              (rpm) - Tool to translate x86-64 CPU Machine Check Exception data.
+visudo               (8)  - edit the sudoers file
+chkfontpath          (8)  - simple interface for adding, removing, and listing directories in the X font server's path
+chkfontpath         (rpm) - Simple interface for editing the font path for the X font server.
+chpasswd             (8)  - update passwords in batch mode
+lnewusers            (1)  - Create new user accounts
+nhfsstone            (8)  - Network File System benchmark program
+setsebool            (8)  - set SELinux boolean value
+warnquota            (8)  - send mail to users over quota
+avcstat              (8)  - Display SELinux AVC statistics
+sosreport            (1)  - Generate debugging information for this system
+irdaping             (8)  - sends IrDA test frames
+zic                  (8)  - time zone compiler
+ntp-keygen           (8)  - generate public and private keys
+saslpasswd2          (8)  - set a user's sasl password
+iptstate             (8)  - A top-like display of IP Tables state table entries
+iptstate            (rpm) - A top-like display of IP Tables state table entries
+mklost+found         (8)  - create a lost+found directory on a mounted Linux second extended file system
+automount            (8)  - manage autofs mount points
+audit2why            (8)  - Translates SELinux audit messages into a description of why the access was denied
+atd                  (8)  - run jobs queued for later execution
+pcscd                (8)  - PC/SC Smart Card Daemon
+system-config-network-tui (rpm) - The NEtwork Adminstration Tool
+lvmdump              (8)  - create lvm2 information dumps for diagnostic purposes
+tmpwatch             (8)  - removes files which haven't been accessed for a period of time
+tmpwatch            (rpm) - A utility for removing files based on when they were last accessed.
+tcpslice             (8)  - extract pieces of and/or glue together tcpdump files
+fping                (8)  - send ICMP ECHO_REQUEST packets to network hosts
+fping               (rpm) - Utility to ping multiple hosts at once
+irnetd               (8)  - Handle automatically incoming IrNET connections
+pppd                 (8)  - Point-to-Point Protocol Daemon
+fbset                (8)  - show and modify frame buffer device settings
+fbset               (rpm) - Tools for managing a frame buffer's video mode properties.
+bccmd                (8)  - Utility for the CSR BCCMD interface
+rpc.rquotad [rquotad] (8)  - remote quota server
+praliases            (8)  - display system mail aliases
+hid2hci              (8)  - Bluetooth HID to HCI mode switching utility
+plainrsa-gen         (8)  - generator for Plain RSA keys
+userhelper           (8)  - A helper interface to pam
+filefrag             (8)  - report on file fragmentation
+nfsstat              (8)  - list NFS statistics
+lgroupadd            (1)  - Add an user group
+sys-unconfig         (8)  - shell script to reconfigure the system upon next boot
+vpddecode            (8)  - VPD structure decoder
+ntpd                 (8)  - Network Time Protocol (NTP) daemon
+ntpq                 (8)  - standard NTP query program
+biosdecode           (8)  - BIOS information decoder
+logrotate            (8)  - rotates, compresses, and mails system logs
+logrotate           (rpm) - Rotates, compresses, removes and mails system log files.
+rdistd [rdist]       (8)  - remote file distribution server program
+nscd                (rpm) - A Name Service Caching Daemon (nscd).
+cpuspeed             (8)  - user-space cpu frequency scaling program, v1.2.1
+cpuspeed            (rpm) - CPU frequency adjusting daemon
+pmap_dump            (8)  - print a list of all registered RPC programs
+sasldblistusers2     (8)  - list users in sasldb
+conmand              (8)  - ConMan daemon
+rhnreg_ks            (8)  - A program for non interactively registering systems to Red Hat Network
+prelink              (8)  - prelink ELF shared libraries and binaries to speed up startup time
+prelink             (rpm) - An ELF prelinking utility
+NetworkManager       (8)  - network management daemon
+NetworkManager      (rpm) - Network connection manager and user applications
+NetworkManager-glib (rpm) - Libraries for adding NetworkManager support to applications that use glib.
+nhfsgraph            (8)  - Run nhfsstone over multiple loads
+tunelp               (8)  - set various parameters for the lp device
+lpadmin              (8)  - configure cups printers and classes
+togglesebool         (8)  - flip the current value of a SELinux boolean
+run_init             (8)  - run an init script in the proper SELinux context
+mtr                  (8)  - a network diagnostic tool
+mtr                 (rpm) - Network diagnostic tool
+cupsaddsmb           (8)  - export printers to samba for windows clients
+selinuxenabled       (8)  - tool to be used within shell scripts to determine if selinux is enabled
+hciattach            (8)  - attach serial devices via UART HCI to BlueZ stack
+yptest               (8)  - test NIS configuration
+genhomedircon        (8)  - generate SELinux file context configuration entries for user home directories
+userdel              (8)  - delete a user account and related files
+atrun                (8)  - run jobs queued for later execution
+acpid                (8)  - Advanced Configuration and Power Interface event daemon
+acpid               (rpm) - ACPI Event Daemon
+wpa_supplicant       (8)  - Wi-Fi Protected Access client and IEEE 802.1X supplicant
+wpa_supplicant      (rpm) - WPA/WPA2/IEEE 802.1X Supplicant
+wpa_supplicant.conf [wpa_supplicant] (5)  - configuration file for wpa_supplicant
+racoonctl            (8)  - racoon administrative control tool
+lgroupmod            (1)  - Modify an user group
+avahi-autoipd        (8)  - IPv4LL network address configuration daemon
+avahi-autoipd.action [avahi-autoipd] (8)  - avahi-autoipd action script
+fsadm                (8)  - utility to resize or check filesystem on a device
+dnsmasq              (8)  - A lightweight DHCP and caching DNS server
+dnsmasq             (rpm) - Lightweight caching nameserver with integrated DHCP server
+cupsfilter           (8)  - convert a file to another format using cups filters
+cupsctl              (8)  - configure cupsd.conf options
+Kobil_mIDentity_switch (8)  - activate mIDentity CCID reader
+avahi-daemon         (8)  - The Avahi mDNS/DNS-SD daemon
+avahi-daemon.conf [avahi-daemon] (5)  - avahi-daemon configuration file
+avahi-dnsconfd       (8)  - Unicast DNS server from mDNS/DNS-SD configuration daemon
+avahi-dnsconfd.action [avahi-dnsconfd] (8)  - avahi-dnsconfd action script
+ntpdate              (8)  - set the date and time via NTP
+ntpdc                (8)  - special NTP query program
+ntptime              (8)  - read kernel time variables
+ntptrace             (8)  - trace a chain of NTP servers back to the primary source
+sntp                 (8)  - a SNTP utility (command and daemon)
+vgimportclone        (8)  - import and rename duplicated volume group (e.g. a hardware snapshot)
+tcsd                 (8)  - daemon that manages Trusted Computing resources
+tcsd.conf [tcsd]     (5)  - configuration file for the trousers TCS daemon
+xinetd               (8)  - the extended Internet services daemon
+xinetd              (rpm) - A secure replacement for inetd.
+xinetd.conf [xinetd] (5)  - Extended Internet Services Daemon configuration file
+xinetd.log [xinetd]  (8)  - xinetd service log format
+sfcbd                (1)  - Small-Footprint CIM Broker (sfcb)
+spacewalk-channel    (8)  - Subscribe to or unsubscribe system from channel
+fancontrol           (8)  - automated software based fan speed regulation
+i2cdetect            (8)  - detect I2C chips
+i2cdump              (8)  - examine I2C registers
+i2cget               (8)  - read from I2C/SMBus chip registers
+i2cset               (8)  - set I2C registers
+isadump              (8)  - examine ISA registers
+isaset               (8)  - set ISA registers
+pwmconfig            (8)  - tests the PWM outputs of sensors and configures fancontrol
+sensors-detect       (8)  - detect hardware monitoring chips
+snmpd                (8)  - daemon to respond to SNMP request packets
+snmpd.conf [snmpd]   (5)  - configuration file for the Net-SNMP SNMP agent
+snmpd.examples [snmpd] (5)  - example configuration for the Net-SNMP agent
+snmpd.internal [snmpd] (5)  - internal configuration of the Net-SNMP agent
+snmptrapd            (8)  - Receive and log SNMP trap messages
+snmptrapd.conf [snmptrapd] (5)  - configuration file for the Net-SNMP notification receiver
+lockdev              (3)  - manage device lockfiles
+lockdev             (rpm) - A library for locking devices.
+lockdev-devel       (rpm) - The header files and a static library for the lockdev library.
+mysqld               (8)  - the MySQL server
+mysqlmanager         (8)  - the MySQL Instance Manager
+GDM [gdm]            (1)  - The GNOME Display Manager
+gdm                 (rpm) - The GNOME Display Manager.
+gdm-docs            (rpm) - GDM Documentation
+ftpshut              (8)  - shut down all proftpd servers at a given time
+winbindd             (8)  - Name Service Switch daemon for resolving names from NT servers
+proftpd              (8)  - Professional configurable, secure file transfer protocol server
+proftpd             (rpm) - Flexible, stable and highly-configurable FTP server
+cifs.upcall [cifs]   (8)  - Userspace upcall helper for Common Internet File System (CIFS)
+nmbd                 (8)  - NetBIOS name server to provide NetBIOS over IP naming services to clients
+smbd                 (8)  - server to provide SMB/CIFS services to clients
+swat                 (8)  - Samba Web Administration Tool
+vsftpd               (8)  - Very Secure FTP Daemon
+vsftpd              (rpm) - vsftpd - Very Secure Ftp Daemon
+vsftpd.conf [vsftpd] (5)  - config file for vsftpd

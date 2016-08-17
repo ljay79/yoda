@@ -1,0 +1,214 @@
+#!/bin/bash
+# Edit a file. Use this instead of edit or nano.
+
+if [ -f /yoda/bin/inc/init ]; then
+	source /yoda/bin/inc/init
+fi
+ARGV="$@"
+PWD=`pwd`
+NANO=$(which nano)
+NANO_ARGS=""
+
+APACHE_DIR="/usr/local/apache2"
+
+LASTOPEN="${SUEDIT_LASTOPEN}"
+
+if [ "$LASTOPEN" = "" -a $# -eq 0 ]; then
+	SELF=${green}`basename $0`${WHITE}
+	mymsg "SuperEdit (yoda tools)"
+	mymsg "Features: auto rolling backups, auto sudo, auto syntax coloring, auto path find, etc"
+	mymsg "Usage: $SELF <file or common conf file>"
+	mymsg "       $SELF php.ini"
+	mymsg "       $SELF httpd-local.conf"
+	mymsg "       $SELF my.cnf" 	
+	exit 1
+fi
+
+echo ""
+
+#if [ $UID -gt 0 ]; then 
+#	exec `which sudo` $0 $*
+#	exit 0
+#fi
+
+if [ "$LASTOPEN" != "" ]; then
+	FILE="$LASTOPEN"
+else 
+	FILE=$1
+fi
+
+C=""
+
+if [ -d "${FILE}" ]; then
+	myerror 'That is a folder u dummy.'
+	exit 1
+fi
+
+if [ ! -f "${FILE}" ]; then
+
+
+	
+  if [[ "${FILE}" = "startup" ]]; then
+    C="/yoda/startup.sh"
+  fi
+
+
+	if [[ "${FILE}" = php* ]]; then
+		C="/usr/local/lib/php.ini"
+	fi
+
+  if [[ "${FILE}" = php-cli* ]]; then
+    C="/usr/local/lib/php-cli.ini"
+  fi
+
+	if [[ "${FILE}" = httpd || "${FILE}" = httpd.conf ]]; then
+		C="$APACHE_DIR/conf/httpd.conf"
+	fi	
+
+	if [[ "${FILE}" = httpd-* ]]; then
+		FOUND=$(find $APACHE_DIR/conf -type f -iname "${FILE}*" -printf "%p\\n" | wc -l)
+		if [ $FOUND -gt 1 ]; then
+			find $APACHE_DIR/conf -type f  -iname "${FILE}*" -printf "%p\\n" | grep --color "${FILE}"
+			echo ""
+      mymsg "Which one? (${RED}$FOUND${WHITE} possibilities)";
+			exit 1
+		fi
+    C=$(find $APACHE_DIR/conf -type f -iname "${FILE}*" -printf "%p")
+	fi
+	
+	SEARCHFOLDERS="/etc /yoda/bin/ ."
+
+	if [ -z $C ]; then
+		FOUND=$(find $SEARCHFOLDERS -maxdepth 1 -type f  -iname "${FILE}*" -printf "%p\\n" | wc -l)
+		if [ $FOUND -gt 1 ]; then
+			 find $SEARCHFOLDERS -maxdepth 1 -type f  -iname "${FILE}*" -printf "%p\\n" | grep --color "${FILE}"
+			 echo ""
+	     mymsg "Which one? (${RED}$FOUND${WHITE} possibilities)";
+	     exit 1
+		fi
+	  C=$(find $SEARCHFOLDERS -maxdepth 1 -type f -iname "${FILE}*" -printf "%p")
+  fi
+   
+	if [ -z $C ]; then
+		C=${FILE}
+	else 
+		if [ -f $C ]; then
+			A=$C
+			FILE=$C
+		fi
+	fi
+
+fi
+
+if [ ! -f ${FILE} ]; then
+	myerror "Where is ${BLUE}$FILE${RED}?"
+	exit 1
+fi
+
+if [ ! -w ${FILE} ]; then
+	if [ $UID -gt 0 ]; then
+	  exec `which sudo` -E $0 $*
+	  exit 0
+	fi
+fi
+
+
+NOW=`date +%s`
+BACKUP="`basename ${FILE}`.$NOW"
+ABSOLUTE=$(echo "${FILE}" | grep -c '^/');
+
+if [ $ABSOLUTE -eq 0 -a -f "$PWD/${FILE}" ]; then
+	FILEPATH="$PWD/${FILE}"
+else 
+	FILEPATH=${FILE}
+fi
+
+FILEPATH=$(readlink -e -q -s "${FILEPATH}")
+
+FHEAD=$(head -n1 ${FILEPATH})
+
+SYNTAX=""
+
+if [ `echo $FHEAD | grep -c 'bash'` -eq 1 ]; then
+	SYNTAX="sh"
+elif [ `echo $FHEAD | grep -c 'php'` -eq 1 ]; then
+  SYNTAX="php"
+elif [ `echo $FILEPATH | grep -c -P 'http|apache'` -eq 1 ]; then
+	SYNTAX="Apache2"
+elif [ `echo $FHEAD | grep -c -P '^#'` -eq 1 ]; then
+	SYNTAX="conf"
+fi
+
+if [ ! -z $SYNTAX ]; then
+	NANO_ARGS="$NANO_ARGS --syntax=$SYNTAX"
+#	mymsg "Syntax: $SYNTAX"
+fi
+
+PROTECTED=$(lsattr $FILEPATH | grep  -c '^....i')
+chattr -i $FILEPATH
+cp -p $FILEPATH /backup/$BACKUP
+mymsg "Editing: ${CYAN}${FILEPATH}"
+
+sleep 0.35
+
+if [ ! -w $FILEPATH ]; then
+	myerror 'No write permission!'
+	exit 1
+fi
+
+$NANO ${NANO_ARGS} "$FILEPATH"
+
+SAME="foo"
+
+if [ -f "/backup/$BACKUP" ]; then
+
+	EMPTY=$(cat "/backup/$BACKUP")
+	if [ "$EMPTY" != "" ]; then
+		SAME=$(cmp "/backup/$BACKUP" "$FILEPATH")
+	fi
+
+fi
+
+if [ "$SAME" = "" ]; then
+	mymsg "No changes made."
+	rm -f /backup/$BACKUP
+else
+	mymsg "File saved."
+	mymsg "Original backed up to: ${BLUE}/backup/${BACKUP}${NC}."
+fi
+if [ "$PROTECTED" = "1" ]; then
+	chattr +i $FILEPATH
+	mymsg "${red}File re-locked.${NC}"
+fi
+echo
+
+if [ "$SYNTAX" = "Apache2" ]; then
+	echo
+	mymsg "Validating apache conf syntax..."
+	$APACHE_DIR/bin/apachectl -t
+	echo
+fi
+
+if [[ "$FILE" = *.php ]]; then
+  /usr/local/bin/php -l "$FILEPATH" >> /dev/null
+	if [ "$?" != "0" ]; then
+		myerror $(  /usr/local/bin/php -l "$FILEPATH")
+	fi	
+  echo
+fi
+
+if [[ $(cat "$FILEPATH" | head -n1 | grep -c bash) = "1" ]]; then
+	/bin/bash -n "$FILEPATH" &> /dev/null
+	if [ $? -gt 0 ]; then
+		myerror 'Your bash script has errors:'
+		echo
+		/bin/bash -n "$FILEPATH"
+		echo
+	else
+		mysuccess 'Bash syntax check passed.'
+	fi
+fi
+
+export SUEDIT_LASTOPEN="$FILEPATH"
+
+exit 0

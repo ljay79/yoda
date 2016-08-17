@@ -1,0 +1,26 @@
+#!/usr/bin/perl
+
+use strict;
+use Socket;
+
+
+my $NULLBYTE = pack( 'c', 0 );
+my $port = $ARGV[0];
+my $filePath;
+my $content;
+local $/ = undef;
+socket( LISTENSOCK, PF_INET, SOCK_STREAM, getprotobyname( 'tcp' ) ) or die "socket() error: $!";
+setsockopt( LISTENSOCK, SOL_SOCKET, SO_REUSEADDR, pack( 'l', 1 ) ) or die "setsockopt() error: $!";
+bind( LISTENSOCK, sockaddr_in( $port, INADDR_ANY ) ) or die "bind() error: $!";
+listen( LISTENSOCK, SOMAXCONN ) or die "listen() error: $!";
+while ( my $clientAddr = accept( CONNSOCK, LISTENSOCK ) )
+{
+    my ( $clientPort, $clientIp ) = sockaddr_in( $clientAddr );
+    my $clientIpStr = inet_ntoa( $clientIp );
+		read 	CONNSOCK $content;
+#    print CONNSOCK $content;
+#    print CONNSOCK $NULLBYTE;
+#   close CONNSOCK;
+    print STDOUT $content;
+}
+

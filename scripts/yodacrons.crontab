@@ -1,0 +1,6 @@
+MAILTO=""
+*/10 * * * *	/yoda/cron-10m.sh
+0 * * * *	/yoda/cron-hourly.sh
+1 0 * * *	/yoda/cron-daily.sh
+* * 1,15 * *	/yoda/cron-biweekly.sh
+30 0 * * 1	/yoda/cron-weekly.sh

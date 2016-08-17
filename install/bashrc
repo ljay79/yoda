@@ -1,0 +1,114 @@
+# /etc/bashrc
+
+# System wide functions and aliases
+# Environment stuff goes in /etc/profile
+
+# By default, we want this to get set.
+# Even for non-interactive, non-login shells.
+if [ $UID -gt 99 ] && [ "`id -gn`" = "`id -un`" ]; then
+	umask 002
+else
+	umask 022
+fi
+
+# are we an interactive shell?
+if [ "$PS1" ]; then
+    case $TERM in
+	xterm*)
+		if [ -e /etc/sysconfig/bash-prompt-xterm ]; then
+			PROMPT_COMMAND=/etc/sysconfig/bash-prompt-xterm
+		else
+	    	PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/~}"; echo -ne "\007"'
+		fi
+		;;
+	screen)
+		if [ -e /etc/sysconfig/bash-prompt-screen ]; then
+			PROMPT_COMMAND=/etc/sysconfig/bash-prompt-screen
+		else
+		PROMPT_COMMAND='echo -ne "\033_${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/~}"; echo -ne "\033\\"'
+		fi
+		;;
+	*)
+		[ -e /etc/sysconfig/bash-prompt-default ] && PROMPT_COMMAND=/etc/sysconfig/bash-prompt-default
+	    ;;
+    esac
+    # Turn on checkwinsize
+    shopt -s checkwinsize
+    [ "$PS1" = "\\s-\\v\\\$ " ] && PS1="[\u@\h \W]\\$ "
+fi
+
+PS1='\e]2;(\#) \h\a\n\e[35m(\#)\e[31m\h\e[37m[\e[33m\w\e[37m]\e[35m\$ \e[0m'
+
+if ! shopt -q login_shell ; then # We're not a login shell
+	# Need to redefine pathmunge, it get's undefined at the end of /etc/profile
+    pathmunge () {
+		if ! echo $PATH | /bin/egrep -q "(^|:)$1($|:)" ; then
+			if [ "$2" = "after" ] ; then
+				PATH=$PATH:$1
+			else
+				PATH=$1:$PATH
+			fi
+		fi
+	}
+
+	# Only display echos from profile.d scripts if we are no login shell
+    # and interactive - otherwise just process them to set envvars
+    for i in /etc/profile.d/*.sh; do
+        if [ -r "$i" ]; then
+            if [ "$PS1" ]; then
+                . $i
+            else
+                . $i >/dev/null 2>&1
+            fi
+        fi
+    done
+
+	unset i
+	unset pathmunge
+fi
+# vim:ts=4:sw=4
+
+
+
+export EDITOR="nano"
+export VISUAL="nano"
+
+
+alias wtf="watch -n 1 w -hs"
+alias wth="ps -uxa | more"
+alias dir="ls"
+alias copy="cp"
+alias del="rm"
+alias deltree="rm -r"
+alias move="mv -v"
+alias ff="whereis"
+alias attrib="chmod"
+alias edit="nano -w -z -i"
+alias chdir="cd"
+alias mem="top"
+alias search="grep"
+alias pico="nano -w -z -i"
+alias nano="nano -i -S -w"
+alias backup="cp -d -p -R -u -x -v"
+alias df="df -a -h"
+alias rmdirempty='find . -xdev -depth -type d -empty -printf "Deleting empty folder, %p\\n" -exec rmdir {} \;'
+alias rmemptyfile='find . -xdev -depth -type f -empty -printf "Deleting empty file, %p\\n" -exec rm -f {} \;'
+alias dus='du --max-depth=0 -h -x'
+alias du='du -h -x'
+alias netstatsum='netstat -a -n|grep -E "^(tcp)"| cut -c 68-|sort|uniq -c|sort';
+alias ssh='ssh -p 32600'
+alias scp='scp -p -P 32600'
+alias rm='rm -v -i --preserve-root'
+alias status='apachectl status'
+alias files='find . -type f -depth -xdev -printf "%p\\n"'
+alias cp="cp -p -v"
+alias ps="ps wwaux"
+alias diff="diff -b -B --minimal --side-by-side --width=150 -w "
+alias msg="tail -n250 /var/log/messages"
+alias ls='/bin/ls $LS_OPTIONS'
+alias mysql="mysql -hlocalhost"
+
+for server in `cat /admin/servers`
+do
+	alias ${server}="ssh ${server}"
+done

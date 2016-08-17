@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# Shell options
+
+#ulimit -S -c 0          # Don't want any coredumps.
+set -o notify
+set -o noclobber
+set +o nounset
+set -o noglob
+set -o emacs
+set +o ignoreeof
+
+shopt -s cdspell
+shopt -s cdable_vars
+shopt -s checkhash
+shopt -s checkwinsize
+shopt -s sourcepath
+shopt -s no_empty_cmd_completion
+shopt -s cmdhist
+shopt -s histappend histreedit histverify
+shopt -s extglob
+shopt -s nocaseglob
+shopt -u mailwarn
+
+export HISTTIMEFORMAT="%H:%M > "
+export HISTIGNORE="&:bg:fg:ll:h:ls"
+export HISTSIZE=5000
+export HISTCONTROL=ignoreboth
+
+unset MAILCHECK
+
+export TIMEFORMAT=$'\nreal %3R\tuser %3U\tsys %3S\tpcpu %P\n'
+export PS4=" ++ "
+

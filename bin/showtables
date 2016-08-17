@@ -1,0 +1,8 @@
+#!/bin/bash
+
+TABLES="$1"
+DB=${2:-"Mall"}
+
+/yoda/bin/lquery ${DB} "show tables like '${TABLES}'"
+
+exit 0

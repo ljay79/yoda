@@ -1,0 +1,150 @@
+#!/usr/local/bin/php
+<?php
+/*
+This modified version of quicksts uses syslog to output the stats messages.
+Syslog is used to enable remote message logging to a centralized log system.
+*/
+
+openlog('quickstats', LOG_NDELAY | LOG_PID | LOG_PERROR, LOG_USER);
+
+function output($k, $v, $color="\033[1;37m") {
+	$RED="\033[1;31m";
+	$YELLOW="\033[1;33m";
+	$GREEN="\033[1;32m";
+	$WHITE="\033[1;37m";
+	$NC="\033[0m";
+	$tab = "\t";
+	if( strlen($k)  < 10 ) $tab .= $tab;
+	$str = "{$WHITE}{$k}{$NC}:{$tab}{$color}$v{$NC}\n";
+	return $str;
+}
+
+function mem($var) {
+	return (int)`cat /proc/meminfo | grep $var | awk '{print $2}'`;
+}
+
+function diskusage() {
+	$s = `df -l | head -n2 | tail -n1 | awk '{print $5}'`;
+	$usage = (int)str_replace('%','',$s);
+	if( $usage > 80 && !mt_rand(0,5) ) {
+		shell_exec("/yoda/bin/textmessagenoah 'alert: disk usage at $usage'"); 
+	}
+	return $usage;
+}
+
+function sockets($grep=":80|:443") {
+	return (int)trim(shell_exec("/bin/netstat -na | grep -P '{$grep}' | grep -P -c 'ESTABLISHED|SYN_RECV'"));
+}
+
+function getMaxRegistry() {
+	$file = $_ENV['home'] . '/.quickstats';
+	if( !file_exists($file) ) return (object)array();
+	$data = file_get_contents($file);
+	return unserialize($data);
+}
+
+function saveRegistry() {
+
+}
+
+function getSwapStatus() {
+	$swap = mem('SwapTotal');
+	$used = mem('SwapFree');
+	$perc = $used / $swap;
+}
+
+$mem_total = mem('MemTotal');
+$mem_free = mem('MemFree');
+$mem_notused = mem('Inactive');
+$mem_cached = mem('Cached');
+$mem_buffers = mem('Buffers');
+
+$mem_system=$mem_cached+$mem_buffers-$mem_notused;
+$mem_system_percent = round(((float)$mem_system / (float)($mem_total-$mem_free)) * (float)100.0);
+
+$mem_program = $mem_total - $mem_free - $mem_system;
+$mem_program_percent = round(((float)$mem_program / (float)($mem_total-$mem_free)) * (float)100.0);
+$mem_system_string = round((float)$mem_system / 1000.00 / 1000.00, 2);
+$mem_program_string = round((float)$mem_program / 1000.0 / 1000.0, 2);
+
+$mem_free_real = (int)$mem_free+(int)$mem_notused;
+$mem_free_real_percent = round(((float)$mem_free_real / (float)$mem_total) * (float)100.0);
+$apache_active_connections = (int)`/bin/netstat -na | grep -P ':80|:443' | grep 'ESTABLISHED' | wc -l`;
+$mem_free_real_string = round((float)$mem_free_real / 1000.00 / 1000.00, 2);
+
+
+$number_of_cpus = `cat /proc/cpuinfo | grep -c processor`;
+$number_of_cpus = trim($number_of_cpus);
+$load_avg = (float)trim((`cat /proc/loadavg | awk '{print $1}'`));
+$load_avg2 = (float)trim((`cat /proc/loadavg | awk '{print $3}'`));
+$load_avg += $load_avg2;
+$load_avg = (float)($load_avg / 2.0);
+$load_avg = round(($load_avg / (float)$number_of_cpus)*100.00,2);
+
+$RED="\033[1;31m";
+$YELLOW="\033[1;33m";
+$GREEN="\033[1;32m";
+$WHITE="\033[1;37m";
+$white="\033[0;37m";
+$NC="\033[0m";
+
+$str = '';
+
+if ( $mem_free_real_percent < 20 ) $COLOR=$RED;
+else if ( $mem_free_real_percent < 40 ) $COLOR=$YELLOW;
+else $COLOR=$GREEN;
+$str .= output('Ram Available', "{$mem_free_real_string}{$white}GB ({$COLOR}{$mem_free_real_percent}% {$WHITE}free{$white})", $COLOR);
+$COLOR=$NC;
+//$str .= "{$NC}RAM Used ({$WHITE}Processes{$NC}):{$NC}\t{$COLOR}{$mem_program_string}{$COLOR} GB $NC\n"; //({$COLOR}{$mem_program_percent}%{$WHITE}){$NC}\n";
+//$str .= "{$NC}RAM Used ({$WHITE}Kernel{$NC}):{$NC}\t{$COLOR}{$mem_system_string}{$COLOR} GB $NC\n"; //({$COLOR}{$mem_system_percent}%{$WHITE}){$NC}\n";
+//$str .= "{$WHITE}RAM Available:{$NC}\t\t{$COLOR}{$mem_free_real_string}{$WHITE} Gigs ({$COLOR}{$mem_free_real_percent}%{$WHITE}){$NC}\n";
+
+if( $load_avg > 50 ) $COLOR=$RED;
+else if( $load_avg > 20 ) $COLOR=$YELLOW;
+else $COLOR=$GREEN;
+$str .= output('CPU Load Avg', "{$load_avg}{$white}% ({$WHITE}{$number_of_cpus}{$white} CPU's)", $COLOR);
+//$str .= "{$WHITE}CPU Load Avg:\t{$NC}\t{$COLOR}{$load_avg}{$WHITE}%{$NC}\n";
+$apache_active_connections = sockets();
+$sockets_mysql = sockets(':3306');
+
+
+if ( $apache_active_connections < 10 ) $COLOR=$GREEN;
+else if( $apache_active_connections < 25 ) $COLOR=$YELLOW;
+else $COLOR=$RED;
+$str .= output('Open sockets', "$apache_active_connections {$white}HTTP, {$GREEN}$sockets_mysql {$white}MySQL", $COLOR);
+//$str .= "{$WHITE}Open HTTP sockets:{$NC}\t{$COLOR}{$apache_active_connections}{$NC}\n";
+$diskusage = diskusage();
+if( $diskusage > 80 ) $COLOR = $RED;
+else if( $diskusage > 60 ) $COLOR = $YELLOW;
+else $COLOR = $GREEN;
+$str .= output('Disk Usage', ($diskusage)."$white%", $COLOR);
+if( file_exists('/yoda/etc/motd.banner') ) {
+  $str = rtrim(file_get_contents('/yoda/etc/motd.banner')) . "\n\n" .  $str ;
+} else if( file_exists('/etc/motd.banner') ) {
+	$str = rtrim(file_get_contents('/etc/motd.banner')) . "\n\n" .  $str ;
+} 
+$str .= "\n";
+if( file_exists('/yoda/misc/jokes.db') && !mt_rand(0,2) ) {
+	$jokes = file('/yoda/misc/jokes.db');
+	shuffle($jokes);
+	$str .= wordwrap($jokes[0]);
+}
+file_put_contents('/etc/motd',$str);
+echo $str;
+
+
+/*
+ * Log to log syslog
+ */
+try {
+    $line = "[".date('Y-m-d H:i:s')."] ";
+    $line .= "RAM ".$mem_total."Kb|".$mem_free_real."Kb|".$mem_free_real_percent."% ";
+    $line .= "CPU ".$number_of_cpus."|".$load_avg."% ";
+    $line .= "HTTPSOCKETS $apache_active_connections ";
+    $line .= "MYSQLSOCKETS $sockets_mysql ";
+    $line .= "DISK $diskusage%";
+
+    syslog(LOG_INFO, $line);
+} catch( Exception $e) {}
+
+?>

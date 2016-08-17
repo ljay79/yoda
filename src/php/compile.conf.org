@@ -1,0 +1,63 @@
+# This file is parsed by my php compile script
+--host=x86_64-redhat-linux
+--prefix=/usr/local
+--with-libdir=lib64
+--with-gnu-ld
+--with-apxs2=/usr/local/apache2/bin/apxs
+
+# Disable ALL modules/plugins
+# We will specify specifically
+
+--disable-all
+# All our modules to enable
+
+--enable-libxml
+--enable-hash
+--enable-pcntl
+--enable-exif
+--enable-xml
+--enable-zend-multibyte
+--enable-mbstring
+--enable-mbregex
+#--enable-mbregex-backtrack
+#--enable-sockets
+--enable-gd-native-ttf
+--enable-soap
+--enable-filter
+--enable-session
+--enable-simplexml
+--enable-xmlwriter
+--enable-xmlreader
+--enable-pdo
+--enable-json
+--enable-posix
+--enable-spl
+#--enable-zip
+ #--enable-ftp
+--enable-ctype
+--enable-calendar
+--enable-dom
+--enable-tokenizer
+
+# All our extensions to enable
+--with-regex=php
+--with-pcre-regex
+--with-mysql=/usr/bin/mysql_config
+--with-mysqli=/usr/bin/mysql_config
+--with-pdo-mysql=/usr/bin/mysql_config
+--with-curl=/usr
+--with-curlwrappers
+--with-gd=/usr
+--with-jpeg-dir=/usr
+--with-png-dir=/usr
+--with-freetype-dir=/usr
+--with-zlib
+--with-openssl
+--with-readline=/usr
+#--with-mcrypt=/usr
+--with-iconv
+--with-xsl
+--with-xpm-dir=/usr
+
+--disable-ipv6
+

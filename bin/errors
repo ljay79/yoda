@@ -1,0 +1,2 @@
+#!/bin/bash
+find /www -size +100b -name "error*" -exec /yoda/bin/striptags {} \;

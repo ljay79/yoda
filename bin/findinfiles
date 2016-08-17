@@ -1,0 +1,44 @@
+#!/bin/bash
+
+red='\e[0;31m'
+RED='\e[1;31m'
+blue='\e[0;34m'
+BLUE='\e[1;34m'
+cyan='\e[0;36m'
+CYAN='\e[1;36m'
+NC='\e[0m'
+
+HERE=`pwd`
+
+if [ -z $1 ]; then
+	echo
+	echo -e "${BLUE}Grep all .php files in working directory for given regexp.$NC"
+	echo -e "${cyan}Usage: ${nc}${red}$0 ${RED}< regexp.. >${NC}"
+	echo
+	exit 1
+
+fi
+
+
+Q=""
+REG="${Q}${*}${Q}"
+REG=${REG// /\\s}
+echo -e "${RED}$REG${NC}"
+sleep 1
+echo
+I=0
+TOTAL=0
+for FILE in $(find -H . -maxdepth 5 -type f  -printf '%P\n'); do
+	let 'I+=1'
+	if [ $I -gt 100 ]; then
+		let 'TOTAL+=100'
+		echo "$TOTAL files searched..."
+		I=0
+	fi
+	if [ -f $FILE ]; then
+		if [[ $FILE != *trash* && $FILE != "unused" ]]; then
+			cat $FILE | grep --text --color=always -n -P -H --label=$FILE $REG | awk -F: '{ print "[" $1 " - Line #" $2 "]\n\t" $3 "\n"; }'
+		fi	
+	fi
+done
+

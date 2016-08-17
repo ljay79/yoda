@@ -1,0 +1,3 @@
+Run ./compile.sh to compile and install php automatically.
+Edit the compile.conf file, adding, removing, or commenting out the parameters you want for your php setup.
+This file is parsed by the compile.sh script.

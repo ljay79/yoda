@@ -1,0 +1,19 @@
+#!/bin/bash
+
+
+if [ ! -z $1 ]; then
+	exec 6<&0                        
+	tail $1 > /tmp/striptags.tmp
+	exec < /tmp/striptags.tmp
+	echo ;
+	echo "========> $1 <========"
+fi 
+	
+	
+exec php -r 'while( $s = fgets(STDIN) ) fwrite(STDOUT, trim(html_entity_decode(strip_tags($s))). "\n");' <&0
+
+if [ ! -z $1 ]; then
+	exec 0<&6 6<&-
+	rm -f /tmp/striptags.tmp
+
+fi

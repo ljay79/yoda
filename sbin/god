@@ -1,0 +1,63 @@
+#!/bin/bash
+
+user=$USER
+source /yoda/bin/inc/colors
+
+if [ $# -eq 0 ]; then
+	echo "No."
+	exit 1
+fi
+
+#if [ $UID -ne 0 ]; then
+#	echo "No."
+#	exit 1
+#fi
+
+if groups $user | grep &>/dev/null '\bwheel\b'; then
+    echo "Lets play god..."
+    echo
+else
+    echo "No."
+    exit 1
+fi
+
+SSH_ARGS="-n -q -T -p32600 -l $user"
+SSH=$(which ssh)
+PWD=`pwd`
+THISBOX=`/bin/hostname -s`
+
+if [ -f "$*" -a ! -x "$*" ]; then
+	echo 
+	echo -e "${WHITE}This is a file. Deploying in 2 seconds ...$NC"
+	echo
+	sleep 2
+	/yoda/bin/godcp "$*"
+	exit 0
+fi
+
+$SSH ${SSH_ARGS} $THISBOX "cd ${PWD}; $*"
+RET=$?
+if [[ $RET != 0 ]]; then
+	echo -e "${RED}Error ${RET}${NC}"
+	echo -e "${YELLOW}Continue? ${NC}Five seconds to CTRL-C ..."
+	sleep 5
+fi
+
+for box in `cat /yoda/servers.conf`
+do
+	if [[ $THISBOX = $box ]]; then
+		continue;
+	fi
+	if [ "$box" != "" ]; then		
+		echo -e "$yellow[$YELLOW$box$yellow]$NC"
+		$SSH ${SSH_ARGS} ${box} "cd ${PWD}; $*"
+		RET=$?
+		if [[ $RET != 0 ]]; then
+			echo -e "${RED}Error ${RET}${NC}"
+		fi
+		echo
+	fi
+done
+
+		
+exit 0

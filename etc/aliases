@@ -1,0 +1,85 @@
+#!/bin/bash
+# YODA Bash alises for everybody
+#########################################################################3
+
+#########################
+# YODA GLOBAL ALIASES
+# DO NOT EDIT
+# EDIT aliases.local FOR PER SERVER customs
+########################
+
+alias chmod='chmod --preserve-root -c'
+alias +x="chmod -v +x"
+alias 777="chmod -v 777"
+alias 770="chmod -v 770"
+alias cd.="cd .."
+alias cd..="cd .."
+alias ..="cd .."
+alias vi='vim'
+alias wtf="watch -n 1 w -hs"
+alias wth="ps -uxa | more"
+alias edit="nano"
+alias df="df -a -h"
+alias dus='du --max-depth=0 -h -x'
+alias du='du -h -x'
+alias netstatsum='netstat -a -n|grep -E "^(tcp)"| cut -c 68-|sort|uniq -c|sort';
+alias scp='scp -p -P32600 -c arcfour'
+alias rm='rm -v -i --preserve-root'
+alias status='apachectl status'
+alias files='find . -maxdepth 1 -type f -printf "%P "'
+alias folders='find -H . -maxdepth 1 -type d -printf "%P "'
+alias cp="cp -p -v"
+alias ps="ps auxkstart_time"
+alias diff="diff -b -B --minimal --side-by-side --width=150 -w "
+alias msg="tail -n300 /var/log/messages"
+alias ls='ls $LS_OPTIONS'
+alias lsd='/bin/ls $LS_OPTIONS -l'
+alias ll='/bin/ls $LS_OPTIONS -l'
+alias lls='/bin/ls $LS_OPTIONS -l --sort=size'
+alias grep='grep --color=auto --line-buffered'
+alias recent='find / -type f -mtime 1 -printf "%Tm:%Td %TI:%TM %Tp  %p%f\\n" | sort | grep --color "\s\s.*"'
+alias yoda='pushd /yoda'
+alias glob='set +f'
+alias trash='mv -f -v --target-directory=/trash'
+alias httpwhat="/usr/sbin/apachectl fullstatus | grep -P '\s\s(GET|POST) ' | sort"
+alias phperr="tail -n50 /var/log/php.log"
+alias bigfiles='find / -xdev -type f -size +100M -exec du -h {} \;'
+alias mysqlstat="/usr/bin/mtstat -M mysqlqps,mysqlhandler,mysqlqcache"
+alias realpath="readlink -e -q -s"
+alias www="cd /www"
+alias sudo="sudo -E"
+alias howto="/yoda/bin/howdoi"
+alias commit='svn commit -m ""'
+
+#### FOR MAN PAGES ####
+alias less='less'
+export PAGER=less
+#export LESSCHARSET='utf8'
+export LESSOPEN='|/usr/bin/lesspipe.sh %s 2>&-'
+export LESS='-i -N -w  -z-4 -g -e -M -X -F -R -P%t?f%f \
+:stdin .?pb%pb\%:?lbLine %lb:?bbByte %bb:-...'
+
+
+#### ALIASES FOR QUICK SERVER LOGINS ####
+
+if [ -f /yoda/servers.conf ]; then
+  for server in `cat /yoda/servers.conf`
+  do
+    alias ${server}="ssh -p32600 ${server}"
+  done
+fi
+
+if [ -f /yoda/servers-dev.conf ]; then
+  for server in `cat /yoda/servers-dev.conf`
+  do
+    alias ${server}="ssh -p32600 ${server}"
+  done
+fi
+
+
+#### NOW RUN LOCAL SPECIFIC ALIASES FILE ####
+if [ -f /yoda/etc/aliases.local ]; then
+	. /yoda/etc/aliases.local
+fi
+
+#########################################################################3

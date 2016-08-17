@@ -1,0 +1,238 @@
+#!/bin/bash
+
+source /yoda/bin/inc/init
+
+if [ ! -f /yoda/etc/deploy.conf ]; then
+	myerror 'Configuration file missing, /yoda/etc/deploy.conf'
+	exit 1 
+fi
+
+source /yoda/etc/deploy.conf
+
+function recently_modified () {
+  local WHERE=${1:-"/www"}
+	local mtime=${2:-"4"}
+	local LINES=${3:-"15"}
+	local FILTER=${4:-"code"}
+	local goodexpr='php|html|gif|xml|css|ini|js|htm|swf|sh'
+	local exprimages="gif|jpg|png"
+	local badexpr='bash|pimgs|pipe|log|errors|debug|log|csv'	
+	if [ "$FILTER" = "all" ]; then
+		goodexpr="${goodexpr}|${exprimages}"
+	fi
+	if [ "$FILTER" = "images" ]; then
+		goodexpr="${exprimages}|css|swf"
+	fi
+	local C=$(find -H $WHERE -type f -mtime -${mtime} | grep -i -P "$goodexpr" | grep -v -i -P "$badexpr" | wc -l)
+	if [ $C -gt 0 ]; then
+		echo
+	  echo -e "${WHITE} ------- ${YELLOW}Last Modified ${WHITE}------- ${NC}"
+		find -H $WHERE -type f -mtime -${mtime} -printf '%Tm/%Td (%TI:%TM %Tp)  %p\n' | grep -i -P "$goodexpr" | grep -v -i -P "$badexpr" |  sort -r -n | head -n${LINES} | grep --color -P '  .*'
+		mymsg2 "deploy what images" "To see design stuff and graphics";
+		mymsg2 "deploy what all" "To see everything"
+	fi
+}
+
+function last_deployed () {
+	echo
+	echo -e "${WHITE} ------- ${YELLOW}Last Deployed ${WHITE}------- ${NC}"
+	tail -n10 /var/log/deploy | sort -r | grep --color -P '  \S*  '
+}
+
+
+if [ "$1" = "-h" ]; then
+  mymsg 'Deploy it live baby!'
+  myerror "Usage: < files ... >"
+  mymsg '- You can specify files as relative, absolute paths or whatever, it will figure it out'
+  mymsg '- PHP files will be syntaxed checked automatically for dummy-protection'
+  mymsg '- Note: type "glob" first to turn on wildcards so you can do things like *.php'
+  mymsg '- Files on the live server will be backed up automatically for emergency rollback'
+	shift
+fi
+
+if [ "$1" = "what" ]; then
+	 recently_modified "$PROJECTDIR" "10" "50" ${2:-"code"}
+	 exit 1
+fi
+
+if [ $# -lt 1 -o "x$1" = "x" ]; then
+	mymsg 'Deployment script. (Type -h for info)'
+	recently_modified "$PROJECTDIR" "10" "25" "code"
+	last_deployed
+	exit 1
+fi
+
+PWD=${PWD:-`pwd`}
+REAL_DIR=`/usr/bin/readlink -e -q -s -n .`
+if [ $PWD != $REAL_DIR ]; then
+	cd $REAL_DIR
+fi
+if [[ $REAL_DIR != $WWWDIR* ]]; then
+	myerror "You aren't in a www project folder. ($WWWDIR or $PROJECTDIR)"
+	exit 1
+fi 
+
+SCP=$(which scp)
+SSH=$(which ssh)
+PHP=$(which php)
+SSH_USER="root"
+
+SSHCMD="$SSH $SSH_ARGS ${SSH_USER}@${WHERE}"
+
+if [ $(echo "$1" | grep -c -P '[*]') -gt 0 ]; then
+	myerror "Turn on glob for that."
+	exit 1
+fi
+
+if [ "$1" = "-r" ]; then
+	RECURSIVE="1"
+	shift
+else
+	RECURSIVE="0"
+fi
+
+until [ -z "$1" ]
+do
+
+	REAL_LINK=$(/usr/bin/readlink -e -q -s -n "$1")
+	if [[ $REAL_LINK != $WWWDIR* ]]; then
+		myerror "${BLUE}$1${WHITE} is symlink outside /www, skipping."
+		shift
+		continue;
+	fi
+
+
+
+  FILE=`basename $1`
+  DIR=`dirname $1`
+  DIR2="$DIR"
+  MODE="f"
+  FILE2="$FILE"
+
+	if [ "$1" = "." -o "$1" = ".." ]; then
+		shift
+		continue;
+	fi
+
+	if [ $(echo "$FILE" | grep -c -P '^[.]') != "0" ]; then
+		myerror "Skipping hidden file $FILE";
+		continue;
+	fi
+
+  if [ "${DIR2}" = "." ]; then
+    DIR2="$PWD"
+  fi
+  if [ "$DIR" != "/" ]; then
+    DIR="${DIR}/"
+  fi
+
+  if [ "$FILE" = "/" ]; then
+    myerror 'NO!'
+    exit 1
+  fi
+
+	if [ -d "${DIR}${FILE}" ]; then
+ 		 if [ $(echo "${DIR}${FILE}" | grep -c -P 'R_') != "0" ]; then
+	    myerror "Skipping R_ removed file folder";
+ 	  	 shift
+ 	  	 continue;
+	  fi
+
+		myerror "Creating folder ${DIR}${FILE}, but skipping contents"
+		$SSHCMD "mkdir --mode=2777 -p -v ${DIR2}"
+		if [ "$RECURSIVE" = "1" ]; then
+			mymsg "Now deploying ${DIR}${FILE}..."
+			sleep 1 # read
+			pushd ${DIR}${FILE};
+			$0 -r *
+			popd	
+		fi
+		shift
+		continue
+	fi
+
+	if [ -L "${DIR}${FILE}" ]; then
+		READLINK=$(readlink -e -n -q "${DIR}${FILE}")
+		mymsg "${FILE} is a symlink to: ${CYAN}${READLINK}" 
+	fi
+
+  if [ ! -f "${DIR}${FILE}" ]; then
+     myerror "Where is ${DIR}${FILE}?"
+		 recently_modified $PROJECTDIR
+     exit 1
+  fi
+
+  if [ $(echo "$FILE" | grep -c -P '^[.]') != "0" ]; then
+    myerror "Skipping hidden file $FILE";
+    shift
+		continue;
+  fi
+
+
+  if [ $(echo "$FILE" | grep -c -P 'R_') != "0" ]; then
+    myerror "Skipping R_ removed file $FILE";
+    shift
+    continue;
+  fi
+
+
+	LFILE="${DIR}${FILE}"
+  RFILE="${DIR2}/${FILE2}"
+
+	EXT=${FILE##*.}
+	if [ $EXT = "php" -o $EXT = "dv8" -o $EXT = "phtml" ]; then 
+		$PHP -l $LFILE &>/dev/null
+		RET=$?
+		if [ "$RET" != "0" ]; then
+			myerror "Cannot deploy $LFILE with PHP syntax errors!"
+			myerror $($PHP -l $LFILE)
+			exit 1
+		else
+			mysuccess "PHP syntax OK."
+		fi	
+	fi
+
+	if [ $EXT = 'js' ]; then
+		mymsg "Javascript file."
+	fi
+
+	if [ $EXT = 'css' ]; then
+		mymsg "Stylesheet"
+	fi
+
+  mymsg "${BLUE}Creating backup..."
+
+	$SSHCMD /yoda/bin/backup ${RFILE} 1> /dev/null
+	RET=$?
+	if [ "$RET" != "0" ]; then 
+		myerror 'Warning: backup failed'	
+	fi
+
+	$SSHCMD "mkdir --mode=2777 -p -v ${DIR2}"
+	mymsg "Deploying ${yellow}${DIR}${YELLOW}${FILE}${NC}..." 
+	# to ${GREEN}${WHERE}${WHITE}:${yellow}$RFILE"
+	
+	$SCP ${SCP_ARGS} $LFILE ${SSH_USER}@${WHERE}:${RFILE}	
+	
+	RET=$?
+
+	if [ "$RET" != "0" ]; then
+		myerror 'Deploy FAILED.'
+		exit 1
+	fi
+
+  LDATE=$(date +'%m/%d (%I:%M %p)')
+  echo -e "${LDATE}  ${RFILE}  (${USER})" >> /var/log/deploy
+
+
+	mysuccess "Done."
+
+	shift
+
+done
+
+wait
+
+
+exit 0
+
