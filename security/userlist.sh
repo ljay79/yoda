@@ -1,5 +1,6 @@
 #!/bin/bash
 # userlist.sh
+# not clear what the purpose of this is :/
 
 source /yoda/bin/inc/init
 
