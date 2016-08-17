@@ -1,5 +1,7 @@
 #!/bin/bash
 # mysqlaccess.sh
+# Script used for audit MySQL Access
+# 
 
 source /yoda/bin/inc/init
 
