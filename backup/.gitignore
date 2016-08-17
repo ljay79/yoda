@@ -1,0 +1,4 @@
+# folder to keep created backups of files during edit (suedit)
+*
+!.gitkeep
+!.gitignore
