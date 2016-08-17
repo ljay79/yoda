@@ -1,0 +1,52 @@
+# 3 columns with \t tabs!
+# all with 127.0.0.1 not yet active/resolved
+# lines starting with "#" get skipped
+# lines where first alias (column 2) has a period in name, get skipped
+10.79.0.108   nat  nat.aws.example.com
+10.79.0.7   stage01  stage01.aws.example.com
+10.79.0.29   stage02  stage02.aws.example.com
+10.79.2.203   stage01db  stage01db.aws.example.com
+10.79.2.116   stage02db  stage02db.aws.example.com
+10.79.10.12   web1  web1.aws.example.com
+10.79.30.74   web1x1  web1x1.aws.example.com
+127.0.0.1	web1x2	web1x2.aws.example.com
+10.79.10.43   web2  web2.aws.example.com
+10.79.10.70   web3  web3.aws.example.com
+10.79.10.45   web4  web4.aws.example.com
+10.79.12.89   web5  web5.aws.example.com
+10.79.11.32   web6  web6.aws.example.com
+10.79.31.185   web6x1  web6.x1.aws.example.com
+10.79.31.140   web6x2  web6.x2.aws.example.com
+10.79.31.74   web6x3  web6.x3.aws.example.com
+10.79.31.231   web6x4  web6.x4.aws.example.com
+127.0.0.1	web6x5	web6x5.aws.example.com
+10.79.21.103   db1  db1.aws.example.com
+10.79.20.32   db2  db2.aws.example.com
+10.79.21.210   db3  db3.aws.example.com
+10.79.21.63   db4  db4.aws.example.com
+10.79.20.105   db1r  db1r.aws.example.com
+10.79.20.119   db2r  db2r.aws.example.com
+10.79.21.61   db3r  db3r.aws.example.com
+10.79.20.244   db4r  db4r.aws.example.com
+10.79.25.240   db5  db5.aws.example.com
+127.0.0.1	db5r    db5r.aws.example.com
+10.79.23.11   db6  db6.aws.example.com
+10.79.22.191   db6r  db6r.aws.example.com
+10.79.10.182   api2  api2.aws.example.com
+10.79.30.59   api1x1  api1x1.aws.example.com
+10.79.30.141   api1x2  api1x2.aws.example.com
+10.79.30.135   api1x3  api1x3.aws.example.com
+10.79.30.229   api1x4  api1x4.aws.example.com
+10.79.31.146   api5x1  api5x1.aws.example.com
+10.79.31.59   api5x2  api5x2.aws.example.com
+10.79.11.133   api6  api6.aws.example.com
+10.79.1.125   apinav  apinav.aws.example.com
+10.79.13.134   misc1  misc1.aws.example.com
+10.79.13.27   misc2  misc2.aws.example.com
+10.79.26.132   misc1db  misc1db.aws.example.com
+127.0.0.1	misc2db   misc2db.aws.example.com
+10.79.0.4   log01  log01.aws.example.com
+127.0.0.1	dev01   dev01.aws.example.com
+127.0.0.1	dev02   dev02.aws.example.com
+10.79.0.234   kitchen  kitchen.aws.example.com
+10.79.14.39   cpm  cpm.aws.example.com

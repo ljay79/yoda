@@ -1,0 +1,16 @@
+#!/bin/bash
+# Like "whereis" but better. Find the command.
+
+echo "/bin"
+ls -lR /bin | grep "$@"
+echo "/sbin"
+ls -lR /sbin | grep "$@"
+echo "/USR/BIN"
+ls -lR /usr/bin | grep "$@"
+echo "/USR/SBIN"
+ls -lR /usr/sbin | grep "$@"
+echo "/USR/LOCAL/BIN"
+ls -lR /usr/local/bin | grep "$@"
+echo "/USR/LOCAL/sbin"
+ls -lR /usr/local/sbin | grep "$@"
+

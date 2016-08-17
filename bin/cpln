@@ -1,0 +1,36 @@
+#!/bin/bash
+# cpln <symlink...> : Generate the exact ln command to recreate the symlink
+
+source /yoda/bin/inc/init
+
+if [ "x$1" = "x" ]; then
+	myerror "Specify a symlink"
+fi
+
+until [ -z "$1" ]; do
+
+	if [ ! -L "$1" ]; then
+#		echo "$1 not symlink"
+		shift
+		continue
+	fi
+
+	ldir=$(readlink -e -q -s -n `dirname "$1"`)
+	lfn=$(basename "$1");
+	lname="$ldir/$lfn"
+
+	lloc=$(readlink -q -n "$1");
+
+	cmd="ln -sf $lloc $lname"
+
+	echo $cmd 
+
+	shift
+
+done
+
+
+
+
+
+exit 0

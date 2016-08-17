@@ -1,0 +1,30 @@
+#!/bin/bash
+
+
+NOTE=""
+NOTE2=""
+if [ $# -gt 0 ]; then
+	if [ "$1" = "last" ]; then
+		NOTE=`history | tail -n2 | head -n1`
+	fi
+	if [ ! -z $1 ]; then
+		NOTE2="$*"
+	fi;
+else
+	NOTE=`history | tail -n2 | head -n1`
+fi
+LASTCMD=`history | tail -n2 | head -n1`
+
+if [ ! -d /yoda/log ]; then
+	mkdir /yoda/log
+	chown root:wheel /yoda/log
+	chmod ug+rwX /yoda/log
+	chmod o-rw /yoda/log 
+	chmod g+s /yoda/log
+fi
+echo "$NOTE" >> /yoda/log/notes.log
+test -n "$NOTE2" && echo "\# ${NOTE2}" >> /yoda/log/notes.log
+
+
+exit 0
+

@@ -1,0 +1,81 @@
+#!/bin/bash
+# 1-click copy file $2 to server $1
+
+source /yoda/bin/inc/init
+
+if [ $# -lt 2 ]; then
+	myerror "Usage: $0 < server >  < files ... >"
+	exit 1
+fi
+
+if [ $# -eq 2 -a -f "$1" ]; then
+	. $0 $2 $1
+	exit $?
+fi
+
+
+
+WHERE=$1
+PWD=`pwd`
+SCP=$(which scp)
+SCP_ARGS="-p -P32600 -q"
+
+shift
+
+
+until [ -z "$1" ]
+do
+
+  FILE=`basename $1`
+  DIR=`dirname $1`
+  DIR2="$DIR"
+  MODE="f"
+  FILE2="$FILE"
+
+	if [ "$1" = "." -o "$1" = ".." ]; then
+		shift
+		continue;
+	fi
+
+  if [ "${DIR2}" = "." ]; then
+    DIR2="$PWD"
+  fi
+  if [ "$DIR" != "/" ]; then
+    DIR="${DIR}/"
+  fi
+
+  if [ "$FILE" = "/" ]; then
+    myerror 'NO!'
+    exit 1
+  fi
+
+	if [ -d "${DIR}${FILE}" ]; then
+		myerror "Skipping folder ${DIR}${FILE}."
+		shift
+		continue
+	fi
+
+  if [ ! -f "${DIR}${FILE}" ]; then
+     myerror "Where is ${DIR}${FILE}?"
+     exit 1
+  fi
+
+	mymsg "Sending ${YELLOW}${DIR}${FILE}${WHITE} to ${GREEN}${WHERE}${WHITE}:${yellow}${DIR2}/"
+  $SCP ${SCP_ARGS} ${DIR}${FILE} ${WHERE}:${DIR2}/${FILE2}
+	
+	RET=$?
+
+	if [ "$RET" != "0" ]; then
+		myerror "Problem."
+		exit 1
+	fi
+
+	mysuccess "Done."
+
+	shift
+
+done
+
+wait
+exit 0
+

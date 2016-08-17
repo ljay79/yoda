@@ -1,0 +1,14 @@
+#!/bin/bash
+if [ "x$1" = "x" ]; then
+	email='sysadmin@example.com'
+else
+	email="$1"
+fi
+
+ 
+host=$(/bin/hostname -s)
+/usr/bin/tail -n250 /var/log/messages >| /tmp/errorlog
+cat /tmp/errorlog | mail -s "$host - errorlog" "$email"
+rm -f /tmp/errorlog
+
+

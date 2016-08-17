@@ -1,0 +1,83 @@
+#!/bin/bash
+
+JAVA="/usr/bin/java"
+YUI="/usr/bin/java -jar /usr/YUI/build/yuicompressor-2.4.2.jar --preserve-semi"
+
+source /yoda/bin/inc/init
+#echo -e "\n$blue NoahScript $NC\n"
+
+if [ ! -x $JAVA ]; then
+	echo "Where is java?";
+	exit 1
+fi
+
+
+if [ $# -eq 0 ]; then
+  echo ""
+  echo -e "${WHITE}This takes a big .js file and makes it small and complicated looking.$NC"
+  echo ""
+  echo -e " Usage: $0 <${cyan}js files..${NC}>"
+  echo ""
+	exit 1
+fi
+
+echo -e "Okay, lets smash-up the ${CYAN}$#${NC} file(s)..."
+sleep 1              
+              
+TMPJS="/tmp/tmp.js"
+echo ';' > $TMPJS
+until [ -z "$1" ]
+do
+	if [ -f "$1" ]; then
+		cat "$1" >> $TMPJS
+		echo ';' >> $TMPJS
+		echo -e "Smashing: ${cyan}$1 $NC"
+		sleep 1
+	else 
+		echo -e "$RED Error: $1 not found. $NC"  
+		exit 1
+	fi
+	shift
+done
+LINES=`wc -l $TMPJS`
+echo -e "Your .js is  ${CYAN}$LINES${cyan} lines${NC}."
+echo -e "Smashing $BLUE (testing)$NC..."
+echo
+echo
+
+sleep 1
+
+
+$YUI -o /tmp/blah.js -v $TMPJS 2>&1 | grep -v 'is declared but is apparently never used' | grep -v 'more compact' > /tmp/yui.log
+RET=$?
+for err in `cat /tmp/yui.log`
+do
+	echo -e "${RED}Notice:${NC} ${err}"
+done
+rm -f /tmp/yui.log
+
+echo
+sleep 2
+echo
+
+if [ $? -ne 0 ]; then
+  echo -e "${RED}Ooops!${NC}\n${WHITE}There seemed to be some javascript errors.$NC"
+	echo
+  exit 1
+fi
+
+    
+
+echo -e "Smashing $RED (for reals)$NC..."
+
+$YUI $TMPJS > jsmashed.js
+
+PHP=$(which php)
+$PHP /yoda/bin/yui.fix.php jsmashed.js
+chown www:nobody jsmashed.js
+LINES2=`wc -l jsmashed.js`
+echo -e "${CYAN}${LINES2}${NC} lines after smash.$NC"
+echo -e 'Output: $BLUE jsmashed.js $NC'
+echo
+exit 0
+

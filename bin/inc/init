@@ -1,0 +1,96 @@
+#!/bin/bash
+
+source /yoda/bin/inc/colors
+set +f
+umask 022
+
+findit ()
+{
+	local R=""
+	local STR=$1
+	R=`whereis -b ${STR} | cut -f 2 -d' ' | grep -v ':'`
+	echo $R;
+}
+
+myerror ()
+{
+	echo -e "${RED}[] ${WHITE}$*${NC}"
+}
+
+extname () {
+	local F=$1
+	return ${F#*.}
+
+}
+
+mymsg ()
+{
+  echo -e "${BLUE}[] ${WHITE}$*${NC}"
+}
+
+mymsg2 () 
+{
+	echo -ne " ${CYAN}${1}${NC}"
+	shift
+	echo -e " ${WHITE}: $*${NC}"
+}
+
+mysuccess ()
+{
+  echo -e "${GREEN}[] ${WHITE}$*${NC}"
+}
+
+Usage ()         
+{
+  if [ -z "$1" ]       # No arg passed.
+  then
+    msg=filename
+  else
+    msg=$@
+  fi
+
+  echo -e "${WHITE}[Usage]: ${GREEN}`basename $0` ${YELLOW}"$msg"${NC}"
+	exit 1
+}  
+
+h1() {
+  echo
+  echo -e "${WHITE}___________________________________________________"
+	echo
+  echo -e "${YELLOW}$@"
+  echo -e "${WHITE}___________________________________________________"
+  echo
+}
+
+checkfail() {
+	if [ "$1" = "0" ]; then
+		return;
+	fi;
+	myerror "Process $2 FAILED (code $1)"
+	exit $1
+}
+
+
+# Ensure paths
+
+pathmunge () {
+  if ! echo $PATH | /bin/egrep -q "(^|:)$1($|:)" ; then
+     if [ "$2" = "after" ] ; then
+        PATH=$PATH:$1
+     else
+        PATH=$1:$PATH
+     fi
+  fi
+}
+
+pathmunge /sbin
+pathmunge /usr/bin
+pathmunge /usr/sbin
+pathmunge /usr/local/bin
+pathmunge /usr/local/sbin
+pathmunge /yoda/sbin before
+pathmunge /yoda/bin before
+
+export PATH;
+
+unset pathmunge

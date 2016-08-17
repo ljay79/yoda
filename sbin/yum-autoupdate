@@ -1,0 +1,10 @@
+#!/bin/bash
+
+DATE=`date`
+YUM="/usr/bin/yum"
+
+echo "---------------- yum-autoupdate.sh $DATE ------------------------" >> /yoda/log/yum-autoupdate.log
+
+$YUM -y -d 1 -e 1 update yum >> /yoda/log/yum-autoupdate.log
+sleep 1
+$YUM -y -d 2 -e 1 update --security >> /yoda/log/yum-autoupdate.log

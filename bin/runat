@@ -1,0 +1,18 @@
+#!/bin/bash
+# Run a command later, like a .setTimeout
+
+source /yoda/bin/inc/init
+
+if [ "$1" = "" ]; then
+	mymsg "runat" '<delay> command>'
+	mymsg2 "delay" "can be 'now+1minute' for example"
+	exit 1
+fi
+
+WHEN=$1
+
+shift
+
+/bin/echo "$*" | /usr/bin/at "${WHEN}"
+
+exit 0

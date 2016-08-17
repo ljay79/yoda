@@ -1,0 +1,33 @@
+#!/bin/bash
+
+X="/sbin/service"
+
+echo "Stopping"
+
+$X netfs stop
+$X nfslock stop
+$X nfs stop
+$X rpcgssd stop
+$X rpcidmapd stop
+$X rpcsvcgssd stop
+$X portmap stop
+
+sleep 2
+
+
+echo "Resetting"
+/usr/sbin/exportfs -rfav
+sleep 2
+
+echo "Restarting"
+
+$X portmap start
+sleep 1
+$X nfs start
+sleep 2
+$X netfs start
+
+
+unset X
+
+exit 0

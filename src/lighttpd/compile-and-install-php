@@ -1,0 +1,94 @@
+#!/bin/bash
+
+set +o errexit
+set +o verbose
+
+PHP_OPTIONS_FILE="compile.ini"
+PHP_OPTIONS=""
+PHP_OPTIONS_COUNT=0
+
+if [ ! -f $PHP_OPTIONS_FILE ]
+then
+	echo "$PHP_OPTIONS_FILE does not exist"
+	exit 1
+fi
+
+for line in `cat $PHP_OPTIONS_FILE | grep '^\s*--'`
+do
+#	if [[ $(echo $line | grep -c '^\s*#') = "1" ]]
+#	then
+#		continue
+#	fi
+#	if [ $line = 
+	line=$(eval $line)
+	PHP_OPTIONS="$PHP_OPTIONS $line "
+	let "PHP_OPTIONS_COUNT+=1"
+	echo -ne '\003[35m${line}'
+done
+
+echo "$PHP_OPTIONS_COUNT compile options found"
+
+exec 3<&1 >/dev/null
+
+if [ -d php ]; then pushd php; fi
+
+if [ -d php ]; then pushd php; fi
+
+exec 1<&3 3>&-
+echo "--------------------------------------------------------------------"
+echo "Cleaning up. . ."
+echo "--------------------------------------------------------------------"
+sleep 2
+make clean
+make distclean 
+
+echo "--------------------------------------------------------------------"
+echo "Configuring. . ."
+echo "--------------------------------------------------------------------"
+echo $PHP_OPTIONS | more
+if [ $# -gt 0 ]; then
+	echo 'And also...'
+	echo $*
+fi
+sleep 2
+./configure $PHP_OPTIONS $*
+
+if [ $? -ne 0 ]; then
+	echo '***************'
+	echo 'CONFIGURE ERROR'
+	echo '***************'
+	exit 1
+fi
+
+echo "--------------------------------------------------------------------"
+echo "Making..."
+echo "--------------------------------------------------------------------"
+sleep 2
+make
+
+if [ $? -ne 0 ]; then
+  echo '***************'
+  echo 'MAKE ERROR'
+  echo '***************'
+	exit 1
+fi
+        
+
+echo "--------------------------------------------------------------------"
+echo "Installing..."
+echo "--------------------------------------------------------------------"
+sleep 2
+
+strip sapi/cli/php
+strip .libs/libphp5.so
+strip libs/libphp5.so
+apachectl stop
+sleep 5
+
+make install
+
+sleep 1
+apachectl restart
+
+popd 
+popd

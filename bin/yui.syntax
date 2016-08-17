@@ -1,0 +1,59 @@
+#!/bin/bash
+# yui.syntax
+
+source /yoda/bin/inc/init
+
+# temp file passed from svn hook
+FILE="$1"
+YUI="/yoda/bin/yui"
+
+FILETYPE="js"
+if [[ "$FILE" = *.css ]]; then
+	FILETYPE="css"
+fi
+
+function getErrorLineNo()
+{
+    $YUI "$FILE" 2>&1 1>/dev/null  | grep ERROR | grep  -P -o ' [0-9]+' | head -n1
+}
+
+function getYUIError()
+{
+    $YUI "$FILE" 2>&1 1>/dev/null  | grep '[ERROR]' | head -n1
+}
+
+function showLineFromFile()
+{ 
+    local LINE=$1
+    ((LINE+=1))
+    cat "$FILE" | head -n$LINE | tail -n3
+}
+
+function isYUIOK()
+{
+    local OK=$($YUI "$FILE"  2>&1 1>/dev/null  | grep -c '[ERROR]')
+    if [ "$OK" = "0" ]; then
+		echo -n 'yes'
+ 	else
+		echo -n 'no'
+	fi
+}
+
+CHECK=$(isYUIOK);
+
+if [ "$CHECK" = "yes" ]; then
+    RETCODE=0
+else 
+	echo '------------------'      1>&2
+	echo "Javascript/CSS error found:" 1>&2
+	echo "in $FILENAME"            1>&2
+	echo $(getYUIError)     1>&2
+	ERRORLINE=$(getErrorLineNo);   1>&2
+	showLineFromFile $ERRORLINE	   1>&2
+	echo '------------------'      1>&2
+	RETCODE=1
+fi
+
+
+exit $RETCODE
+

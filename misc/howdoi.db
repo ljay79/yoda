@@ -1,0 +1,1940 @@
+
+chgrp                (1)  - change group ownership
+chgrp                (1p)  - change the file group ownership
+ln                   (1)  - make links between files
+ln                   (1p)  - link files
+mv                   (1)  - move (rename) files
+mv                   (1p)  - move files
+pwd                  (1p)  - return working directory name
+pwd                  (1)  - print name of current/working directory
+pwd [builtins]       (1)  - bash built-in commands, see bash(1)
+pwd.h [pwd]          (0p)  - password structure
+red [ed]             (1)  - text editor
+red [tc-red]         (8)  - Random Early Detection
+ed                   (1p)  - edit text
+ed                   (1)  - text editor
+taskset              (1)  - retrieve or set a process's CPU affinity
+cat                  (1)  - concatenate files and print on the standard output
+cat                  (1p)  - concatenate and print files
+tracepath6 [tracepath] (8)  - traces path to a network host discovering MTU along this path
+findmnt              (8)  - find a filesystem
+cpio                 (1)  - copy files to and from archives
+cpio.h [cpio]        (0p)  - cpio archive values
+umount               (2)  - unmount file system
+umount               (8)  - unmount file systems
+umount.ecryptfs_private [umount] (1)  - eCryptfs private unmount helper
+umount.nfs4 [umount] (8)  - unmount a Network File System
+umount.nfs [umount]  (8)  - unmount a Network File System
+lscgroup             (1)  - list all cgroups
+setfont              (8)  - load EGA/VGA console screen font
+sync                 (1)  - flush file system buffers
+sync                 (2)  - commit buffer cache to disk
+sync                 (3p)  - schedule file system updates
+sync                 (8)  - synchronize data on disk with memory
+dbus-uuidgen         (1)  - Utility to generate UUIDs
+gzip                 (1)  - compress or expand files
+cgsnapshot           (1)  - generate the configuration file for given controllers
+uname                (1p)  - return system name
+uname                (1)  - print system information
+uname                (2)  - get name and information about current kernel
+uname                (3p)  - get the name of the current system
+unicode_start        (1)  - put keyboard and console in unicode mode
+nano                 (1)  - Nano's ANOther editor, an enhanced free Pico clone
+kbd_mode             (1)  - report or set the keyboard mode
+link                 (1)  - call the link function to create a link to a file
+link                 (1p)  - call link function
+link                 (2)  - make a new name for a file
+link                 (3p)  - link to a file
+tcsh                 (1)  - C shell with file name completion and command line editing
+readlink             (1)  - print value of a symbolic link or canonical file name
+readlink             (2)  - read value of a symbolic link
+readlink             (3p)  - read the contents of a symbolic link
+lsblk                (8)  - list block devices
+true                 (1)  - do nothing, successfully
+true                 (1p)  - return true value
+true [builtins]      (1)  - bash built-in commands, see bash(1)
+cut                  (1p)  - cut out selected fields of each line of a file
+cut                  (1)  - remove sections from each line of files
+cgdelete             (1)  - remove control group(s)
+dumpkeys             (1)  - dump keyboard translation tables
+dbus-daemon          (1)  - Message bus daemon
+plymouth             (8)  - A graphical boot system and logger
+env                  (1p)  - set the environment for command invocation
+env                  (1)  - run a program in a modified environment
+Env                  (3pm)  - perl module that imports environment variables as scalars or arrays
+sort                 (1p)  - sort, merge, or sequence check text files
+sort                 (1)  - sort lines of text files
+sort                 (3pm)  - perl pragma to control sort() behaviour
+rm                   (1p)  - remove directory entries
+rm                   (1)  - remove files or directories
+dbus-cleanup-sockets (1)  - clean up leftover sockets in a directory
+sed                  (1p)  - stream editor
+sed                  (1)  - stream editor for filtering and transforming text
+tar                  (1)  - manual page for tar 1.23
+tar.h [tar]          (0p)  - extended tar definitions
+dbus-monitor         (1)  - debug probe to print message bus messages
+nice                 (1p)  - invoke a utility with an altered nice value
+nice                 (1)  - run a program with modified scheduling priority
+nice                 (2)  - change process priority
+nice                 (3p)  - change the nice value of a process
+find                 (1p)  - find files
+find                 (1)  - search for files in a directory hierarchy
+stty                 (1)  - change and print terminal line settings
+stty                 (1p)  - set the options for a terminal
+stty [unimplemented] (2)  - unimplemented system calls
+raw                  (7)  - Linux IPv4 raw sockets
+raw                  (8)  - bind a Linux raw character device
+raw [curs_inopts]    (3x)  - curses input options
+lssubsys             (1)  - list hierarchies containing given subsystem
+hostname             (1)  - show or set the system's host name
+hostname             (7)  - hostname resolution description
+su                   (1)  - run a shell with substitute user and group IDs
+cp                   (1)  - copy files and directories
+cp                   (1p)  - copy files
+echo                 (1)  - display a line of text
+echo                 (1p)  - write arguments to standard output
+echo [builtins]      (1)  - bash built-in commands, see bash(1)
+echo [curs_inopts]   (3x)  - curses input options
+fgrep [grep]         (1)  - print lines matching a pattern
+setserial            (8)  - get/set Linux serial port information
+cgset                (1)  - set the parameters of given cgroup(s)
+vi                   (1p)  - screen-oriented (visual) display editor
+kill                 (1p)  - terminate or signal processes
+kill                 (1)  - terminate a process
+kill                 (2)  - send signal to a process
+kill                 (3p)  - send a signal to a process or a group of processes
+kill [builtins]      (1)  - bash built-in commands, see bash(1)
+ping6 [ping]         (8)  - send ICMP ECHO_REQUEST to network hosts
+date                 (1)  - print or set the system date and time
+date                 (1p)  - write the date and time
+mktemp               (1)  - create a temporary file or directory
+mktemp               (3)  - make a unique temporary filename
+mktemp               (3p)  - make a unique filename (LEGACY)
+mailx                (1p)  - process messages
+mailx                (1)  - send and receive Internet mail
+sleep                (1)  - delay for a specified amount of time
+sleep                (1p)  - suspend execution for an interval
+sleep                (3p)  - suspend execution for an interval of time
+sleep                (3)  - Sleep for the specified number of seconds
+dd                   (1)  - convert and copy a file
+dd                   (1p)  - convert and copy a file
+zcat                 (1p)  - expand and concatenate data
+zcat [gzip]          (1)  - compress or expand files
+gunzip [gzip]        (1)  - compress or expand files
+gettext              (1)  - translate message
+gettext              (3)  - translate message
+ps                   (1p)  - report process status
+ps                   (1)  - report a snapshot of the current processes
+unicode_stop         (1)  - revert keyboard and console from unicode mode
+touch                (1)  - change file timestamps
+touch                (1p)  - change file access and modification times
+loadkeys             (1)  - load keyboard translation tables
+cgcreate             (1)  - create new cgroup(s)
+unlink               (1)  - call the unlink function to remove the specified file
+unlink               (1p)  - call the unlink function
+unlink               (2)  - delete a name and possibly the file it refers to
+unlink               (3p)  - remove a directory entry
+cgget                (1)  - print parameter(s) of given group(s)
+dbus-send            (1)  - Send a message to a message bus
+chown                (1)  - change file owner and group
+chown                (1p)  - change the file ownership
+chown                (2)  - change ownership of a file
+chown                (3p)  - change owner and group of a file
+cgexec               (1)  - run the task in given control groups
+ping                 (8)  - send ICMP ECHO_REQUEST to network hosts
+mkdir                (1)  - make directories
+mkdir                (1p)  - make directories
+mkdir                (2)  - create a directory
+mkdir                (3p)  - make a directory
+egrep [grep]         (1)  - print lines matching a pattern
+rmdir                (1p)  - remove directories
+rmdir                (1)  - remove empty directories
+rmdir                (2)  - delete a directory
+rmdir                (3p)  - remove a directory
+usleep               (1)  - sleep some number of microseconds
+usleep               (3p)  - suspend execution for an interval
+usleep               (3)  - suspend execution for microsecond intervals
+login                (1)  - sign on
+login                (3)  - write utmp and wtmp entries
+login.defs [login]   (5)  - shadow password suite configuration
+bash                 (1)  - GNU Bourne-Again SHell
+bash [builtins]      (1)  - bash built-in commands, see bash(1)
+keyctl               (1)  - Key management facility control
+keyctl               (2)  - Manipulate the kernel's key management facility
+chmod                (1)  - change file mode bits
+chmod                (1p)  - change the file modes
+chmod                (2)  - change permissions of a file
+chmod                (3p)  - change mode of a file
+more                 (1)  - file perusal filter for crt viewing
+more                 (1p)  - display files on a page-by-page basis
+mountpoint           (1)  - see if a directory is a mountpoint
+traceroute           (8)  - print the route packets trace to network host
+df                   (1p)  - report free disk space
+df                   (1)  - report file system disk space usage
+arch                 (1)  - print machine hardware name (same as uname -m)
+dmesg                (1)  - print or control the kernel ring buffer
+rpm                  (8)  - RPM Package Manager
+mount                (2)  - mount file system
+mount                (8)  - mount a filesystem
+mount.cifs [mount]   (8)  - mount using the Common Internet File System (CIFS)
+mount.ecryptfs [mount] (8)  - eCryptfs mount helper
+mount.ecryptfs_private [mount] (1)  - eCryptfs private mount helper
+mount.nfs4 [mount]   (8)  - mount a Network File System
+mount.nfs [mount]    (8)  - mount a Network File System
+mknod                (1)  - make block or character special files
+mknod                (2)  - create a special or ordinary file
+mknod                (3p)  - make a directory, a special file, or a regular file
+grep                 (1)  - print lines matching a pattern
+grep                 (1p)  - search a file for a pattern
+ipcalc               (1)  - perform simple manipulation of IP addresses
+basename             (1p)  - return non-directory portion of a pathname
+basename             (1)  - strip directory and suffix from filenames
+basename             (3)  - parse pathname components
+basename             (3p)  - return the last component of a pathname
+cgclassify           (1)  - move running task(s) to given cgroups
+netstat              (8)  - Print network connections, routing tables, interface statistics, masquerade connections, and multicast memberships
+false                (1)  - do nothing, unsuccessfully
+false                (1p)  - return false value
+false [builtins]     (1)  - bash built-in commands, see bash(1)
+tracepath            (8)  - traces path to a network host discovering MTU along this path
+ls                   (1)  - list directory contents
+ls                   (1p)  - list directory contents
+gawk                 (1)  - pattern scanning and processing language
+gawk [pgawk]         (1)  - pattern scanning and processing language
+addpart              (8)  - simple wrapper around the add partition ioctl
+cgrulesengd          (8)  - control group rules daemon
+iwconfig             (8)  - configure a wireless network interface
+dmsetup              (8)  - low level logical volume management
+auditctl             (8)  - a utility to assist controlling the kernel's audit system
+route                (8)  - show / manipulate the IP routing table
+installkernel        (8)  - tool to script kernel installation
+fdisk                (8)  - Partition table manipulator for Linux
+iwgetid              (8)  - Report ESSID, NWID or AP/Cell Address of wireless network
+kexec                (8)  - directly boot into a new kernel
+aureport             (8)  - a tool that produces summary reports of audit daemon logs
+blkid                (8)  - command-line utility to locate/print block device attributes
+kpartx               (8)  - Create device maps from partition tables
+insmod               (8)  - simple program to insert a module into the Linux Kernel
+dumpe2fs             (8)  - dump ext2/ext3/ext4 filesystem information
+grub-terminfo        (8)  - Generate a terminfo command from a terminfo name
+fsck                 (8)  - check and repair a Linux file system
+iwpriv               (8)  - configure optionals (private) parameters of a wireless network interface
+mkdosfs              (8)  - create an MS-DOS file system under Linux
+chkconfig            (8)  - updates and queries runlevel information for system services
+sulogin              (8)  - Single-user login
+service              (8)  - run a System V init script
+audispd              (8)  - an event multiplexor
+audispd.conf [audispd] (5)  - the audit event dispatcher configuration file
+crda                 (8)  - send to the kernel a wireless regulatory domain for a given ISO / IEC 3166 alpha2
+ctrlaltdel           (8)  - set the function of the Ctrl-Alt-Del combination
+modprobe             (8)  - program to add and remove modules from the Linux Kernel
+modprobe.conf [modprobe] (5)  - Configuration directory/file for modprobe
+modprobe.d [modprobe] (5)  - Configuration directory/file for modprobe
+udevd                (8)  - event managing daemon
+rtmon                (8)  - listens to and monitors RTnetlink
+mdmon                (8)  - monitor MD external metadata arrays
+e2image              (8)  - Save critical ext2/ext3/ext4 filesystem metadata to a file
+killall5             (8)  -- send a signal to all processes
+mount.nfs [mount]    (8)  - mount a Network File System
+mdadm                (8)  - manage MD devices aka Linux Software RAID
+mdadm.conf [mdadm]   (5)  - configuration for management of Software RAID with mdadm
+dmraid               (8)  - discover, configure and activate software (ATA)RAID
+swapon               (2)  - start/stop swapping to file/device
+swapon               (8)  - enable/disable devices and files for paging and swapping
+makedev              (3)  - manage a device number
+MAKEDEV              (8)  - create devices
+ipmaddr              (8)  - adds, deletes, and displays multicast addresses
+dmevent_tool         (8)  - A utility used to load a DSO into dmeventd and (un)register devices with it for monitoring
+dmevent_tool [dm_dso_reg_tool] (8)  - A utility used to load a DSO into dmeventd and (un)register devices with it for monitoring
+ifdown [ifup]        (8)  - take a network interface down
+logsave              (8)  - save the output of a command in a logfile
+telinit              (8)  - change system runlevel
+mke2fs               (8)  - create an ext2/ext3/ext4 filesystem
+mke2fs.conf [mke2fs] (5)  - Configuration file for mke2fs
+mke2fs [mkfs]        (8)  - create an ext2/ext3/ext4 filesystem
+sln                  (8)  - static ln
+mingetty             (8)  - minimal getty for consoles
+losetup              (8)  - set up and control loop devices
+grubby               (8)  - command line tool for configuring grub, lilo, and elilo
+shutdown             (2)  - shut down part of a full-duplex connection
+shutdown             (3p)  - shut down socket send and receive operations
+shutdown             (8)  - bring the system down
+unix_update          (8)  - Helper binary that updates the password of a given user
+ifrename             (8)  - rename network interfaces based on various static criteria
+vconfig              (8)  - VLAN (802.1q) configuration program
+resize2fs            (8)  - ext2/ext3/ext4 file system resizer
+ifcfg                (8)  - simplistic script which replaces ifconfig IP managment
+mount.cifs [mount]   (8)  - mount using the Common Internet File System (CIFS)
+fuser                (1)  - identify processes using files or sockets
+fuser                (1p)  - list process IDs of all processes that have one or more files open
+dosfslabel           (8)  - set or get a MS-DOS filesystem label
+modinfo              (8)  - program to show information about a Linux Kernel module
+arping               (8)  - send ARP REQUEST to a neighbour host
+ifenslave            (8)  - Attach and detach slave network devices to a bonding device
+switch_root          (8)  - switch to another filesystem as the root of the mount tree
+nameif               (8)  - name network interfaces based on MAC addresses
+e2label              (8)  - Change the label on an ext2/ext3/ext4 filesystem
+nologin              (5)  - prevent non-root users from logging into the system
+nologin              (8)  - politely refuse a login
+ausearch             (8)  - a tool to query audit daemon logs
+ausearch-expression  (5)  - audit search expression format
+lvm                  (8)  - LVM2 tools
+lvm.conf [lvm]       (5)  - Configuration file for LVM2
+setfiles             (8)  - set file SELinux security contexts
+accton               (8)  - turns process accounting on or off
+iw                   (8)  - show / manipulate wireless devices and their configuration
+sysctl               (2)  - read/write system parameters
+sysctl               (8)  - configure kernel parameters at runtime
+sysctl.conf [sysctl] (5)  - sysctl(8) preload/configuration file
+mkdumprd             (8)  - creates initial ramdisk images for kdump crash recovery
+pccardctl            (8)  - PCMCIA card control utility
+lspci                (8)  - list all PCI devices
+sushell              (8)  - execute the single-user shell
+partprobe            (8)  - inform the OS of partition table changes
+badblocks            (8)  - search a device for bad blocks
+sfdisk               (8)  - Partition table manipulator for Linux
+pam_timestamp_check  (8)  - Check to see if the default timestamp is valid
+request-key          (8)  - Handle key instantiation callback requests from the kernel
+request-key.conf [request-key] (5)  - Instantiation handler configuration file
+vgimportclone        (8)  - import and rename duplicated volume group (e.g. a hardware snapshot)
+grub-md5-crypt       (8)  - Encrypt a password in MD5 format
+ppp-watch            (8)  - daemon to make PPP interfaces act more like other interfaces
+rpc.statd [statd]    (8)  - NSM service daemon
+grub-crypt           (8)  - manual page for grub-crypt (GNU GRUB 0.97)
+load_policy          (8)  - load a new SELinux policy into the kernel
+netreport            (1)  - request notification of network interface changes
+findfs               (8)  - Find a filesystem by label or UUID
+microcode_ctl        (8)  - microcode utility for Intel IA32 processors
+hdparm               (8)  - get/set SATA/IDE device parameters
+securetty            (5)  - file which lists ttys from which root can log in
+securetty            (8)  - add a tty to /etc/securetty
+iwlist               (8)  - Get more detailed wireless information from a wireless interface
+setpci               (8)  - configure PCI devices
+lvmdump              (8)  - create lvm2 information dumps for diagnostic purposes
+grub                 (8)  - the grub shell
+grub-crypt           (8)  - manual page for grub-crypt (GNU GRUB 0.97)
+grub-install         (8)  - install GRUB on your drive
+grub-md5-crypt       (8)  - Encrypt a password in MD5 format
+grub-terminfo        (8)  - Generate a terminfo command from a terminfo name
+dhclient             (8)  - Dynamic Host Configuration Protocol Client
+dhclient.conf [dhclient] (5)  - DHCP client configuration file
+dhclient.leases [dhclient] (5)  - DHCP client lease database
+dhclient-script      (8)  - DHCP client network configuration script
+pam_tally2           (8)  - The login counter (tallying) module
+fixfiles             (8)  - fix file SELinux security contexts
+cfdisk               (8)  - Curses based disk partition table manipulator for Linux
+init                 (5)  - Upstart init daemon job configuration
+init                 (8)  - Upstart process management daemon
+rngd                 (8)  - Check and feed random data from hardware device to kernel random device
+fsfreeze             (8)  - suspend access to an filesystem (Linux Ext3/4, ReiserFS, JFS, XFS)
+wipefs               (8)  - wipe a filesystem signature from a device
+mkfs                 (8)  - build a Linux file system
+rdisc                (8)  - network router discovery daemon
+unix_chkpwd          (8)  - Helper binary that verifies the password of the current user
+rfkill               (1)  - tool for enabling and disabling wireless devices
+grub-install         (8)  - install GRUB on your drive
+lvmconf              (8)  - LVM configuration modifier
+quotaon              (8)  - turn filesystem quotas on and off
+slattach             (8)  - attach a network interface to a serial line
+faillock             (8)  - Tool for displaying and modifying the authentication failure record files
+pam_console_apply    (8)  - set or revoke permissions for users at the system console
+iptunnel             (8)  - creates, deletes, and displays configured tunnels
+portreserve          (1)  - reserve ports to prevent portmap mapping them
+dmeventd             (8)  - Device-mapper event daemon
+dosfsck              (8)  - check and repair MS-DOS file systems
+partx                (8)  - telling the kernel about presence and numbering of on-disk partitions
+iwspy                (8)  - Get wireless statistics from specific nodes
+initctl              (8)  - init daemon control tool
+debugfs              (8)  - ext2/ext3/ext4 file system debugger
+cryptsetup           (8)  - setup cryptographic volumes for dm-crypt (including LUKS extension)
+lsmod                (8)  - program to show the status of modules in the Linux Kernel
+consoletype          (1)  - print type of the console connected to standard input
+mii-diag             (8)  - Network adapter control and monitoring
+readahead            (2)  - perform file readahead into page cache
+install-info         (1)  - update info/dir entries
+regdbdump            (8)  - parse and print out regulatory rules file
+e2undo               (8)  - Replay an undo log for an ext2/ext3/ext4 filesystem
+mkswap               (8)  - set up a Linux swap area
+CBQ [tc-cbq]         (8)  - Class Based Queueing
+CBQ [tc-cbq-details] (8)  - Class Based Queueing
+fsadm                (8)  - utility to resize or check filesystem on a device
+fstrim               (8)  - discard unused blocks on a mounted filesystem
+sgpio                (1)  - captive backplane LED control utility
+delpart              (8)  - simple wrapper around the del partition ioctl
+getkey               (1)  - wait until a key is pressed
+kdump.conf [kdump]   (5)  - configuration file for kdump kernel
+depmod               (8)  - program to generate modules.dep and map files
+depmod.conf [depmod] (5)  - Configuration file/directory for depmod
+depmod.d [depmod]    (5)  - Configuration file/directory for depmod
+mii-tool             (8)  - view, manipulate media-independent interface status
+ifconfig             (8)  - configure a network interface
+ip                   (7)  - Linux IPv4 protocol implementation
+ip                   (8)  - show / manipulate routing, devices, policy routing and tunnels
+ifup                 (8)  - bring a network interface up
+ethtool              (8)  - Display or change ethernet card settings
+hwclock              (8)  - query and set the hardware clock (RTC)
+e2fsck               (8)  - check a Linux ext2/ext3/ext4 file system
+e2fsck.conf [e2fsck] (5)  - Configuration file for e2fsck
+e2fsck [fsck]        (8)  - check a Linux ext2/ext3/ext4 file system
+rpcbind              (8)  - universal addresses to RPC program number mapper
+plipconfig           (8)  - fine tune PLIP device parameters
+iwevent              (8)  - Display Wireless Events generated by drivers and setting changes
+fstab-decode         (8)  - run a command with fstab-encoded arguments
+tc                   (8)  - show / manipulate traffic control settings
+genhostid            (1)  - generate and set a hostid for the current host
+cgconfigparser       (8)  - setup control group file system
+runlevel             (7)  - event signalling change of system runlevel
+runlevel             (8)  - output previous and current runlevel
+tune2fs              (8)  - adjust tunable filesystem parameters on ext2/ext3/ext4 filesystems
+setsysfont           (8)  - set console font according to /etc/sysconfig/i18n
+matchpathcon         (3)  - get the default SELinux security context for the specified path from the file contexts configuration
+matchpathcon         (8)  - get the default SELinux security context for the specified path from the file contexts configuration
+auditd               (8)  - The Linux Audit daemon
+auditd.conf [auditd] (5)  - audit daemon configuration file
+cgclear              (1)  - unload the cgroup filesystem
+reboot               (2)  - reboot or enable/disable Ctrl-Alt-Del
+reboot               (8)  - reboot or stop the system
+ether-wake           (8)  - A tool to send a Wake-On-LAN Magic Packet
+agetty               (8)  - alternative Linux getty
+setregdomain         (1)  - set regulatory domain based on timezone
+runuser              (1)  - run a shell with substitute user and group IDs
+dracut               (8)  - create initial ramdisk images for preloading modules
+dracut.conf [dracut] (5)  - configuration file for dracut
+rsyslogd             (8)  - reliable and extended syslogd
+arp                  (7)  - Linux ARP kernel module
+arp                  (8)  - manipulate the system ARP cache
+dhclient-script      (8)  - DHCP client network configuration script
+mkhomedir_helper     (8)  - Helper binary that creates home directories
+quotacheck           (8)  - scan a filesystem for disk usage, create, check and repair quota files
+blockdev             (8)  - call block device ioctls from the command line
+pivot_root           (2)  - change the root file system
+pivot_root           (8)  - change the root file system
+BusyBox [busybox]    (1)  - The Swiss Army Knife of Embedded Linux
+udevadm              (8)  - udev management tool
+autrace              (8)  - a program similar to strace
+alsactl              (1)  - advanced controls for ALSA soundcard driver
+rmmod                (8)  - simple program to remove a module from the Linux Kernel
+AS [as]              (1)  - the portable GNU assembler
+Magick++-config      (1)  - get information about the installed version of Magick++
+dig                  (1)  - DNS lookup utility
+ps2ps                (1)  - Ghostscript PostScript distiller
+nfs4_getfacl         (1)  - get NFSv4 file/directory access control lists
+mkmanifest           (1)  - makes list of file names and their DOS 8+3 equivalent
+printenv             (1)  - print all or part of environment
+smbtar               (1)  - shell script for backing up SMB/CIFS shares directly to UNIX tape drives
+indent               (1)  - changes the appearance of a C program by inserting or deleting whitespace
+mysql_fix_extensions (1)  - normalize table file name extensions
+dstat                (1)  - versatile tool for generating system resource statistics
+config_data          (1)  - Query or change configuration of Perl modules
+xz                   (1)  - Compress or decompress .xz and .lzma files
+semodule_expand      (8)  - Expand a SELinux policy module package
+pl2pm                (1)  - Rough tool to translate Perl4 .pl files to Perl5 .pm modules
+wbemcat              (1)  - a multi-protocol CIM-XML client
+usb-devices          (1)  - print USB device details
+gjar                 (1)  - - Archive tool for Java archives
+dircolors            (1)  - color setup for ls
+perl                 (1)  - Practical Extraction and Report Language
+abrt-action-list-dsos (1)  - Prints out DSO from mapped memory regions
+lzmainfo             (1)  - show infomation stored in the .lzma file header
+sharesec             (1)  - Set or get share ACLs
+script               (1)  - make typescript of terminal session
+mapscrn              (8)  - load screen output mapping table
+groffer              (1)  - display groff files and man~pages on X and tty
+hal-get-property     (1)  - get a property from a device object
+ldapsearch           (1)  - LDAP search tool
+shasum               (1)  - Print or Check SHA Checksums
+quota                (1)  - display disk usage and limits
+svnserve             (8)  - Server for the 'svn' repository access method
+svnserve.conf [svnserve] (5)  - Repository configuration file for svnserve
+gtester              (1)  - test running utility
+gtester-report       (1)  - test report formatting utility
+sha256sum            (1)  - compute and check SHA256 message digest
+tee                  (1p)  - duplicate standard input
+tee                  (1)  - read from standard input and write to standard output and files
+tee                  (2)  - duplicating pipe content
+mysqlhotcopy         (1)  - a database backup program
+seq                  (1)  - print a sequence of numbers
+idn                  (1)  - Internationalized Domain Names command line tool
+ldapwhoami           (1)  - LDAP who am i? tool
+myisamlog            (1)  - display MyISAM log file contents
+fmt                  (1)  - simple optimal text formatter
+xdg-email            (1)  - command line tool for sending mail using the user's preferred e-mail composer
+resizecons           (8)  - change kernel idea of the console size
+lsusb                (8)  - list USB devices
+ptardiff             (1)  - program that diffs an extracted archive against an unextracted one
+msgunfmt             (1)  - uncompile message catalog from binary format
+mysqltest_embedded [mysqltest] (1)  - program to run embedded test cases
+grodvi               (1)  - convert groff output to TeX dvi format
+autoconf             (1)  - Generate configuration scripts
+sum                  (1)  - checksum and count the blocks in a file
+time                 (1p)  - time a simple command
+time                 (1)  - time a simple command or give resource usage
+time                 (2)  - get time in seconds
+time                 (3p)  - get time
+time                 (7)  - overview of time and timers
+time.conf [time]     (5)  - configuration file for the pam_time module
+Time::HiRes          (3pm)  - High resolution alarm, sleep, gettimeofday, interval timers
+time.h [time]        (0p)  - time types
+Time::Local          (3pm)  - efficiently compute time from local and GMT time
+Time::Piece          (3pm)  - Object Oriented time objects
+Time::Seconds        (3pm)  - a simple API to convert seconds to other date values
+btt                  (1)  - analyse block i/o traces produces by blktrace
+c2ph                 (1)  - Dump C structures as generated from cc -g -S stabs
+c2ph [pstruct]       (1)  - Dump C structures as generated from cc -g -S stabs
+thumbnail            (1)  - create a TIFF file with thumbnail images
+blkiomon             (8)  - monitor block device I/O based o blktrace data
+lwp-download         (1)  - Fetch large files from the web
+tiffdump             (1)  - print verbatim information about TIFF files
+abrt-action-analyze-oops (1)  - Calculate and save UUID and duplicate hash for an oops dump directory DIR
+speaker-test         (1)  - command-line speaker test tone generator for ALSA
+xmlwf                (1)  - Determines if an XML document is well-formed
+ntpstat              (8)  - show network time synchronisation status
+mysqlbug             (1)  - generate bug report
+ldd                  (1)  - print shared library dependencies
+sdiff                (1)  - side-by-side merge of file differences
+watch                (1)  - execute a program periodically, showing output fullscreen
+passwd               (1)  - update user's authentication tokens
+passwd               (5)  - password file
+passwd [sslpasswd]   (1ssl)  - compute password hashes
+pr                   (1)  - convert text files for printing
+pr                   (1p)  - print files
+ctags                (1)  - Generate tag files for source code
+ctags                (1p)  - create a tags file (DEVELOPMENT, FORTRAN)
+ldappasswd           (1)  - change the password of an LDAP entry
+dir                  (1)  - list directory contents
+printf               (1)  - format and print data
+printf               (1p)  - write formatted output
+printf               (3)  - formatted output conversion
+printf               (3p)  - print formatted output
+printf [builtins]    (1)  - bash built-in commands, see bash(1)
+csplit               (1p)  - split files based on context
+csplit               (1)  - split a file into sections determined by context lines
+mysqldump            (1)  - a database backup program
+ionice               (1)  - get/set program io scheduling class and priority
+sha224sum            (1)  - compute and check SHA224 message digest
+msguniq              (1)  - unify duplicate translations in message catalog
+createdb             (1)  - create a new PostgreSQL database
+crontab              (1)  - maintain crontab files for individual users
+crontab              (1p)  - schedule periodic background work
+crontab              (5)  - tables for driving cron (ISC Cron V4.1)
+powertop             (1)  - program to analyze power consumption on Intel-based laptops
+wc                   (1)  - print newline, word, and byte counts for each file
+wc                   (1p)  - word, line, and byte or character count
+ppdi                 (1)  - import ppd files
+hal-is-caller-locked-out (1)  - determine if a caller is locked out
+gendiff              (1)  - utility to aid in error-free diff file generation
+podselect            (1)  - print selected sections of pod documentation on standard output
+podselect() [Pod::Select] (3pm)  - extract selected sections of POD from input
+aulastlog            (8)  - a program similar to lastlog
+build-classpath      (1)  - build a Java CLASSPATH with the named JARs
+Wget [wget]          (1)  - The non-interactive network downloader
+merge                (1)  - three-way file merge
+nroff                (1)  - emulate nroff command with groff
+snice [skill]        (1)  - send a signal or report process status
+onsgmls              (1)  - An SGML/XML parser and validator
+write                (1p)  - write to another user
+write                (1)  - send a message to another user
+write                (2)  - write to a file descriptor
+write                (3p)  - write on a file
+pal2rgb              (1)  - convert a palette color TIFF image to a full color image
+unzip                (1)  - list, test and extract compressed files in a ZIP archive
+fc-scan              (1)  - scan font files or directories
+hugectl              (8)  - Control policy for backing text, data and malloc() with hugepages
+sclient              (1)  - sample Kerberos version 5 client
+apropos              (1)  - search the whatis database for strings
+mysql_client_test_embedded [mysql_client_test] (1)  - test client API for embedded server
+fc-list              (1)  - list available fonts
+gst-xmllaunch [gst-xmllaunch-0] (1)  - build and run a GStreamer pipeline from an XML serialization
+pkexec               (1)  - Execute a command as another user
+gsdj500 [gslp]       (1)  - Format and print text for DeskJet 500 BubbleJet using ghostscript
+trace-cmd            (1)  - interacts with Ftrace Linux kernel internal tracer
+trace-cmd.dat [trace-cmd] (5)  - trace-cmd file format
+trace-cmd-extract    (1)  - extract out the data from the Ftrace Linux tracer
+trace-cmd-list       (1)  - list available plugins, events or options for Ftrace
+trace-cmd-listen     (1)  - listen for incoming connection to record tracing
+trace-cmd-record     (1)  - record a trace from the Ftrace Linux internal tracer
+trace-cmd-report     (1)  - show in ASCII a trace created by trace-cmd record
+trace-cmd-reset      (1)  - turn off all Ftrace tracing to bring back full performance
+trace-cmd-split      (1)  - split a trace.dat file into smaller files
+trace-cmd-start      (1)  - start the Ftrace Linux kernel tracer without recording
+trace-cmd-stop       (1)  - stop the Ftrace Linux kernel tracer from writing to the ring buffer
+rpmbuild             (8)  - Build RPM Package(s)
+shuf                 (1)  - generate random permutations
+GET                  (1)  - Simple command line user agent
+GET [HEAD]           (1)  - Simple command line user agent
+GET [lwp-request]    (1)  - Simple command line user agent
+GET [POST]           (1)  - Simple command line user agent
+ngettext             (1)  - translate message and choose plural form
+ngettext             (3)  - translate message and choose plural form
+grmiregistry         (1)  - - Remote object registry
+MagickCore-config    (1)  - get information about the installed version of ImageMagick
+Wand-config          (1)  - get information about the installed version of the Magick Wand
+blkrawverify         (1)  - verifies an output file produced by blkparse
+sndfile-play         (1)  - play a sound file
+xdg-desktop-icon     (1)  - command line tool for (un)installing icons to the desktop
+hal-find-by-capability (1)  - find device objects by capability matching
+hexdump              (1)  - ascii, decimal, hexadecimal, octal dump
+update-mime-database (1)  - a program to build the Shared MIME-Info database cache
+wftopfa              (1)  - Convert a Wadalab base font to Postscript .PFA (or .PFB) format using ghostscript
+ypcat                (1)  - print values of all keys in a NIS database
+Magick-config        (1)  - get information about the installed version of ImageMagick
+xml_grep             (1)  - grep XML files looking for specific elements
+gkeytool             (1)  - Manage private keys and public certificates
+dropuser             (1)  - remove a PostgreSQL user account
+uuidgen              (1)  - command-line utility to create a new UUID value
+kadmin               (1)  - Kerberos V5 database administration program
+objcopy              (1)  - copy and translate object files
+nfs4_setfacl         (1)  - manipulate NFSv4 file/directory access control lists
+docbook2html [jw]    (1)  - (Jade Wrapper) converts SGML files to other formats
+lsattr               (1)  - list file attributes on a Linux second extended file system
+ps2ascii             (1)  - Ghostscript translator from PostScript or PDF to ASCII
+ci                   (1)  - check in RCS revisions
+pkaction             (1)  - Get details about a registered action
+fallocate            (1)  - preallocate space to a file
+fallocate            (2)  - manipulate file space
+mysqladmin           (1)  - client for administering a MySQL server
+sfcbuuid             (1)  - Script to create a universally unique identifier for the installed Small-Footprint CIM Broker (sfcb)
+lkbib                (1)  - search bibliographic databases
+tr                   (1p)  - translate characters
+tr                   (1)  - translate or delete characters
+yacc                 (1p)  - yet another compiler compiler (DEVELOPMENT)
+Yacc [yacc]          (1)  - an LALR(1) parser generator
+docbook2texi [jw]    (1)  - (Jade Wrapper) converts SGML files to other formats
+docbook2texi-spec.pl [docbook2texi-spec] (1)  - convert DocBook Booksto Texinfo documents
+xzgrep               (1)  - search compressed files for a regular expression
+xdg-desktop-menu     (1)  - command line tool for (un)installing desktop menu items
+gzexe                (1)  - compress executable files in place
+od                   (1)  - dump files in octal and other formats
+od                   (1p)  - dump files in various formats
+replace              (1)  - a string-replacement utility
+report-cli           (1)  - Work with ABRT dump directories from command line
+tiff2pdf             (1)  - convert a TIFF image to a PDF document
+gpgv2                (1)  - Verify OpenPGP signatures
+pmap                 (1)  - report memory map of a process
+opgprof              (1)  - produce gprof-format profile data
+rediff               (1)  - fix offsets and counts of a hand-edited diff
+smbcontrol           (1)  - send messages to smbd, nmbd or winbindd processes
+pg_dumpall           (1)  - extract a PostgreSQL database cluster into a script file
+perf                 (1)  - Performance analysis tools for Linux
+perf-annotate        (1)  - Read perf.data (created by perf record) and display annotated code
+perf-archive         (1)  - Create archive with object files with build-ids found in perf.data file
+perf-bench           (1)  - General framework for benchmark suites
+perf-buildid-cache   (1)  - Manage build-id cache
+perf-buildid-list    (1)  - List the buildids in a perf.data file
+perf-diff            (1)  - Read two perf.data files and display the differential profile
+perf-evlist          (1)  - List the event names in a perf.data file
+perf-help            (1)  - display help information about perf
+perf-inject          (1)  - Filter to augment the events stream with additional information
+perf-kmem            (1)  - Tool to trace/measure kernel memory(slab) properties
+perf-kvm             (1)  - Tool to trace/measure kvm guest os
+perf-list            (1)  - List all symbolic event types
+perf-lock            (1)  - Analyze lock events
+perf-probe           (1)  - Define new dynamic tracepoints
+perf-record          (1)  - Run a command and record its profile into perf.data
+perf-report          (1)  - Read perf.data (created by perf record) and display the profile
+perf-sched           (1)  - Tool to trace/measure scheduler properties (latencies)
+perf-script          (1)  - Read perf.data (created by perf record) and display trace output
+perf-script-perl     (1)  - Process trace data with a Perl script
+perf-script-python   (1)  - Process trace data with a Python script
+perf-stat            (1)  - Run a command and gather performance counter statistics
+perf-test            (1)  - Runs sanity tests
+perf-timechart       (1)  - Tool to visualize total system behavior during a workload
+perf-top             (1)  - System profiling tool
+rsvg                 (1)  - Turn SVG files into raster images
+msgcat               (1)  - combines several message catalogs
+gtester-report       (1)  - test report formatting utility
+vdir                 (1)  - list directory contents
+foomatic-rip         (1)  - Universal print filter/RIP wrapper
+instmodsh            (1)  - A shell to examine installed modules
+blktrace             (8)  - generate traces of the i/o traffic on block devices
+ssh-add              (1)  - adds RSA or DSA identities to the authentication agent
+setkeycodes          (8)  - load kernel scancode-to-keycode mapping table entries
+localedef            (1)  - compile locale definition files
+localedef            (1p)  - define locale environment
+reporter-print       (1)  - Prints problem information to standard output or FILE
+pdf2ps               (1)  - Ghostscript PDF to PostScript translator
+aulast               (8)  - a program similar to last
+autoreconf           (1)  - Update generated configuration files
+cvs                  (1)  - Concurrent Versions System
+cvs                  (5)  - Concurrent Versions System support files
+nproc                (1)  - print the number of processing units available
+whereis              (1)  - locate the binary, source, and manual page files for a command
+aclocal [aclocal-1]  (1)  - manual page for aclocal 1.11.1
+chfn                 (1)  - change your finger information
+gcov                 (1)  - coverage testing tool
+tload                (1)  - graphic representation of system load average
+sudoreplay           (8)  - replay sudo session logs
+grotty               (1)  - groff driver for typewriter-like devices
+git                  (1)  - the stupid content tracker
+Git                  (3pm)  - Perl interface to the Git version control system
+git-add              (1)  - Add file contents to the index
+git-am               (1)  - Apply a series of patches from a mailbox
+git-annotate         (1)  - Annotate file lines with commit information
+git-apply            (1)  - Apply a patch to files and/or to the index
+git-archive          (1)  - Create an archive of files from a named tree
+git-bisect           (1)  - Find by binary search the change that introduced a bug
+git-blame            (1)  - Show what revision and author last modified each line of a file
+git-branch           (1)  - List, create, or delete branches
+git-bundle           (1)  - Move objects and refs by archive
+git-cat-file         (1)  - Provide content or type and size information for repository objects
+git-check-attr       (1)  - Display gitattributes information
+git-checkout         (1)  - Checkout a branch or paths to the working tree
+git-checkout-index   (1)  - Copy files from the index to the working tree
+git-check-ref-format (1)  - Ensures that a reference name is well formed
+git-cherry           (1)  - Find commits not merged upstream
+git-cherry-pick      (1)  - Apply the change introduced by an existing commit
+git-clean            (1)  - Remove untracked files from the working tree
+git-clone            (1)  - Clone a repository into a new directory
+git-commit           (1)  - Record changes to the repository
+git-commit-tree      (1)  - Create a new commit object
+git-config           (1)  - Get and set repository or global options
+git-count-objects    (1)  - Count unpacked number of objects and their disk consumption
+git-describe         (1)  - Show the most recent tag that is reachable from a commit
+git-diff             (1)  - Show changes between commits, commit and working tree, etc
+git-diff-files       (1)  - Compares files in the working tree and the index
+git-diff-index       (1)  - Compares content and mode of blobs between the index and repository
+git-difftool         (1)  - Show changes using common diff tools
+git-diff-tree        (1)  - Compares the content and mode of blobs found via two tree objects
+git-fast-export      (1)  - Git data exporter
+git-fast-import      (1)  - Backend for fast Git data importers
+git-fetch            (1)  - Download objects and refs from another repository
+git-fetch-pack       (1)  - Receive missing objects from another repository
+git-filter-branch    (1)  - Rewrite branches
+git-fmt-merge-msg    (1)  - Produce a merge commit message
+git-for-each-ref     (1)  - Output information on each ref
+git-format-patch     (1)  - Prepare patches for e-mail submission
+git-fsck             (1)  - Verifies the connectivity and validity of the objects in the database
+git-fsck-objects     (1)  - Verifies the connectivity and validity of the objects in the database
+git-gc               (1)  - Cleanup unnecessary files and optimize the local repository
+git-get-tar-commit-id (1)  - Extract commit ID from an archive created using git-archive
+git-grep             (1)  - Print lines matching a pattern
+git-hash-object      (1)  - Compute object ID and optionally creates a blob from a file
+git-help             (1)  - display help information about git
+git-http-backend     (1)  - Server side implementation of Git over HTTP
+git-http-fetch       (1)  - Download from a remote git repository via HTTP
+git-http-push        (1)  - Push objects over HTTP/DAV to another repository
+git-imap-send        (1)  - Send a collection of patches from stdin to an IMAP folder
+git-index-pack       (1)  - Build pack index file for an existing packed archive
+git-init             (1)  - Create an empty git repository or reinitialize an existing one
+git-init-db          (1)  - Creates an empty git repository
+git-instaweb         (1)  - Instantly browse your working repository in gitweb
+git-log              (1)  - Show commit logs
+git-lost-found       (1)  - Recover lost refs that luckily have not yet been pruned
+git-ls-files         (1)  - Show information about files in the index and the working tree
+git-ls-remote        (1)  - List references in a remote repository
+git-ls-tree          (1)  - List the contents of a tree object
+git-mailinfo         (1)  - Extracts patch and authorship from a single e-mail message
+git-mailsplit        (1)  - Simple UNIX mbox splitter program
+git-merge            (1)  - Join two or more development histories together
+git-merge-base       (1)  - Find as good common ancestors as possible for a merge
+git-merge-file       (1)  - Run a three-way file merge
+git-merge-index      (1)  - Run a merge for files needing merging
+git-merge-one-file   (1)  - The standard helper program to use with git-merge-index
+git-mergetool        (1)  - Run merge conflict resolution tools to resolve merge conflicts
+git-mergetool--lib   (1)  - Common git merge tool shell scriptlets
+git-merge-tree       (1)  - Show three-way merge without touching index
+git-mktag            (1)  - Creates a tag object
+git-mktree           (1)  - Build a tree-object from ls-tree formatted text
+git-mv               (1)  - Move or rename a file, a directory, or a symlink
+git-name-rev         (1)  - Find symbolic names for given revs
+git-notes            (1)  - Add/inspect object notes
+git-pack-objects     (1)  - Create a packed archive of objects
+git-pack-redundant   (1)  - Find redundant pack files
+git-pack-refs        (1)  - Pack heads and tags for efficient repository access
+git-parse-remote     (1)  - Routines to help parsing remote repository access parameters
+git-patch-id         (1)  - Compute unique ID for a patch
+git-peek-remote      (1)  - List the references in a remote repository
+git-prune            (1)  - Prune all unreachable objects from the object database
+git-prune-packed     (1)  - Remove extra objects that are already in pack files
+git-pull             (1)  - Fetch from and merge with another repository or a local branch
+git-push             (1)  - Update remote refs along with associated objects
+git-quiltimport      (1)  - Applies a quilt patchset onto the current branch
+git-read-tree        (1)  - Reads tree information into the index
+git-rebase           (1)  - Forward-port local commits to the updated upstream head
+git-receive-pack     (1)  - Receive what is pushed into the repository
+git-reflog           (1)  - Manage reflog information
+git-relink           (1)  - Hardlink common objects in local repositories
+git-remote           (1)  - manage set of tracked repositories
+git-remote-helpers   (1)  - Helper programs to interact with remote repositories
+git-repack           (1)  - Pack unpacked objects in a repository
+git-replace          (1)  - Create, list, delete refs to replace objects
+git-repo-config      (1)  - Get and set repository or global options
+git-request-pull     (1)  - Generates a summary of pending changes
+git-rerere           (1)  - Reuse recorded resolution of conflicted merges
+git-reset            (1)  - Reset current HEAD to the specified state
+git-revert           (1)  - Revert an existing commit
+git-rev-list         (1)  - Lists commit objects in reverse chronological order
+git-rev-parse        (1)  - Pick out and massage parameters
+git-rm               (1)  - Remove files from the working tree and from the index
+git-send-pack        (1)  - Push objects over git protocol to another repository
+git-shell            (1)  - Restricted login shell for GIT-only SSH access
+git-shortlog         (1)  - Summarize 'git log' output
+git-show             (1)  - Show various types of objects
+git-show-branch      (1)  - Show branches and their commits
+git-show-index       (1)  - Show packed archive index
+git-show-ref         (1)  - List references in a local repository
+git-sh-setup         (1)  - Common git shell script setup code
+git-stage            (1)  - Add file contents to the staging area
+git-stash            (1)  - Stash the changes in a dirty working directory away
+git-status           (1)  - Show the working tree status
+git-stripspace       (1)  - Filter out empty lines
+git-submodule        (1)  - Initialize, update or inspect submodules
+git-symbolic-ref     (1)  - Read and modify symbolic refs
+git-tag              (1)  - Create, list, delete or verify a tag object signed with GPG
+git-tar-tree         (1)  - Create a tar archive of the files in the named tree object
+git-unpack-file      (1)  - Creates a temporary file with a blob's contents
+git-unpack-objects   (1)  - Unpack objects from a packed archive
+git-update-index     (1)  - Register file contents in the working tree to the index
+git-update-ref       (1)  - Update the object name stored in a ref safely
+git-update-server-info (1)  - Update auxiliary info file to help dumb servers
+git-upload-archive   (1)  - Send archive back to git-archive
+git-upload-pack      (1)  - Send objects packed back to git-fetch-pack
+git-var              (1)  - Show a git logical variable
+git-verify-pack      (1)  - Validate packed git archive files
+git-verify-tag       (1)  - Check the GPG signature of tags
+git-web--browse      (1)  - git helper script to launch a web browser
+git-whatchanged      (1)  - Show logs with difference each commit introduces
+git-write-tree       (1)  - Create a tree object from the current index
+mysql_install_db     (1)  - initialize MySQL data directory
+nm                   (1)  - list symbols from object files
+nm                   (1p)  - write the name list of an object file (DEVELOPMENT)
+grops                (1)  - PostScript driver for groff
+pod2man              (1)  - Convert POD data to formatted *roff input
+gencat               (1p)  - generate a formatted message catalog
+cupstestdsc          (1)  - test conformance of postscript files
+mysqlcheck           (1)  - a table maintenance program
+tiff2rgba            (1)  - convert a TIFF image to RGBA color space
+mysql_plugin         (1)  - configure MySQL server plugins
+mysql_secure_installation (1)  - improve MySQL installation security
+editdiff [rediff]    (1)  - fix offsets and counts of a hand-edited diff
+reporter-upload      (1)  - Uploads compressed tarball of dump directory
+mysqlimport          (1)  - a data import program
+btreplay             (8)  - recreate IO loads recorded by blktrace
+find2perl            (1)  - translate find command lines to Perl code
+ppm2tiff             (1)  - create a TIFF file from PPM, PGM and PBM image files
+ssh                  (1)  - OpenSSH SSH client (remote login program)
+ssh-add              (1)  - adds RSA or DSA identities to the authentication agent
+ssh-agent            (1)  - authentication agent
+ssh-copy-id          (1)  - install your public key in a remote machine's authorized_keys
+ssh-keygen           (1)  - authentication key generation, management and conversion
+ssh-keyscan          (1)  - gather ssh public keys
+ssh-keysign          (8)  - ssh helper program for host-based authentication
+ssh [slogin]         (1)  - OpenSSH SSH client (remote login program)
+jw                   (1)  - (Jade Wrapper) converts SGML files to other formats
+sgmldiff             (1)  - Find differences in the markup of two SGML files
+whiptail             (1)  - display dialog boxes from shell scripts
+opreport             (1)  - produce symbol or binary image summaries
+reporter-kerneloops  (1)  - Reports kernel oops to kerneloops.org (or similar) site
+xgettext             (1)  - extract gettext strings from source
+gcj-dbtool           (1)  - Manipulate class file mapping databases for libgcj
+tty                  (1p)  - return user's terminal name
+tty                  (1)  - print the file name of the terminal connected to standard input
+tty                  (4)  - controlling terminal
+tty ioctl [tty_ioctl] (4)  - ioctls for terminals and serial lines
+gpg-agent            (1)  - Secret key management for GnuPG
+jv-convert           (1)  - Convert file from one encoding to another
+eqn2graph            (1)  - convert an EQN equation into a cropped image
+sndfile-convert      (1)  - convert a sound files from one format to another
+eqn                  (1)  - format equations for troff
+sha512hmac           (8)  - compute and check HMAC values
+col                  (1)  - filter reverse line feeds from input
+dropdb               (1)  - remove a PostgreSQL database
+ppdc                 (1)  - cups ppd compiler
+m4                   (1)  - macro processor
+m4                   (1p)  - macro processor (DEVELOPMENT)
+smp_rep_route_info   (8)  - invoke REPORT ROUTE INFORMATION SMP function
+autoscan             (1)  - Generate a preliminary configure.in
+semodule_package     (8)  - Create a SELinux policy module package
+pcretest             (1)  - a program for testing Perl-compatible regular expressions
+tiffinfo             (1)  - print information about TIFF files
+dvipdf               (1)  - Convert TeX DVI file to PDF using ghostscript and dvips
+callgrind_control    (1)  - observe and control programs being run by Callgrind
+pdfimages            (1)  - Portable Document Format (PDF) image extractor (version 3.00)
+net                  (8)  - Tool for administration of Samba and remote CIFS servers
+Net::Cmd             (3pm)  - Network Command class (as used by FTP, SMTP etc)
+Net::Config          (3pm)  - Local configuration data for libnet
+Net::Domain          (3pm)  - Attempt to evaluate the current host's internet name and domain
+Net::FTP             (3pm)  - FTP Client class
+Net::HTTP            (3pm)  - Low-level HTTP connection (client)
+Net::HTTP::NB        (3pm)  - Non-blocking HTTP client
+net/if.h [if]        (0p)  - sockets local interfaces
+Net::Netrc           (3pm)  - OO interface to users netrc file
+Net::NNTP            (3pm)  - NNTP Client class
+Net::Ping            (3pm)  - check a remote host for reachability
+Net::POP3            (3pm)  - Post Office Protocol 3 Client class (RFC1939)
+Net::SMTP            (3pm)  - Simple Mail Transfer Protocol Client
+Net::SSL             (3pm)  - support for Secure Sockets Layer
+Net::Time            (3pm)  - time and daytime network client interface
+udisks               (1)  - udisks command line tool
+udisks               (7)  - Storage Management
+udisks-daemon        (8)  - udisks Daemon
+h2xs                 (1)  - convert .h C header files to Perl extensions
+addftinfo            (1)  - add information to troff font files for use with groff
+fixcvsdiff           (1)  - fix problematic diff files
+zipsplit             (1)  - split a zipfile into smaller zipfiles
+strace               (1)  - trace system calls and signals
+rlog                 (1)  - print log messages and other information about RCS files
+ps2pdfwr             (1)  - Convert PostScript to PDF without specifying CompatibilityLevel, using ghostscript
+neqn                 (1)  - format equations for ascii output
+size                 (1)  - list section sizes and total size
+comm                 (1)  - compare two sorted files line by line
+comm                 (1p)  - select or reject lines common to two files
+xzless               (1)  - view xz or lzma compressed (text) files
+cas                  (1)  - Tool to configure core analysis environment
+cas-admin            (1)  - Administrator tools for building rpm/server database
+iecset               (1)  - Set or dump IEC958 status bits
+xml_pp               (1)  - xml pretty-printer
+btrecord             (8)  - recreate IO loads recorded by blktrace
+pdftoppm             (1)  - Portable Document Format (PDF) to Portable Pixmap (PPM) converter (version 3.00)
+glib-gettextize      (1)  - gettext internationalization utility
+lwp-rget             (1)  - Retrieve web documents recursively
+clear                (1)  - clear the terminal screen
+clear [curs_clear]   (3x)  - clear all or part of a curses window
+perldoc              (1)  - Look up Perl documentation in Pod format
+groff                (1)  - front-end for the groff document formatting system
+groff                (7)  - a short reference for the GNU roff language
+timeout              (1)  - run a command with a time limit
+timeout [curs_inopts] (3x)  - curses input options
+xdg-mime             (1)  - command line tool for querying information about file type handling and adding descriptions for new file types
+hostid               (1)  - print the numeric identifier for the current host
+column               (1)  - columnate lists
+ranlib               (1)  - generate index to archive
+diff                 (1)  - compare files line by line
+diff                 (1p)  - compare two files
+diff-jars            (1)  - output the differences between two JAR files
+python               (1)  - an interpreted, interactive, object-oriented programming language
+zipcloak             (1)  - encrypt entries in a zipfile
+cd-read              (1)  - manual page for cd-read version 0.81
+setleds              (1)  - set the keyboard leds
+fc-cat               (1)  - read font information cache files
+soelim               (1)  - interpret .so requests in groff input
+grolj4               (1)  - groff driver for HP Laserjet 4 family
+zmore                (1)  - file perusal filter for crt viewing of compressed text
+svnsync              (1)  - Subversion repository synchronization tool
+interdiff            (1)  - show differences between two diff files
+foomatic-printjob    (1)  - manage printer jobs in a spooler-independent fashion
+pango-view           (1)  - Pango text viewer
+slabtop              (1)  - display kernel slab cache information in real time
+du                   (1)  - estimate file space usage
+du                   (1p)  - estimate file space usage
+msql2mysql           (1)  - convert mSQL programs for use with MySQL
+paste                (1)  - merge lines of files
+paste                (1p)  - merge corresponding or subsequent lines of files
+logger               (1)  - a shell command interface to the syslog(3) system log module
+logger               (1p)  - log messages
+truncate             (1)  - shrink or extend the size of a file to the specified size
+truncate             (2)  - truncate a file to a specified length
+truncate             (3p)  - truncate a file to a specified length
+TRUNCATE [truncate]  (7)  - empty a table or set of tables
+tiffmedian           (1)  - apply the median cut algorithm to data in a TIFF file
+setarch              (8)  - change reported architecture in new program environment and set personality flags
+unprotoize [protoize] (1)  - automatically add or remove function prototypes
+xxd                  (1)  - make a hexdump or do the reverse
+abrt-handle-upload   (1)  - Unpacks and moves problem data
+procmail             (1)  - autonomous mail processor
+myisam_ftdump        (1)  - display full-text index information
+openjade             (1)  - apply a DSSSL stylesheet to an SGML or XML document
+msginit              (1)  - initialize a message catalog
+ssh-agent            (1)  - authentication agent
+fc-match             (1)  - match available fonts
+ospent               (1)  - Concatenates entities in an SGML/XML document
+zcmp [zdiff]         (1)  - compare compressed files
+traptoemail          (1)  - snmptrapd handler script to convert snmp traps into emails
+vacuumdb             (1)  - garbage-collect and analyze a PostgreSQL database
+semodule_link        (8)  - Link SELinux policy module packages together
+xzmore               (1)  - view xz or lzma compressed (text) files
+foomatic-configure   (1)  - the main configuration program of the foomatic printing system
+docbook2rtf [jw]     (1)  - (Jade Wrapper) converts SGML files to other formats
+profiles             (1)  - A utility to report and change SIDs in registry files
+numactl              (8)  - Control NUMA policy for processes or shared memory
+tput                 (1)  - initialize a terminal or query terminfo database
+tput                 (1p)  - change terminal characteristics
+psql                 (1)  - PostgreSQL interactive terminal
+grog                 (1)  - guess options for groff command
+kvno                 (1)  - print key version numbers of Kerberos principals
+dbus-binding-tool    (1)  - C language GLib bindings generation utility
+install-catalog      (8)  - Manage a SGML or XML centralized catalog
+gs                   (1)  - Ghostscript (PostScript and PDF language interpreter and previewer)
+reporter-rhtsupport  (1)  - Reports problem to RHTSupport
+c++filt              (1)  - Demangle C++ and Java symbols
+msgcomm              (1)  - match two message catalogs
+cd-paranoia 9.8 (Paranoia release III via libcdio) [cd-paranoia] (1)  - an audio CD reading utility which includes extra data verification features
+svnlook              (1)  - Subversion repository examination tool
+splitdiff            (1)  - separate out incremental patches
+ldapurl              (1)  - LDAP URL formatting tool
+ppdhtml              (1)  - cups html summary generator
+arecordmidi          (1)  - record Standard MIDI Files
+lastlog              (8)  - reports the most recent login of all users or of a given user
+intltool-update      (8)  - updates PO template file and merge translations with it
+infokey              (1)  - compile customizations for Info
+dehtmldiff           (1)  - get usable diff from an HTML page
+glib-mkenums         (1)  - C language enum description generation utility
+elinks               (1)  - lynx-like alternative character mode WWW browser
+elinks.conf [elinks] (5)  - ELinks configuration file
+pdfopt               (1)  - Ghostscript PDF Optimizer
+rsync                (1)  - a fast, versatile, remote (and local) file-copying tool
+gnome-about          (1)  - The Gnome about box
+shred                (1)  - overwrite a file to hide its contents, and optionally delete it
+printafm             (1)  - Print the metrics from a Postscript font in AFM format using ghostscript
+smbcquotas           (1)  - Set or get QUOTAs of NTFS 5 shares
+ssh-keyscan          (1)  - gather ssh public keys
+cas-admin            (1)  - Administrator tools for building rpm/server database
+kdestroy             (1)  - destroy Kerberos tickets
+whoami               (1)  - print effective userid
+mc                   (1)  - Visual shell for Unix-like systems
+pgrep                (1)  - look up or signal processes based on name and other attributes
+showkey              (1)  - examine the codes sent by the keyboard
+osgmlnorm            (1)  - An SGML/XML document normalizer
+smbget               (1)  - wget-like utility for download files over SMB
+tset                 (1)  - terminal initialization
+pdftops              (1)  - Portable Document Format (PDF) to PostScript converter (version 3.00)
+info                 (1)  - read Info documents
+info                 (5)  - readable online documentation
+smp_rep_phy_sata     (8)  - invoke REPORT PHY SATA SMP function
+znew                 (1)  - recompress .Z files to .gz files
+zipgrep              (1)  - search files in a ZIP archive for lines matching a pattern
+gst-launch [gst-launch-0] (1)  - build and run a GStreamer pipeline
+espdiff              (1)  - apply the appropriate transformation to a set of patches
+renice               (1)  - alter priority of running processes
+renice               (1p)  - set nice values of running processes
+autopoint            (1)  - copies standard gettext infrastructure
+smp_write_gpio       (8)  - invoke WRITE GPIO REGISTER SMP function
+ypwhich              (1)  - return name of NIS server or map master
+smbspool             (8)  - send a print file to an SMB printer
+mysqlslap            (1)  - load emulation client
+make                 (1)  - GNU make utility to maintain groups of programs
+make                 (1p)  - maintain, update, and regenerate groups of programs (DEVELOPMENT)
+gettextize           (1)  - install or upgrade gettext infrastructure
+ecpg                 (1)  - embedded SQL C preprocessor
+ophelp               (1)  - list OProfile events
+snmp-bridge-mib      (1)  - provide Linux bridge information via SNMP
+at                   (1p)  - execute commands at a later time
+at                   (1)  - queue, examine or delete jobs for later execution
+at.allow [at]        (5)  - determine who can submit jobs via at or batch
+at.deny [at]         (5)  - determine who can submit jobs via at or batch
+pathchk              (1)  - check whether file names are valid or portable
+pathchk              (1p)  - check pathnames
+chsh                 (1)  - change your login shell
+gorbd                (1)  - - An object request broker daemon
+tabs                 (1p)  - set terminal tabs
+tabs                 (1)  - set tabs on a terminal
+msgfmt               (1)  - compile message catalog to binary format
+sftp                 (1)  - secure file transfer program
+sftp-server          (8)  - SFTP server subsystem
+uniq                 (1p)  - report or filter out repeated lines in a file
+uniq                 (1)  - report or omit repeated lines
+b43-fwcutter         (1)  - manual page for b43-fwcutter
+smp_conf_route_info  (8)  - invoke CONFIGURE ROUTE INFORMATION SMP function
+ps2pdf               (1)  - Convert PostScript to PDF using ghostscript
+msgcmp               (1)  - compare message catalog and template
+dirname              (1p)  - return the directory portion of a pathname
+dirname              (1)  - strip non-directory suffix from file name
+dirname              (3p)  - report the parent directory name of a file pathname
+dirname [basename]   (3)  - parse pathname components
+aconnect             (1)  - ALSA sequencer connection manager
+lchsh                (1)  - Change login shell
+sudoedit             (8)  - execute a command as another user
+sudoedit [sudo]      (8)  - execute a command as another user
+tailf                (1)  - follow the growth of a log file
+indxbib              (1)  - make inverted index for bibliographic databases
+gpgconf              (1)  - Modify .gnupg home directories
+sxpm                 (1)  - Show an XPM (X PixMap) file and/or convert XPM 1 or 2 files to XPM 3
+verify_blkparse      (1)  - verifies an output file produced by blkparse
+test                 (1)  - check file types and compare values
+test                 (1p)  - evaluate expression
+Test                 (3pm)  - provides a simple framework for writing test scripts
+Test::Builder        (3pm)  - Backend for building test libraries
+Test::Builder::Module (3pm)  - Base class for test modules
+Test::Builder::Tester (3pm)  - test testsuites that have been built with Test::Builder
+Test::Builder::Tester::Color (3pm)  - turn on colour in Test::Builder::Tester
+test [builtins]      (1)  - bash built-in commands, see bash(1)
+Test::Harness        (3pm)  - Run Perl standard test scripts with statistics
+Test::More           (3pm)  - yet another framework for writing test scripts
+Test::Simple         (3pm)  - Basic utilities for writing tests
+Test::Tutorial       (3pm)  - A tutorial about writing really basic tests
+sndfile-info         (1)  - display information about a sound file
+reposync             (1)  - synchronize yum repositories to a local directory
+cpanp                (1)  - The CPANPLUS launcher
+getkeycodes          (8)  - print kernel scancode-to-keycode mapping table
+smp_discover         (8)  - invoke DISCOVER SMP function
+callgrind_annotate   (1)  - post-processing tool for the Callgrind
+pagesize             (1)  - Print supported system page sizes
+dbiprof              (1)  - command-line client for DBI::ProfileData
+raw2tiff             (1)  - create a TIFF file from a raw data
+mysql_tzinfo_to_sql  (1)  - load the time zone tables
+tbl                  (1)  - format tables for troff
+kpasswd              (1)  - change a user's Kerberos password
+ac                   (1)  - print statistics about users' connect time
+innochecksum         (1)  - offline InnoDB file checksum utility
+glib-genmarshal      (1)  - C code marshaller generation utility for GLib closures
+automake [automake-1] (1)  - manual page for automake 1.11.1
+stdbuf               (1)  - Run COMMAND, with modified buffering operations for its standard streams
+tiff2bw              (1)  - convert a color TIFF image to greyscale
+msgfilter            (1)  - edit translations of message catalog
+acpi_listen          (8)  - ACPI event listener
+smp_rep_exp_route_tbl (8)  - invoke REPORT EXPANDER ROUTE TABLE LIST SMP function
+afs5log              (1)  - AFS token initializer
+xdg-screensaver      (1)  - command line tool for controlling the screensaver
+chage                (1)  - change user password expiry information
+abrt-action-generate-backtrace (1)  - Analyzes coredump, generates and saves backtrace
+svnadmin             (1)  - Subversion repository administration tool
+pkill [pgrep]        (1)  - look up or signal processes based on name and other attributes
+zdiff                (1)  - compare compressed files
+lchfn                (1)  - Change finger information
+smp_phy_control      (8)  - invoke PHY CONTROL SMP function
+cpan2dist            (1)  - The CPANPLUS distribution creator
+host                 (1)  - DNS lookup utility
+host.conf [host]     (5)  - resolver configuration file
+man2html             (1)  - format a manual page in html
+smp_read_gpio        (8)  - invoke READ GPIO REGISTER SMP function
+locate               (1)  - find files by name
+ppl-config           (1)  - obtain information about an installation of the Parma Polyhedra Library
+lwp-dump             (1)  - See what headers and content is returned for a URL
+ps2pdf12 [ps2pdf]    (1)  - Convert PostScript to PDF 1.2 (Acrobat 3-and-later compatible) using ghostscript
+pdffonts             (1)  - Portable Document Format (PDF) font analyzer (version 3.00)
+pwdx                 (1)  - report current working directory of a process
+tfmtodit             (1)  - create font files for use with groff -Tdvi
+klist                (1)  - list cached Kerberos tickets
+rebuild-jar-repository (1)  - rebuild a JAR repository based on the current JVM
+msgexec              (1)  - process translations of message catalog
+gcc                  (1)  - GNU project C and C++ compiler
+gcc [g++]            (1)  - GNU project C and C++ compiler
+lesskey              (1)  - specify key bindings for less
+gslj [gslp]          (1)  - Format and print text for LaserJet printer using ghostscript
+mysqldumpslow        (1)  - Summarize slow query log files
+cvsbug               (8)  - send problem report (PR) about CVS to a central support site
+ssh-keygen           (1)  - authentication key generation, management and conversion
+pdftotext            (1)  - Portable Document Format (PDF) to text converter (version 3.00)
+myisamchk            (1)  - MyISAM table-maintenance utility
+alsamixer            (1)  - soundcard mixer for ALSA soundcard driver, with ncurses interface
+vmstat               (8)  - Report virtual memory statistics
+tzselect             (8)  - select a timezone
+montage              (1)  - create a composite image by combining several separate images. The images are tiled on the composite image optionall adorned with a border, frame, image name, and more
+mysqld_safe          (1)  - MySQL server startup script
+tiffcmp              (1)  - compare two TIFF files
+findsmb              (1)  - list info about machines that respond to SMB name queries on a subnet
+unzipsfx             (1)  - self-extracting stub for prepending to ZIP archives
+podchecker           (1)  - check the syntax of POD format documentation files
+podchecker() [Pod::Checker] (3pm)  - check pod documents for syntax errors
+iso-info             (1)  - manual page for iso-info
+krb5-config          (1)  - tool for linking against MIT Kerberos libraries
+zipnote              (1)  - write the comments in zipfile to stdout, edit comments and rename files in zipfile
+hpftodit             (1)  - create font description files for use with groff -Tlj4
+ld                   (1)  - The GNU linker
+ld-linux.so* [ld]    (8)  - dynamic linker/loader
+ld.so [ld]           (8)  - dynamic linker/loader
+getconf              (1p)  - get configuration values
+lpoptions            (1)  - display or set printer options and defaults
+tiffset              (1)  - set a field in a TIFF header
+opcontrol            (1)  - control OProfile profiling
+ypmatch              (1)  - print the values of one or more keys from a NIS map
+perlbug              (1)  - how to submit bug reports on Perl
+perlbug [perlthanks] (1)  - how to submit bug reports on Perl
+git-upload-pack      (1)  - Send objects packed back to git-fetch-pack
+tiffdither           (1)  - convert a greyscale image to bilevel using dithering
+aplay                (1)  - command-line sound recorder and player for ALSA soundcard driver
+pstruct              (1)  - Dump C structures as generated from cc -g -S stabs
+pstruct [c2ph]       (1)  - Dump C structures as generated from cc -g -S stabs
+bzdiff               (1)  - compare bzip2 compressed files
+id                   (1p)  - return user identity
+id                   (1)  - print real and effective user and group IDs
+cpp                  (1)  - The C Preprocessor
+resolveip            (1)  - resolve host name to IP address or vice versa
+smbpasswd            (5)  - The Samba encrypted password file
+smbpasswd            (8)  - change a user's SMB password
+sprof                (1)  - Read and display shared object profiling data
+smbclient            (1)  - ftp-like client to access SMB/CIFS resources on servers
+my_print_defaults    (1)  - display options from option files
+valgrind             (1)  - a suite of tools for debugging and profiling programs
+look                 (1)  - display lines beginning with a given string
+look [Search::Dict]  (3pm)  - search for key in dictionary file
+pf2afm               (1)  - Make an AFM file from Postscript (PFB/PFA/PFM) font files using ghostscript
+mysqlshow            (1)  - display database, table, and column information
+rgb2ycbcr            (1)  - convert non-YCbCr TIFF images to a YCbCr TIFF image
+mcookie              (1)  - generate magic cookies for xauth
+tac                  (1)  - concatenate and print files in reverse
+whatis               (1)  - search the whatis database for complete words
+namei                (1)  - follow a pathname until a terminal point is found
+xmlcatalog           (1)  - Command line tool to parse and manipulate XML or SGML catalog files
+testparm             (1)  - check an smb.conf configuration file for internal correctness
+rpcclient            (1)  - tool for executing client side MS-RPC functions
+autoupdate           (1)  - Update a configure.in to a newer Autoconf
+cd-drive             (1)  - manual page for cd-drive
+ptar                 (1)  - a tar-like program written in perl
+pinfo                (1)  - curses based lynx-style info browser
+head                 (1)  - output the first part of files
+head                 (1p)  - copy the first part of files
+HEAD                 (1)  - Simple command line user agent
+HEAD [GET]           (1)  - Simple command line user agent
+HEAD [lwp-request]   (1)  - Simple command line user agent
+HEAD [POST]          (1)  - Simple command line user agent
+kinit                (1)  - obtain and cache Kerberos ticket-granting ticket
+msggrep              (1)  - pattern matching on message catalog
+iotop                (1)  - simple top-like I/O monitor
+smp_conf_general     (8)  - invoke CONFIGURE GENERAL SMP function
+pstree               (1)  - display a tree of processes
+secon                (1)  - See an SELinux context, from a file, program or user input
+getfattr             (1)  - get extended attributes of filesystem objects
+pkg-config           (1)  - Return metainformation about installed libraries
+abrt-action-analyze-backtrace (1)  - Analyzes C/C++ backtrace, generates duplication hash, backtrace rating, and identifies crash function in dump directory DIR
+cal                  (1)  - displays a calendar
+cal                  (1p)  - print a calendar
+djpeg                (1)  - decompress a JPEG file to an image file
+ps2pdf13 [ps2pdf]    (1)  - Convert PostScript to PDF 1.3 (Acrobat 4-and-later compatible) using ghostscript
+mogrify              (1)  - resize an image, blur, crop, despeckle, dither, draw on, flip, join, re-sample, and much more. Mogrify overwrites the original image file, whereas, convert(1) writes to a different image file
+rcsdiff              (1)  - compare RCS revisions
+getopt               (1)  - parse command options (enhanced)
+getopt               (3)  - Parse command-line options
+getopt               (3p)  - command option parsing
+getopt [Getopt::Std] (3pm)  - Process single-character switches with switch clustering
+Getopt::Long         (3pm)  - Extended processing of command line options
+xml_spellcheck       (1)  - spellcheck XML files
+mysql_waitpid        (1)  - kill process and wait for its termination
+smp_rep_manufacturer (8)  - invoke REPORT MANUFACTURER INFORMATION SMP function
+ras2tiff             (1)  - create a TIFF file from a Sun rasterfile
+pdfinfo              (1)  - Portable Document Format (PDF) document information extractor (version 3.00)
+hal-find-by-property (1)  - find device objects by property matching
+ypchsh [yppasswd]    (1)  - change your password in the NIS database
+display              (1)  - displays an image or image sequence on any X server
+refer                (1)  - preprocess bibliographic references for groff
+diff3                (1)  - compare three files line by line
+stap                 (1)  - systemtap script translator/driver
+stap-merge           (1)  - systemtap per-cpu binary merger
+docbook2tex [jw]     (1)  - (Jade Wrapper) converts SGML files to other formats
+mysqlbinlog          (1)  - utility for processing binary log files
+skill                (1)  - send a signal or report process status
+pg_dump              (1)  - extract a PostgreSQL database into a script file or other archive file
+dc                   (1)  - an arbitrary precision calculator
+wrjpgcom             (1)  - insert text comments into a JPEG file
+docbook2man [jw]     (1)  - (Jade Wrapper) converts SGML files to other formats
+docbook2man-spec.pl [docbook2man-spec] (1)  - convert DocBook RefEntries to man pages
+rdjpgcom             (1)  - display text comments from a JPEG file
+gslp                 (1)  - Format and print text using ghostscript
+checkpolicy          (8)  - SELinux policy compiler
+volname              (1)  - return volume name
+identify             (1)  - describes the format and characteristics of one or more image files
+gstack               (1)  - print a stack trace of a running process
+autom4te             (1)  - Generate files and scripts thanks to M4
+hal-disable-polling  (1)  - disable polling on drives with removable media
+wall                 (1)  -- send a message to everybody's terminal
+enc2xs               (1)  -- Perl Encode Module Generator
+sudo                 (8)  - execute a command as another user
+sudo [sudoedit]      (8)  - execute a command as another user
+setfattr             (1)  - set extended attributes of filesystem objects
+objdump              (1)  - display information from object files
+watchgnupg           (1)  - Read and print logs from a socket
+head                 (1)  - output the first part of files
+head                 (1p)  - copy the first part of files
+HEAD                 (1)  - Simple command line user agent
+HEAD [GET]           (1)  - Simple command line user agent
+HEAD [lwp-request]   (1)  - Simple command line user agent
+HEAD [POST]          (1)  - Simple command line user agent
+less                 (1)  - opposite of more
+less                 (3pm)  - perl pragma to request less of something
+git-shell            (1)  - Restricted login shell for GIT-only SSH access
+xargs                (1)  - build and execute command lines from standard input
+xargs                (1p)  - construct argument lists and invoke utility
+xml_split            (1)  - cut a big XML file into smaller chunks
+amidi                (1)  - read from and write to ALSA RawMIDI ports
+perlivp              (1)  - Perl Installation Verification Procedure
+pod2html             (1)  - convert .pod files to .html files
+grepjar              (1)  - search files in a jar file for a pattern
+colrm                (1)  - remove columns from a file
+hugeedit             (8)  - Set default policy for backing text and data with hugepages
+factor               (1)  - factor numbers
+iso-read             (1)  - manual page for iso-read
+pg_config            (1)  - retrieve information about the installed version of PostgreSQL
+gpg2                 (1)  - OpenPGP encryption and signing tool
+svnversion           (1)  - Produce a compact version number for a working copy
+pfbtopfa             (1)  - Convert Postscript .pfb fonts to .pfa format using ghostscript
+free                 (1)  - Display amount of free and used memory in the system
+free                 (3p)  - free allocated memory
+free [malloc]        (3)  - Allocate and free dynamic memory
+getfacl              (1)  - get file access control lists
+ktutil               (1)  - Kerberos keytab file maintenance utility
+ldapcompare          (1)  - LDAP compare tool
+filterdiff           (1)  - extract or exclude diffs from a diff file
+ddate                (1)  - converts Gregorian dates to Discordian dates
+ipcs                 (1p)  - report XSI interprocess communication facilities status
+ipcs                 (1)  - provide information on ipc facilities
+gtnameserv           (1)  - Naming service
+bzgrep               (1)  - search possibly bzip2 compressed files for a regular expression
+strip                (1)  - Discard symbols from object files
+strip                (1p)  - remove unnecessary information from executable files (DEVELOPMENT)
+chattr               (1)  - change file attributes on a Linux file system
+bzmore               (1)  - file perusal filter for crt viewing of bzip2 compressed text
+top                  (1)  - display Linux tasks
+ar                   (1)  - create, modify, and extract from archives
+ar                   (1p)  - create and maintain library archives
+droplang             (1)  - remove a PostgreSQL procedural language
+pinky                (1)  - lightweight finger
+sqlite3              (1)  - A command line interface for SQLite version 3
+xsltproc             (1)  - command line XSLT processor
+rpm2cpio             (8)  - Extract cpio archive from RPM Package Manager (RPM) package
+lookbib              (1)  - search bibliographic databases
+semodule_deps        (8)  - show the dependencies between SELinux policy packages
+fax2tiff             (1)  - create a TIFF Class F fax file from raw fax data
+lastcomm             (1)  - print out information about previously executed commands
+pdbedit              (8)  - manage the SAM database (Database of Samba Users)
+intltool-extract     (8)  - generate header files which can be read by gettext
+latrace              (1)  - LD_AUDIT 2.4+ libc frontend
+mailstat             (1)  - shows mail-arrival statistics
+protoize             (1)  - automatically add or remove function prototypes
+blkparse             (1)  - produce formatted output of event streams of block devices
+cmp                  (1)  - compare two files byte by byte
+cmp                  (1p)  - compare two files
+gst-inspect [gst-inspect-0] (1)  - print info about a GStreamer plugin or element
+gij                  (1)  - GNU interpreter for Java bytecode
+join                 (1)  - join lines of two files on a common field
+join                 (1p)  - relational database operator
+hal-set-property     (1)  - set a property on a device object
+rdate                (1)  - get the time via the network
+ldapdelete           (1)  - LDAP delete entry tool
+nl                   (1)  - number lines of files
+nl                   (1p)  - line numbering filter
+nl [curs_outopts]    (3x)  - curses output options
+nslookup             (1)  - query Internet name servers interactively
+mysql_setpermission  (1)  - interactively set permissions in grant tables
+osx                  (1)  - An SGML to XML converter
+loadunimap           (8)  - load the kernel unicode-to-font mapping table
+aseqnet              (1)  - ALSA sequencer connectors over network
+gpgparsemail         (1)  - Parse a mail message into an annotated format
+tsort                (1)  - perform topological sort
+tsort                (1p)  - topological sort
+cd-info              (1)  - manual page for cd-info
+ms_print             (1)  - post-processing tool for Massif
+recode-sr-latin      (1)  - convert Serbian text from Cyrillic to Latin script
+mysqlaccess          (1)  - client for checking access privileges
+gpg-zip              (1)  - Encrypt or sign files into an archive
+build-jar-repository (1)  - create a symbolic link to a JAR
+ldapexop             (1)  - issue LDAP extended operations
+formail              (1)  - mail (re)formatter
+pod2latex            (1)  - convert pod documentation to latex format
+msgattrib            (1)  - attribute matching and manipulation on message catalog
+expand               (1)  - convert tabs to spaces
+expand               (1p)  - convert tabs to spaces
+aplaymidi            (1)  - play Standard MIDI Files
+ul                   (1)  - do underlining
+pic                  (1)  - compile pictures for troff or TeX
+splain               (1)  - produce verbose warning diagnostics
+splain [diagnostics] (3pm)  - produce verbose warning diagnostics
+igawk                (1)  - gawk with include files
+fastjar              (1)  - archive tool for Java archives
+on_ac_power          (1)  - test whether the computer is running on line power
+mib2c-update         (1)  - script to merge custom code into updated mib2c code
+lynx                 (1)  - a general purpose distributed information browser for the World Wide Web
+msgmerge             (1)  - merge message catalog and template
+yum                  (8)  - Yellowdog Updater Modified
+yum.conf [yum]       (5)  - Configuration file for yum(8)
+yum-groups-manager   (1)  - create and edit yum's group metadata
+yum-utils            (1)  - tools for manipulating repositories and extended package management
+yum [yum-shell]      (8)  - Yellowdog Updater Modified shell
+zip                  (1)  - package and compress (archive) files
+showconsolefont      (8)  - Show the current EGA/VGA console screen font
+dbilogstrip          (1)  - filter to normalize DBI trace logs for diff'ing
+conjure              (1)  - interprets and executes scripts written in the Magick Scripting Language (MSL)
+updatedb             (8)  - update a database for mlocate
+eps2eps [ps2ps]      (1)  - Ghostscript PostScript distiller
+co                   (1)  - check out RCS revisions
+grolbp               (1)  - groff driver for Canon CAPSL printers (LBP-4 and LBP-8 series laser printers)
+unshare              (1)  - run program with some namespaces unshared from parent
+unshare              (2)  - disassociate parts of the process execution context
+compile_et           (1)  - error table compiler
+gpasswd              (1)  - administer /etc/group and /etc/gshadow
+ptx                  (1)  - produce a permuted index of file contents
+POST                 (1)  - Simple command line user agent
+POST [GET]           (1)  - Simple command line user agent
+POST [HEAD]          (1)  - Simple command line user agent
+POST [lwp-request]   (1)  - Simple command line user agent
+xzdiff               (1)  - compare compressed files
+foomatic-ppd-options (1)  - show the PPD options
+opannotate           (1)  - produce source or assembly annotated with profile data
+w                    (1)  - Show who is logged on and what they are doing
+ipcrm                (1p)  - remove an XSI message queue, semaphore set, or shared memory segment identifier
+ipcrm                (1)  - remove a message queue, semaphore set or shared memory id
+msgconv              (1)  - character set conversion for message catalog
+createuser           (1)  - define a new PostgreSQL user account
+metaflac             (1)  - program to list, add, remove, or edit metadata in one or more FLAC files
+nmblookup            (1)  - NetBIOS over TCP/IP client used to lookup NetBIOS names
+xmllint              (1)  - command line XML tool
+chvt                 (1)  - change foreground virtual terminal
+readelf              (1)  - Displays information about ELF files
+ident                (1)  - identify RCS keyword strings in files
+mtools               (1)  - utilities to access DOS disks in Unix
+mtools.conf [mtools] (5)  - mtools configuration files
+opimport             (1)  - converts sample database files
+ipcmk                (1)  - create various ipc resources
+iconv                (1)  - Convert encoding of given files from one encoding to another
+iconv                (1p)  - codeset conversion
+iconv                (3p)  - codeset conversion function
+iconv                (3)  - perform character set conversion
+iconv.h [iconv]      (0p)  - codeset conversion facility
+ksu                  (1)  - Kerberized super-user
+fold                 (1p)  - filter for folding lines
+fold                 (1)  - wrap each input line to fit in specified width
+rename               (1)  - Rename files
+rename               (2)  - change the name or location of a file
+rename               (3p)  - rename a file
+libnetcfg            (1)  - configure libnet
+kbdrate              (8)  - reset the keyboard repeat rate and delay time
+diffstat             (1)  - make histogram from diff-output
+pic2graph            (1)  - convert a PIC diagram into a cropped image
+mysql_zap            (1)  - kill processes that match a pattern
+xmltest              (1)  - Test script to send CIM-XML (via wbemcat) to CIMOM and compare to known results
+nohup                (1p)  - invoke a utility immune to hangups
+nohup                (1)  - run a command immune to hangups, with output to a non-tty
+jpegtran             (1)  - lossless transformation of JPEG files
+gsf                  (1)  - archiving utility using the G Structured File library
+gsf-vba-dump         (1)  - extract Visual Basic for Applications macros
+foomatic-compiledb   (1)  - Compile the Foomatic printer/driver database
+abrt-action-save-package-data.conf [abrt-action-save-package-data] (5)  - Configuration file for abrt-action-save-package-data
+ldapmodify           (1)  - LDAP modify entry and LDAP add entry tools
+ldapmodify [ldapadd] (1)  - LDAP modify entry and LDAP add entry tools
+scp                  (1)  - secure copy (remote file copy program)
+envsubst             (1)  - substitutes environment variables in shell format strings
+flock                (1)  - Manage locks from shell scripts
+flock                (2)  - apply or remove an advisory lock on an open file
+amixer               (1)  - command-line mixer for ALSA soundcard driver
+svndumpfilter        (1)  - Filter a subversion repository 'dumpfile'
+rcs                  (1)  - change RCS file attributes
+foomatic-ppdfile     (1)  - Generate a PPD file for a given printer/driver combo
+mkfontdir            (1)  - create an index of X font files in a directory
+docbook2txt [jw]     (1)  - (Jade Wrapper) converts SGML files to other formats
+cjpeg                (1)  - compress an image file to a JPEG file
+pdf2dsc              (1)  - generate a PostScript page list of a PDF document
+dprofpp              (1)  - display perl profile data
+lockfile             (1)  - conditional semaphore-file creator
+killall              (1)  - kill processes by name
+k5srvutil            (1)  - host key table (keytab) manipulation utility
+ssh-copy-id          (1)  - install your public key in a remote machine's authorized_keys
+fonttosfnt           (1)  - Wrap a bitmap font in a sfnt (TrueType) wrapper
+gobject-query        (1)  - display a tree of types
+setterm              (1)  - set terminal attributes
+setterm [curs_terminfo] (3x)  - curses interfaces to terminfo database
+pm-is-supported      (1)  - Test whether suspend or hibernate is supported
+animate              (1)  - animates an image or image sequence on any X server
+collateindex.pl [collateindex] (1)  - generate DocBook index files
+unexpand             (1)  - convert spaces to tabs
+unexpand             (1p)  - convert spaces to tabs
+reporter-mailx       (1)  - Sends contents of a dump directory via email
+zipinfo              (1)  - list detailed information about a ZIP archive
+setsid               (1)  - run a program in a new session
+setsid               (2)  - creates a session and sets the process group ID
+setsid               (3p)  - create session and set process group ID
+msgen                (1)  - create English message catalog
+xdg-icon-resource    (1)  - command line tool for (un)installing icon resources
+checkmodule          (8)  - SELinux policy module compiler
+corelist             (1)  - a commandline frontend to Module::CoreList
+rev                  (1)  - reverse lines of a file or files
+stream               (1)  - a lightweight tool to stream one or more pixel components of the image or portion of the image to your choice of storage formats
+pdftohtml            (1)  - program to convert pdf files into html, xml and png images
+mysqld_multi         (1)  - manage multiple MySQL servers
+sha512sum            (1)  - compute and check SHA512 message digest
+pfbtops              (1)  - translate a PostScript font in .pfb format to ASCII
+gif2tiff             (1)  - create a TIFF file from a GIF87 format image file
+cxpm                 (1)  - Check an XPM (X PixMap) file - XPM 1, 2, or 3
+flex                 (1)  - the fast lexical analyser generator
+ps2epsi              (1)  - generate conforming Encapsulated PostScript
+pod2usage            (1)  - print usage messages from embedded pod docs in files
+pod2usage() [Pod::Usage] (3pm)  - print a usage message from embedded pod documentation
+grmic                (1)  - Generate stubs for Remote Method Invocation
+expr                 (1)  - evaluate expressions
+expr                 (1p)  - evaluate arguments as an expression
+openvt               (1)  - start a program on a new virtual terminal (VT)
+diff-jars            (1)  - output the differences between two JAR files
+setmetamode          (1)  - define the keyboard meta key handling
+git-upload-archive   (1)  - Send archive back to git-archive
+vim                  (1)  - Vi IMproved, a programmers text editor
+crash                (8)  - Analyze Linux crash dump data or a live system
+curl                 (1)  - transfer a URL
+curl-config          (1)  - Get information about a libcurl installation
+ypchfn [yppasswd]    (1)  - change your password in the NIS database
+mkfontscale          (1)  - create an index of scalable font files for X
+ppdmerge             (1)  - merge ppd files
+split                (1p)  - split files into pieces
+split                (1)  - split a file into pieces
+mysqltest            (1)  - program to run test cases
+cupstestppd          (1)  - test conformance of ppd files
+recountdiff          (1)  - recompute patch counts and offsets
+gst-xmlinspect [gst-xmlinspect-0] (1)  - print info about a GStreamer plugin or element
+gconftool-2          (1)  - GNOME configuration tool
+rcsfreeze            (1)  - freeze a configuration of sources checked in under RCS
+fc-cache             (1)  - build font information cache files
+pcregrep             (1)  - a grep with Perl-compatible regular expressions
+toe                  (1m)  - table of (terminfo) entries
+bmp2tiff             (1)  - create a TIFF file from a Microsoft Windows Device Independent Bitmap image file
+smp_rep_phy_err_log  (8)  - invoke REPORT PHY ERROR LOG SMP function
+chacl                (1)  - change the access control list of a file or directory
+sfcbstage            (1)  - Script to copy provider MOF and registration files to the Small-Footprint CIM Broker (sfcb) staging area
+sfcbstage [sfcbunstage] (1)  - Script to remove provider MOF and registration files from the Small-Footprint CIM Broker (sfcb) staging area
+ppdpo                (1)  - ppd message catalog generator
+mysql                (1)  - the MySQL command-line tool
+mysql.server [mysql] (1)  - MySQL server startup script
+mysql-stress-test.pl [mysql-stress-test] (1)  - server stress test program
+mysql-test-run.pl [mysql-test-run] (1)  - run MySQL test suite
+mysql_client_test    (1)  - test client API
+lshal                (1)  - list HAL devices
+users                (1)  - print the user names of users currently logged in to the current host
+reindexdb            (1)  - reindex a PostgreSQL database
+gdb                  (1)  - The GNU Debugger
+smp_phy_test         (8)  - invoke PHY TEST FUNTION SMP function
+sfcbrepos            (1)  - Script to rebuild the Small-Footprint CIM Broker (sfcb) class repository
+install              (1)  - copy files and set attributes
+install-catalog      (8)  - Manage a SGML or XML centralized catalog
+install-info         (1)  - update info/dir entries
+isosize              (8)  - outputs the length of an iso9660 file system
+smbtree              (1)  - A text based smb network browser
+yes                  (1)  - output a string repeatedly until killed
+doxytag              (1)  - generates a tag file and/or a search index for a set of HTML files
+pg_restore           (1)  - restore a PostgreSQL database from an archive file created by pg_dump
+which                (1)  - shows the full path of (shell) commands
+ifnames              (1)  - Extract CPP conditionals from a set of files
+tiffsplit            (1)  - split a multi-image TIFF into single-image TIFF files
+report               (1)  - uploads FILEs to specified ticket on TARGET
+report-cli           (1)  - Work with ABRT dump directories from command line
+yppasswd             (1)  - change your password in the NIS database
+mesg                 (1)  - control write access to your terminal
+mesg                 (1p)  - permit or deny messages
+intltoolize          (8)  - copy intltool related files to software package
+md5sum               (1)  - compute and check MD5 message digest
+peekfd               (1)  - peek at file descriptors of running processes
+gprof                (1)  - display call graph profile data
+runcon               (1)  - run command with specified SELinux security context
+smbcacls             (1)  - Set or get ACLs on an NT file or directory names
+man                  (1)  - format and display the on-line manual pages
+man                  (1p)  - display system documentation
+man                  (7)  - macros to format man pages
+man.config [man]     (5)  - configuration data for man
+man-pages            (7)  - conventions for writing Linux man pages
+ausyscall            (8)  - a program that allows mapping syscall names and numbers
+uptime               (1)  - Tell how long the system has been running
+psfxtable            (1)  - handle Unicode character tables for console fonts
+prove                (1)  - Run tests through a TAP harness
+ospam                (1)  - An SGML/XML markup stream editor
+gsdj [gslp]          (1)  - Format and print text for DeskJet printer using ghostscript
+sha1sum              (1)  - compute and check SHA1 message digest
+xzdec                (1)  - Small .xz and .lzma decompressors
+gst-feedback [gst-feedback-0] (1)  - generate debug info for GStreamer bug reports
+gserialver           (1)  - version command
+zforce               (1)  - force a '.gz' extension on all gzip files
+mkfifo               (1)  - make FIFOs (named pipes)
+mkfifo               (1p)  - make FIFO special files
+mkfifo               (3)  - make a FIFO special file (a named pipe)
+mkfifo               (3p)  - make a FIFO special file
+gsf-vba-dump         (1)  - extract Visual Basic for Applications macros
+smp_rep_general      (8)  - invoke REPORT GENERAL SMP function
+mysql_find_rows      (1)  - extract SQL statements from files
+psed                 (1)  - a stream editor
+psed [s2p]           (1)  - a stream editor
+mysql_convert_table_format (1)  - convert tables to use a given storage engine
+bdftopcf             (1)  - convert X font from Bitmap Distribution Format to Portable Compiled Format
+vimtutor             (1)  - the Vim tutor
+ucs2any              (1)  - generate BDF fonts containing subsets of ISO 10646-1 codepoints
+chrt                 (1)  - manipulate real-time attributes of a process
+ldapmodrdn           (1)  - LDAP rename entry tool
+myisampack           (1)  - generate compressed, read-only MyISAM tables
+flac                 (1)  - Free Lossless Audio Codec
+ccache-swig          (1)  - a fast compiler cache
+oparchive            (1)  - produce archive of oprofile data for offline analysis
+piconv               (1)  -- iconv(1), reinvented in perl
+addr2line            (1)  - convert addresses into file names and line numbers
+foomatic-combo-xml   (1)  - <put a short description here>
+consolehelper        (8)  - A wrapper that helps console users run system programs
+grmid                (1)  - - RMI activation system daemon
+mib2c                (1)  -- generate template code for extending the agent
+mib2c.conf [mib2c]   (5)  -- How to write mib2c.conf files to do ANYTHING based on MIB input
+mib2c-update         (1)  - script to merge custom code into updated mib2c code
+yum-groups-manager   (1)  - create and edit yum's group metadata
+gst-typefind [gst-typefind-0] (1)  - print MIME type of file
+git-receive-pack     (1)  - Receive what is pushed into the repository
+bzip2recover [bzip2] (1)  - recovers data from damaged bzip2 files
+strings              (1p)  - find printable strings in files
+strings              (1)  - print the strings of printable characters in files
+strings.h [strings]  (0p)  - string operations
+fgconsole            (1)  - print the number of the active VT
+luac                 (1)  - Lua compiler
+import               (1)  - saves any visible window on an X server and outputs it as an image file. You can capture a single window, the entire screen, or any rectangular portion of the screen
+pabrowse             (1)  - List PulseAudio sound servers on the network
+ltrace               (1)  - A library call tracer
+createlang           (1)  - define a new PostgreSQL procedural language
+intltool-prepare     (8)  - Prepare software to make use of intltool
+rcsclean             (1)  - clean up working files
+doxygen              (1)  - documentation system for various programming languages
+nosetests            (1)  - unit testing for Python software
+scriptreplay         (1)  - play back typescripts, using timing information
+gjarsigner           (1)  - Java ARchive (JAR) file signing and verification tool
+nsupdate             (1)  - Dynamic DNS update utility
+autoheader           (1)  - Create a template header for configure
+mbchk                (1)  - check the format of a Multiboot kernel
+bison                (1)  - GNU Project parser generator (yacc replacement)
+tiffcrop             (1)  - select, copy, crop, convert, extract, and/or process one or more TIFF files
+hal-lock             (1)  - lock an interface
+grn                  (1)  - groff preprocessor for gremlin files
+zless                (1)  - file perusal filter for crt viewing of compressed text
+tiffcp               (1)  - copy (and possibly convert) a TIFF file
+rngtest              (1)  - Check the randomness of data using FIPS 140-2 tests
+chcon                (1)  - change file SELinux security context
+convert              (1)  - convert between image formats as well as resize an image, blur, crop, despeckle, dither, draw on, flip, join, re-sample, and much more
+h2ph                 (1)  - convert .h C header files to .ph Perl header files
+stat                 (1)  - display file or file system status
+stat                 (2)  - get file status
+stat                 (3p)  - get file status
+openssl              (1ssl)  - OpenSSL command line tool
+xml2po               (1)  - program to create a PO-template file from a DocBook XML file and merge it back into a (translated) XML file
+fc-query             (1)  - query font files
+xdg-open             (1)  - opens a file or URL in the user's preferred application
+rcsmerge             (1)  - merge RCS revisions
+mysql_upgrade        (1)  - check tables for MySQL upgrade
+smp_discover_list    (8)  - invoke DISCOVER LIST SMP function
+compare              (1)  - mathematically and visually annotate the difference between an image and its reconstruction
+attr                 (1)  - extended attributes on XFS filesystem objects
+attr                 (5)  - Extended attributes
+ospcat               (1)  - SGML print catalog
+intltool-merge       (8)  - merge translated strings into various types of file
+lzmadec [xzdec]      (1)  - Small .xz and .lzma decompressors
+sha384sum            (1)  - compute and check SHA384 message digest
+a2p                  (1)  - Awk to Perl translator
+funzip               (1)  - filter for extracting from a ZIP archive in a pipe
+perror               (1)  - explain error codes
+perror               (3)  - print a system error message
+perror               (3p)  - write error messages to standard error
+groups               (1)  - print the groups a user is in
+MagickWand-config    (1)  - get information about the installed version of the Magick Wand
+btparser             (1)  - a backtrace analyzer
+xsubpp               (1)  - compiler to convert Perl XS code into C code
+last                 (1)  - show listing of last logged in users
+mysql_config         (1)  - get compile options for compiling clients
+unwrapdiff           (1)  - demangle word-wrapped patches
+infocmp              (1m)  - compare or print out terminfo descriptions
+tail                 (1)  - output the last part of files
+tail                 (1p)  - copy the last part of a file
+dbiproxy             (1)  - A proxy server for the DBD::Proxy driver
+cg_annotate          (1)  - post-processing tool for Cachegrind
+gsbj [gslp]          (1)  - Format and print text for BubbleJet printer using ghostscript
+abrt-action-trim-files (1)  - Deletes old dump directories or files in specified directories until they are smaller than specified size
+btrace               (8)  - perform live tracing for block devices
+deallocvt            (1)  - deallocate unused virtual consoles
+fax2ps               (1)  - convert a TIFF facsimile to compressed (tm
+sfcbmof              (1)  - MOF compile for the Small-Footprint CIM Broker (sfcb)
+clusterdb            (1)  - cluster a PostgreSQL database
+aseqdump             (1)  - show the events received at an ALSA sequencer port
+lua                  (1)  - Lua interpreter
+pax                  (1p)  - portable archive interchange
+pax                  (1)  - read and write file archives and copy directory hierarchies
+lwp-request          (1)  - Simple command line user agent
+lwp-request [GET]    (1)  - Simple command line user agent
+lwp-request [HEAD]   (1)  - Simple command line user agent
+lwp-request [POST]   (1)  - Simple command line user agent
+floppy               (8)  - format floppy disks
+colcrt               (1)  - filter nroff output for CRT previewing
+execstack            (8)  - tool to set, clear, or query executable stack flag of ELF binaries and shared libraries
+hugeadm              (8)  - Configure the system huge page pools
+lscpu                (1)  - CPU architecture information helper
+base64               (1)  - base64 encode/decode data and print to standard output
+pkcheck              (1)  - Check whether a process is authorized
+batch                (1p)  - schedule commands to be executed in a batch queue
+batch [at]           (1)  - queue, examine or delete jobs for later execution
+c99                  (1p)  - compile standard C programs
+tic                  (1m)  - the terminfo entry-description compiler
+lppasswd             (1)  - add, change, or delete digest passwords
+locale               (1)  - Get locale-specific information
+locale               (1p)  - get locale-specific information
+locale               (3pm)  - Perl pragma to use and avoid POSIX locales for built-in operations
+locale               (5)  - Describes a locale definition file
+locale               (7)  - Description of multi-language support
+Locale::Constants    (3pm)  - constants for Locale codes
+Locale::Country      (3pm)  - ISO codes for country identification (ISO 3166)
+Locale::Currency     (3pm)  - ISO three letter codes for currency identification (ISO 4217)
+locale.h [locale]    (0p)  - category macros
+Locale::Language     (3pm)  - ISO two letter codes for language identification (ISO 639)
+Locale::Maketext     (3pm)  - framework for localization
+Locale::Maketext::Simple (3pm)  - Simple interface to Locale::Maketext::Lexicon
+Locale::Maketext::TPJ13 (3pm)  -- article about software localization
+Locale::Script       (3pm)  - ISO codes for script identification (ISO 15924)
+cksum                (1)  - checksum and count the bytes in a file
+cksum                (1p)  - write file checksums and sizes
+zgrep                (1)  - search possibly compressed files for a regular expression
+gfortran             (1)  - GNU Fortran compiler
+curl-config          (1)  - Get information about a libcurl installation
+cscope               (1)  - interactively examine a C program
+setfacl              (1)  - set file access control lists
+cpan                 (1)  - easily interact with CPAN from the command line
+CPAN                 (3pm)  - query, download and build perl modules from CPAN sites
+CPAN::API::HOWTO     (3pm)  - a recipe book for programming with CPAN.pm
+CPAN::Distroprefs    (3pm)  -- read and match distroprefs
+CPAN::FirstTime      (3pm)  - Utility for CPAN::Config file Initialization
+CPAN::Kwalify        (3pm)  - Interface between CPAN.pm and Kwalify.pm
+CPAN::Nox            (3pm)  - Wrapper around CPAN.pm without using any XS module
+CPAN::Version        (3pm)  - utility functions to compare CPAN versions
+lessecho             (1)  - expand metacharacters
+logname              (1p)  - return the user's login name
+logname              (1)  - print user's login name
+gsnd                 (1)  - Run ghostscript (PostScript and PDF engine) without display
+bc                   (1)  - An arbitrary precision calculator language
+bc                   (1p)  - arbitrary-precision arithmetic language
+stap-merge           (1)  - systemtap per-cpu binary merger
+hunspell             (1)  - spell checker, stemmer and morphological analyzer
+hunspell             (4)  - format of Hunspell dictionaries and affix files
+bzip2                (1)  - a block-sorting file compressor, v1.0.4
+gpg-connect-agent    (1)  - Communicate with a running agent
+newgrp               (1)  - log in to a new group
+newgrp               (1p)  - change to a new group
+file                 (1)  - determine file type
+file                 (1p)  - determine file type
+File::Basename       (3pm)  - Parse file paths into directory, filename and suffix
+File::CheckTree      (3pm)  - run many filetest checks on a tree
+File::Compare        (3pm)  - Compare files or filehandles
+File::Copy           (3pm)  - Copy files or filehandles
+File::DosGlob        (3pm)  - DOS like globbing and then some
+File::Fetch          (3pm)  - A generic file fetching mechanism
+File::Find           (3pm)  - Traverse a directory tree
+File::Glob           (3pm)  - Perl extension for BSD glob routine
+File::GlobMapper     (3pm)  - Extend File Glob to Allow Input and Output Files
+File::Listing        (3pm)  - parse directory listing
+File::Path           (3pm)  - Create or remove directory trees
+File::Spec           (3pm)  - portably perform operations on file names
+File::Spec::Cygwin   (3pm)  - methods for Cygwin file specs
+File::Spec::Epoc     (3pm)  - methods for Epoc file specs
+File::Spec::Functions (3pm)  - portably perform operations on file names
+File::Spec::Mac      (3pm)  - File::Spec for Mac OS (Classic)
+File::Spec::OS2      (3pm)  - methods for OS/2 file specs
+File::Spec::Unix     (3pm)  - File::Spec for Unix, base for other File::Spec modules
+File::Spec::VMS      (3pm)  - methods for VMS file specs
+File::Spec::Win32    (3pm)  - methods for Win32 file specs
+File::Temp           (3pm)  - return name and handle of a temporary file safely
+font2c               (1)  - Write PostScript Type 0 or Type 1 font as C code
+pod2text             (1)  - Convert POD data to formatted ASCII text
+svn                  (1)  - Subversion command line client tool
+xml_merge            (1)  - merge back XML files split with C<xml_split>
+who                  (1p)  - display who is on the system
+who                  (1)  - show who is logged on
+tiff2ps              (1)  - convert a TIFF image to
+patch                (1)  - apply a diff file to an original
+patch                (1p)  - apply changes to files
+lwp-mirror           (1)  - Simple mirror utility
+composite            (1)  - overlaps one image over another
+troff                (1)  - the troff processor of the groff text formatting system
+staprun              (8)  - systemtap runtime
+foomatic-perl-data   (1)  - generate Perl data structures from XML
+resolve_stack_dump   (1)  - resolve numeric stack trace dump to symbols
+rhn_register         (8)  - Connect to RHN Satellite or Red Hat Network Classic
+tunelp               (8)  - set various parameters for the lp device
+convertquota         (8)  - convert quota from old file format to new one
+ntp-keygen           (8)  - generate public and private keys
+brctl                (8)  - ethernet bridge administration
+nslcd                (8)  - local LDAP name service daemon
+nslcd.conf [nslcd]   (5)  - configuration file for LDAP nameservice daemon
+nfsstat              (8)  - list NFS statistics
+tcpslice             (8)  - extract pieces of and/or merge together tcpdump files
+usermod              (8)  - modify a user account
+semodule             (8)  - Manage SELinux policy modules
+anacron              (8)  - runs commands periodically
+pwck                 (8)  - verify integrity of password files
+mklost+found         (8)  - create a lost+found directory on a mounted Linux second extended file system
+sm-notify            (8)  - send reboot notifications to NFS peers
+grpconv [pwconv]     (8)  - convert to and from shadow passwords and groups
+rpc.nfsd [nfsd]      (8)  - NFS server process
+newusers             (8)  - update and create new users in batch
+cupsaccept/cupsreject [cupsaccept] (8)  - accept/reject jobs sent to a destination
+safe_finger          (8)  - finger client wrapper that protects against nasty stuff from finger servers
+run_init             (8)  - run an init script in the proper SELinux context
+clockdiff            (8)  - measure clock difference between hosts
+selinuxenabled       (8)  - tool to be used within shell scripts to determine if selinux is enabled
+nstat [rtacct]       (8)  - network statistics tools
+lid                  (1)  - Display user's groups or group's users
+avahi-daemon         (8)  - The Avahi mDNS/DNS-SD daemon
+avahi-daemon.conf [avahi-daemon] (5)  - avahi-daemon configuration file
+selinuxconlist       (8)  - list all SELinux context reachable for user
+rtacct               (8)  - network statistics tools
+setquota             (8)  - set disk quotas
+ss                   (8)  - another utility to investigate sockets
+foomatic-getpjloptions (8)  - <put a short description here>
+dmidecode            (8)  - DMI table decoder
+rhn_check            (8)  - Check for and execute queued actions on RHN
+vipw                 (8)  - edit the password, group, shadow-password or shadow-group file
+ntpd                 (8)  - Network Time Protocol (NTP) daemon
+create-cracklib-dict (8)  - Check passwords using libcrack2
+mcelog               (8)  - Decode kernel machine check log on x86 machines
+spacewalk-channel    (8)  - Subscribe to or unsubscribe system from channel
+saslpasswd2          (8)  - set a user's sasl password
+sssd                 (8)  - System Security Services Daemon
+sssd.conf [sssd]     (5)  - the configuration file for SSSD
+sssd-ipa             (5)  - the configuration file for SSSD
+sssd-krb5            (5)  - the configuration file for SSSD
+sssd-ldap            (5)  - the configuration file for SSSD
+sssd-simple          (5)  - the configuration file for SSSD's 'simple' access-control provider
+avcstat              (8)  - Display SELinux AVC statistics
+cupsd                (8)  - cups scheduler
+cupsd.conf [cupsd]   (5)  - server configuration file for cups
+foomatic-preferred-driver (8)  - <put a short description here>
+useradd              (8)  - create a new user or update default new user information
+lgroupadd            (1)  - Add an user group
+tcpdump              (8)  - dump traffic on a network
+chpasswd             (8)  - update passwords in batch mode
+latencytop           (8)  - a tool for developers to visualize system latencies
+rhn-profile-sync     (8)  - Update system information on Red Hat Network
+atrun                (8)  - run jobs queued for later execution
+abrtd                (8)  - automated bug reporting tool's daemon
+mtr                  (8)  - a network diagnostic tool
+groupdel             (8)  - delete a group
+tmpwatch             (8)  - removes files which haven't been accessed for a period of time
+eject                (1)  - eject removable media
+togglesebool         (8)  - flip the current value of a SELinux boolean
+tcpd                 (8)  - access control facility for internet services
+warnquota            (8)  - send mail to users over quota
+yptest               (8)  - test NIS configuration
+vpddecode            (8)  - VPD structure decoder
+rpc.rquotad [rquotad] (8)  - remote quota server
+getcap               (8)  - examine file capabilities
+selinuxdefcon        (8)  - report default SELinux context for user
+getsebool            (8)  - get SELinux boolean value(s)
+foomatic-kitload     (8)  - installs a data kit into the foomatic database
+nfsiostat            (8)  - Emulate iostat for NFS mount points using /proc/self/mountstats
+rpc.mountd [mountd]  (8)  - NFS mount daemon
+smrsh                (8)  - restricted shell for sendmail
+visudo               (8)  - edit the sudoers file
+lgroupdel            (1)  - Delete an user group
+repquota             (8)  - summarize quotas for a filesystem
+setenforce           (8)  - modify the mode SELinux is running in
+cracklib-packer [cracklib-format] (8)  - cracklib dictionary utilities
+mountstats           (8)  - Displays NFS client per-mount statistics
+smartd               (8)  - SMART Disk Monitoring Daemon
+smartd.conf [smartd] (5)  - SMART Disk Monitoring Daemon Configuration File
+mailstats            (8)  - display mail statistics
+sserver              (8)  - sample Kerberos version 5 server
+grpck                (8)  - verify integrity of group files
+hald                 (8)  - HAL daemon
+sshd                 (8)  - OpenSSH SSH daemon
+applygnupgdefaults   (8)  - Run gpgconf --apply-defaults for all users
+smartctl             (8)  - Control and Monitor Utility for SMART Disks
+luserdel             (1)  - Delete an user
+tickadj              (8)  - set time-related kernel variables
+mysqld               (8)  - the MySQL server
+cupsctl              (8)  - configure cupsd.conf options
+prelink              (8)  - prelink ELF shared libraries and binaries to speed up startup time
+cupsaddsmb           (8)  - export printers to samba for windows clients
+getenforce           (8)  - get the current mode of SELinux
+addgnupghome         (8)  - Create .gnupg home directories
+ypset                (8)  - bind ypbind to a particular NIS server
+open_init_pty        (8)  - run an program under a psuedo terminal
+quotastats           (8)  - Program to query quota statistics
+pm-powersave         (8)  - Put your computer into low power mode
+openwsmand           (8)  - WS-Management Server
+sestatus             (8)  - SELinux status tool
+cracklib-check       (8)  - Check passwords using libcrack2
+rpcinfo              (8)  - report RPC information
+grpunconv [pwconv]   (8)  - convert to and from shadow passwords and groups
+dump-utmp            (8)  - print a utmp file in human-readable format
+sfcbd                (1)  - Small-Footprint CIM Broker (sfcb)
+rpc.svcgssd [svcgssd] (8)  - server-side rpcsec_gss daemon
+cracklib-unpacker [cracklib-format] (8)  - cracklib dictionary utilities
+zic                  (8)  - timezone compiler
+setcap               (8)  - set file capabilities
+foomatic-addpjloptions (8)  - Format PJL option information the for foomatic database
+rhnsd                (8)  - A program for querying the Red Hat Network for updates and information
+dump-acct            (8)  - print an acct/pacct file in human-readable format
+groupadd             (8)  - create a new group
+cacertdir_rehash     (8)  - simple script to create or update hash links to certificate files in a directory
+sasldblistusers2     (8)  - list users in sasldb
+rpc.idmapd [idmapd]  (8)  - NFSv4 ID <-> Name Mapper
+automount            (8)  - manage autofs mount points
+alternatives         (8)  - maintain symbolic links determining default commands
+lpmove               (8)  - move a job or all jobs to a new destination
+update-pciids        (8)  - download new version of the PCI ID list
+efibootmgr           (8)  - manipulate the EFI Boot Manager
+abrt-install-ccpp-hook (1)  - Install coredump handler
+rtcwake              (8)  - enter a system sleep state until specified wakeup time
+logrotate            (8)  - rotates, compresses, and mails system logs
+userhelper           (8)  - A helper interface to PAM
+e2freefrag           (8)  - report free space fragmentation information
+lchage               (1)  - Display or change user password policy
+sys-unconfig         (8)  - shell script to reconfigure the system upon next boot
+lpasswd              (1)  - Change group or user password
+makewhatis           (8)  - Create the whatis database
+fdformat             (8)  - Low-level formats a floppy disk
+luseradd             (1)  - Add an user
+irqbalance           (1)  - distribute hardware interrupts across processors on a multiprocessor system
+ldattach             (8)  - attach a line discipline to a serial line
+ypbind               (8)  - NIS binding process
+yppoll               (8)  - return version and master server of a NIS map
+fping                (8)  - send ICMP ECHO_REQUEST packets to network hosts
+ntpq                 (8)  - standard NTP query program
+quota_nld            (8)  - quota netlink message daemon
+saslauthd            (8)  - sasl authentication server
+chroot               (1)  - run command or interactive shell with special root directory
+chroot               (2)  - change root directory
+readprofile          (1)  - a tool to read kernel profiling information
+cracklib-format      (8)  - cracklib dictionary utilities
+ownership            (8)  - Compaq ownership tag retriever
+makedumpfile         (8)  - make a small dumpfile of kdump
+arpd                 (8)  - userspace arp daemon
+edquota              (8)  - edit user quotas
+ntsysv               (8)  - simple interface for configuring runlevels
+lgroupmod            (1)  - Modify an user group
+genhomedircon        (8)  - generate SELinux file context configuration entries for user home directories
+krb5-send-pr         (1)  - send problem report (PR) to a central support site
+cifs.upcall [cifs]   (8)  - Userspace upcall helper for Common Internet File System (CIFS)
+capsh                (1)  - capability shell wrapper
+biosdecode           (8)  - BIOS information decoder
+restorecond          (8)  - daemon that watches for file creation and then sets the default SELinux file context
+try-from             (8)  - test program for the tcp_wrapper
+exportfs             (8)  - maintain table of exported NFS file systems
+pethtool             (8)  - Display or change ethernet card settings
+lnewusers            (1)  - Create new user accounts
+testsaslauthd        (8)  - test utility for the SASL authentication server
+rpcdebug             (8)  - set and clear NFS and RPC kernel debug flags
+pluginviewer         (8)  - list loadable SASL plugins and their properties
+showmount            (8)  - show mount information for an NFS server
+lpinfo               (8)  - show available devices or drivers
+atd                  (8)  - run jobs queued for later execution
+rpc.gssd [gssd]      (8)  - rpcsec_gss daemon
+lusermod             (1)  - Modify an user
+sa                   (8)  - summarizes accounting information
+makemap              (8)  - create database maps for sendmail
+praliases            (8)  - display system mail aliases
+ntpdc                (8)  - special NTP query program
+abrt-server          (1)  - Unix socket for ABRT
+ntptime              (8)  - read kernel time variables
+pwconv               (8)  - convert to and from shadow passwords and groups
+lsof                 (8)  - list open files
+sosreport            (1)  - Generate debugging information for this system
+filefrag             (8)  - report on file fragmentation
+pwunconv [pwconv]    (8)  - convert to and from shadow passwords and groups
+rhnreg_ks            (8)  - A program for non interactively registering systems to RHN Satellite or Red Hat Network Classic
+ntpdate              (8)  - set the date and time via NTP
+groupmod             (8)  - modify a group definition on the system
+usernetctl           (8)  - allow a user to manipulate a network interface if permitted
+lnstat               (8)  - unified linux network statistics
+setup                (1)  - A text mode system configuration tool
+setup                (2)  - setup devices and file systems, mount root file system
+lpadmin              (8)  - configure cups printers and classes
+setsebool            (8)  - set SELinux boolean value
+userdel              (8)  - delete a user account and related files
+acpid                (8)  - Advanced Configuration and Power Interface event daemon
+cupsfilter           (8)  - convert a file to another format using cups filters
+groupmems            (8)  - administer members of a user's primary group
+cpuspeed             (8)  - user-space cpu frequency scaling program, v1.5.1
+pifconfig            (8)  - display information about a network interface
+zdump                (8)  - timezone dumper
+phpize               (1)  - prepare a PHP extension for compiling
+spelldump            (1)  - Sphinxsearch tool for extract the contents of a dictionary file
+aspell-import        (1)  - import old personal dictionaries into GNU Aspell
+run-with-aspell      (1)  - script to help use GNU Aspell as an ispell replacement
+php-config           (1)  - get information about PHP configuration and compile options
+prezip-bin           (1)  - prefix zip delta word list compressor/decompressor
+aspell               (1)  - interactive spell checker
+aspell-import        (1)  - import old personal dictionaries into GNU Aspell
+pspell-config        (1)  - prints information about a libpspell installation
+prezip-bin           (1)  - prefix zip delta word list compressor/decompressor
+php                  (1)  - PHP Command Line Interface 'CLI'
+php-config           (1)  - get information about PHP configuration and compile options
+searchd              (1)  - Sphinxsearch network daemon
+geoiplookup          (1)  - look up country using IP Address or hostname
+word-list-compress   (1)  - word list compressor/decompressor for GNU Aspell
+search               (1)  - Sphinxsearch command-line index query
+Search::Dict         (3pm)  - search for key in dictionary file
+search.h [search]    (0p)  - search tables
+memcached            (1)  - high-performance memory object caching system
+indexer              (1)  - Sphinxsearch fulltext index generator
+indextool            (1)  - Sphinxsearch tool dump miscellaneous debug information about the physical index
+geoipupdate          (1)  - a program for updating the MaxMind GeoIP databases

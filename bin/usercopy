@@ -1,0 +1,90 @@
+#!/bin/bash
+# Get the exact "useradd" command that would create a clone of specified user account
+# YodaTools
+# Written by noah
+
+source /yoda/bin/inc/init
+
+if [ "x$1" = "x" ]; then
+	echo
+	mymsg 'Usage: usercopy <username>'
+	echo
+	mymsg 'This function outputs the adduser command that would creates the specified user,'
+	mymsg 'including the password and groups, so you can use on another server easily.'
+	echo
+	mymsg2 "Users" $(cat /etc/passwd | grep '/home' | awk -F':' '{print $1 }') | more
+	echo
+
+	exit 1
+fi
+
+MODE=1
+
+if [ "$1" = "-2" ]; then
+ MODE=2
+ shift
+fi
+
+user="$1"
+
+if [ "$user" = "oprofile" ]; then 
+	exit 0
+fi
+
+pass=$(cat /etc/shadow | grep "${user}:" | awk -F':' '{print $2}')
+
+if [ "${pass}" = "" ]; then 
+	myerror "user not found"
+	exit 1
+fi
+
+uid=$(cat /etc/passwd | grep "${user}:" | awk -F':' '{print $3}')
+gid=$(cat /etc/passwd | grep "${user}:" | awk -F':' '{print $4}')
+shell=$(cat /etc/passwd | grep "${user}:" | awk -F':' '{print $7}')
+
+groups=""
+for g in $(cat /etc/group | grep "${user}" | awk -F':' '{print $1}'); do
+	if [ "${g}" = "${user}" ]; then
+		continue
+	fi
+	if [ "${groups}" = "" ]; then
+		groups="${g}" 
+	else	
+		groups="${groups},${g}"
+	fi
+done
+
+if [ "${groups}" != "" ]; then
+	groupnames=$groups
+	groups="--groups ${groups}"
+else
+	groupnames='\t'
+fi
+
+if [ ${#groupnames} -lt 10 ]; then
+	groupnames="$groupnames\t"
+fi
+
+if [ "${uid}" != "${gid}" ]; then
+	gidname=$gid
+	gid="-g ${gid}"
+else
+	gidname=''
+	gid=""
+fi
+
+
+if [ $MODE -eq 2 ]; then
+	echo -en "Login: ${green}$user${NC}\t"
+	if [ ${#user} -lt 9 ]; then echo -ne "\t"; fi
+	echo -en "Shell: ${yellow}$shell${NC}\tGroup: ${gidname} ${groupnames}\tPass: "
+	if [ "$pass" = "!!" ]; then
+	  echo -e "${RED}NO PASSWORD${NC}"
+	else
+	  echo -e "${green}${#pass}${NC} complexity"
+	fi
+else
+	echo "/usr/sbin/adduser ${gid} ${groups} --uid ${uid} -s $shell -p ${pass//\$/\\\$} ${user}" | sed 's/  / /g'  
+fi
+
+exit 0

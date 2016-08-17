@@ -1,0 +1,81 @@
+#!/bin/bash
+
+MYSQLDUMP="/usr/bin/mysqldump"
+MYSQLDUMP_OPTIONS="--skip-opt --add-locks --create-options --disable-keys --extended-insert --quick --set-charset --protocol=SOCKET --verbose --skip-events --skip-routines"
+MYSQLDUMP_OPTIONS_SCHEMA="--skip-opt --no-data --add-locks --create-options --disable-keys --extended-insert --quick --set-charset --protocol=SOCKET --verbose --events --routines"
+WHERE="/backup/mysql"
+SQL="/yoda/bin/lquery"
+
+source /yoda/bin/inc/init
+
+if [ ! -x $SQL ]; then
+	myerror "/yoda/bin/lquery is required"
+	exit 1
+fi
+
+DB="$1"
+shift
+OPT="$1"
+
+if [ "x$DB" = "x" ]; then
+	myerror "What database?";
+	DBS=$(/yoda/bin/lquery test 'show databases');
+	for db in $DBS; do
+		mymsg $db;
+	done
+	echo
+	mymsg "Optional 2nd argument: schema"
+	exit 1
+fi
+
+if [ ! -d "${WHERE}/${DB}" ]; then
+  mkdir -p "${WHERE}/${DB}"
+fi
+
+
+if [ "x$OPT" = "xschema" ]; then
+	mymsg "Dumping only the schema..."
+	sleep 2
+	MYSQLDUMP_OPTIONS="${MYSQLDUMP_OPTIONS_SCHEMA}"
+	DUMP="$MYSQLDUMP $MYSQLDUMP_OPTIONS"
+	${DUMP} ${DB} >| "${WHERE}/${DB}/SCHEMA.sql"
+	exit 0
+fi
+
+DUMP="$MYSQLDUMP $MYSQLDUMP_OPTIONS $*"
+
+
+
+TABLES=$(/yoda/bin/lquery ${DB} 'show tables');
+
+if [ "$TABLES" = "" ]; then
+	myerror "No tables"
+	exit 1
+fi
+
+mymsg "Going to dump tables from ${DB} into $WHERE/$DB."
+
+for tbl in $TABLES; do
+	mymsg "Waiting a moment..."
+	sleep 3
+	if [[ "$tbl" = index_* ]]; then
+		mymsg "Skipping $tbl ..."
+		continue;
+	fi
+	if [[ "$tbl" = zbackup_* ]]; then
+		mymsg "Skipping $tbl ..."
+		continue
+	fi
+	mymsg "Backing up ${tbl}..."
+	${DUMP} ${DB} ${tbl} >| "${WHERE}/${DB}/${tbl}.sql"
+	RET=$?
+	if [ $? -ne 0 ]; then
+		logger "$0 - Error dumping $tbl"
+		myerror "DUMP ERROR"
+	fi
+	mymsg "Gzipping..."
+	/bin/gzip -f "${WHERE}/${DB}/${tbl}.sql" 
+done;
+
+exit 0;
+

@@ -1,0 +1,109 @@
+#!/bin/bash
+# Magicaly copy (or syncronize) a file(s) to ALL servers at once 
+
+USER=$USER
+SSH_PORT=32600
+
+if groups $USER | grep &>/dev/null '\bwheel\b'; then
+    echo "Lets play god..."
+    echo
+else
+    echo "No."
+    exit 1
+fi
+
+
+PWD=`pwd`
+THISHOST=`/bin/hostname -s`
+SSH_ARGS="-n -q -T -p32600 -l $USER"
+SSH=$(which ssh)
+
+source /yoda/bin/inc/init
+
+if [ $# -eq 0 ]; then
+	echo ""
+	echo -e "$blue -NoahScript- $NC"
+	echo -e "$BLUE This command will syncronize a file or dir across all servers in /yoda/servers. $NC" 
+	echo ""
+	echo -e " Usage: $0 \<${cyan}files...${NC}>"
+	echo ""
+	exit 1
+fi
+
+SERVERS="/yoda/servers.conf"
+
+if [ "x$1" = "x-dev" -o "x$1" = "x-all" ]; then
+	SERVERS="/yoda/servers${1}.conf"
+	mymsg "Note: ${SERVERS}"
+	shift
+fi
+
+mymsg "Godly deploy ${CYAN}$1${WHITE} across all servers?" 
+read
+
+
+until [ -z "$1" ]
+do
+
+	FILE=`basename $1`
+	DIR=`dirname $1`
+	DIR2="$DIR"
+	SCP_ARGS="-p -P${SSH_PORT} -q"
+	MODE="f"
+	FILE2="$FILE"
+	
+	if [ "${DIR2}" = "." ]; then
+		DIR2="$PWD"
+	fi
+	if [ "$DIR" != "/" ]; then
+		DIR="${DIR}/"
+	fi
+	
+	if [ "$FILE" = "/" ]; then
+		echo 'NO!'
+		exit 1
+	fi
+	
+	if [ -d "${DIR}${FILE}" ]; then
+		echo "Copying the entire ${DIR}${FILE} DIRECTORY in 5 seconds. . ."
+		SCP_ARGS="${SCP_ARGS} -r"
+		MODE="d"
+		FILE2=""
+		sleep 5
+	else
+		if [ ! -f "${DIR}${FILE}" ]; then
+			echo "Where is ${DIR}${FILE}?"
+			exit 1
+		fi
+	fi
+	
+	echo -ne "${WHITE}Deploying (${yellow}${DIR2}/${FILE2}${WHITE}) : "
+
+
+	for box in `cat $SERVERS`
+	do
+		if [ "$box" = "$THISHOST" ]; then
+			continue
+		fi
+		echo -ne " ${BLUE}${box}${NC} "
+		$SSH ${SSH_ARGS} ${box} "/yoda/bin/backup ${DIR2}/${FILE2}" >> /dev/null
+		scp ${SCP_ARGS}  ${DIR}${FILE} ${box}:${DIR2}/${FILE2}
+		RET=$?
+		if [ "$RET" != "0" ]; then
+			myerror "Problem copying to ${RED}${box}"
+			sleep 1
+		fi
+	done
+
+	echo
+
+shift
+done
+
+echo
+
+unset box
+
+wait
+
+exit 0

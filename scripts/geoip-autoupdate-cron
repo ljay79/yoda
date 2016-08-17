@@ -1,0 +1,8 @@
+# Uses MaxMind licensed subscription database update.
+# Config in /usr/local/etc/GeoIP.conf 
+# Concat:       Jens Rosemeier <github@jens79.de>
+# Since:        2014-01-08
+MAILTO=sysadmin@example.com
+
+0 12 * * 3 /usr/local/bin/geoipupdate
+# end of crontab

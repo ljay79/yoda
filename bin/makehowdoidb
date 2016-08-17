@@ -1,0 +1,26 @@
+#!/bin/bash
+
+source /yoda/bin/inc/init
+
+echo "Running..."
+
+/usr/sbin/makewhatis -w
+
+function files () { find . -maxdepth 1 -type f -printf "%P "; }
+
+echo '' >| /yoda/misc/howdoi.db
+
+for D in /bin /sbin /usr/bin /usr/sbin /usr/local/bin /usr/local/sbin; do
+	pushd $D
+	for F in `files`; do
+		whatis $F | grep -v -i "nothing appropriate" | grep -v -P '[a-z]::[a-z]' >> /yoda/misc/howdoi.db
+		echo -n '.' 
+	done 
+	echo 
+	popd
+done
+
+
+
+exit 0
+

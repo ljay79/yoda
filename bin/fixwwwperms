@@ -1,0 +1,20 @@
+#!/bin/bash
+FIND=$(which find)
+FOLDER="/www/"
+FINDARGS="-xdev -maxdepth 4"
+
+cd $FOLDER;
+$FIND $FOLDER $FINDARGS -user root -exec chown -v nobody:www {} \;
+$FIND $FOLDER $FINDARGS ! -group www chgrp -v www {} \;
+$FIND $FOLDER $FINDARGS -type d ! -perm 777 -exec chmod -v 777 {} \;
+$FIND $FOLDER $FINDARGS -type d -exec chmod -v g+s {} \;
+$FIND $FOLDER $FINDARGS -type f ! -perm 644 ! -regex ".*php|.*dv8|.*htm" -exec chmod -v 644 {} \;
+$FIND $FOLDER $FINDARGS -name "*.php" ! -perm 744 -type f -exec chmod -v 744 {} \;
+$FIND $FOLDER $FINDARGS -name "*.dv8" ! -perm 744 -type f -exec chmod -v 744 {} \;
+$FIND $FOLDER $FINDARGS -name "*.htm" ! -perm 666 -type f -exec chmod -v 666 {} \;
+$FIND $FOLDER $FINDARGS -name "error* -exec chown -v nobody:www {} \;
+$FIND $FOLDER $FINDARGS -name "error*" -exec chmod -v 777 {} \;
+$FIND $FOLDER $FINDARGS -name debug.htm -exec chown -v nobody:www {} \;
+$FIND $FOLDER $FINDARGS -name debug.htm -exec chmod -v 777 {} \;
+
+

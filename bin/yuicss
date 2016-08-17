@@ -1,0 +1,7 @@
+#!/bin/bash
+/noah/yui $1 > "$1.tmp"
+/usr/local/bin/php /noah/yui.fix.php "$1.tmp"
+/usr/local/bin/php /noah/sort2 "$1.tmp" > "$1"
+# rm -f "$1.tmp"
+chown idv8:nobody $1
+echo "OK"

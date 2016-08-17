@@ -1,0 +1,57 @@
+#!/bin/bash
+# Grep through all the php files for <expression>
+
+red='\e[0;31m'
+RED='\e[1;31m'
+blue='\e[0;34m'
+BLUE='\e[1;34m'
+cyan='\e[0;36m'
+CYAN='\e[1;36m'
+NC='\e[0m'
+BLACK='\e[1;30m'
+
+HERE=`pwd`
+
+if [ "x$1" = "x" ]; then
+	echo
+	echo -e "${BLUE}Grep all .php files in working directory for given regexp.$NC"
+	echo -e "${cyan}Usage: ${nc}${red}$0 ${RED}< regexp.. >${NC}"
+	echo
+	exit 1
+
+fi
+
+
+Q=""
+REG="${Q}${*}${Q}"
+REG=${REG// /\\s}
+REG=${REG//$/\\$}
+REG=${REG//(/\\(}
+REG=${REG//)/\\)}
+REG=${REG//./\\.}
+echo -e "Searching '${RED}$REG${NC}' in $PWD ..."
+sleep 1
+echo
+I=0
+II=0
+TOTAL=0
+for FILE in $(find -H . -maxdepth 5 -type f -iregex '.*[.]\(php\|dv8\|phtml\|js\)$' -printf '%P\n'); do
+	let 'I+=1'
+	((II++))
+	if [ $I -gt 100 ]; then
+		let 'TOTAL+=100'
+		echo -e "${BLACK}${TOTAL} files searched...${NC}"
+		I=0
+	fi
+	if [ -f $FILE ]; then
+		if [[ $FILE != *trash* && $FILE != *unused* && $FILE != Copy* && $FILE != *old* ]]; then
+			cat "$FILE" | grep --text --color=always -n -P -H --label="$FILE" $"$REG" | awk -F: '{ print "[" $1 " - Line #" $2 "]\n" $3 ""; }'
+		fi	
+	fi
+done
+
+echo
+echo -e "${BLACK}${II} files searched.${NC}"
+
+echo 
+exit 0

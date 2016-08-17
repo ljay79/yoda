@@ -1,0 +1,52 @@
+#!/bin/bash
+
+#export CHOST="x86_64-redhat-linux"
+export LDFLAGS="-L/lib64 -L/usr/lib64 -L/usr/local/lib64 -L/lib -L/usr/lib -L/usr/local/lib"
+export LS_OPTIONS='--time-style=iso --color=always -p -h -F -b -T 0 -X -t -r'
+#export PS1='\e[1;35m\$ \e[0m'
+export PS1="\e[0;35m\u\e[0;36m@\h \e[0;34m\W\e[0;31m\$ \e[0m"
+export PS2=' \e[1;35m>>\e[0m '
+export PS4=' ++ '
+export TMPDIR="/tmp"
+export REPOS_PATH="/svn"
+export EDITOR="nano"
+export VISUAL="nano"
+
+# Timeout for all SSH sessions
+TMOUT=3600
+readonly TMOUT
+
+if [ -f /yoda/etc/profile.local ]; then
+  . /yoda/etc/profile.local
+fi
+
+
+if [[ "$TERM" == xter* || "$TERM" == vt ]]; then
+  if [ ! -f "${HOME}/.bash_profile" -o ! -f "${HOME}/.bashrc" ]; then
+    . /etc/bashrc
+  fi
+fi
+
+pathmunge () {
+    if ! echo $PATH | /bin/egrep -q "(^|:)$1($|:)" ; then
+       if [ "$2" = "after" ] ; then
+          PATH=$PATH:$1
+       else
+          PATH=$1:$PATH
+       fi
+    fi
+}
+
+pathmunge /sbin
+pathmunge /usr/sbin
+pathmunge /usr/local/sbin
+pathmunge /yoda/bin before
+pathmunge /yoda/sbin after
+pathmunge /yoda/local after
+
+export PATH
+
+unset pathmunge
+
+# Set .bash_history as attr +a<br>
+# find /home/ -maxdepth 3|grep -i bash_history|while read line; do chattr +a "$line"; done

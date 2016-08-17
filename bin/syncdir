@@ -1,0 +1,26 @@
+#!/bin/bash
+
+. /yoda/bin/inc/init
+
+if [  $# -lt 3 ]; 
+	myerror "Usage: syncdir to_dir from_dir"
+fi
+
+if [ ! -d "$1" ]; then
+	myerror "$1 is not a directory"
+fi
+
+if [ ! -d "$2" ]; then
+	myerror "$2 is not a directory"
+fi
+
+pushd $1
+
+for file in $(find -H -type f ! -name '*svn*' -printf "%P "); do
+
+	if [ "$2/$file" -nt "$1" ]; then
+		mymsg "$file has canged"
+	fi
+
+done
+

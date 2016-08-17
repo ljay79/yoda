@@ -1,0 +1,28 @@
+#!/bin/bash
+
+source /yoda/bin/inc/init
+
+h1 'Yoda Tools Help'
+
+mymsg2 '<server>' 'Just type server name to connect to it'
+mymsg2 'ff <pattern>' 'find files like pattern in current folder'
+mymsg2 'msg' 'Show recent system / php errors'
+mymsg2 'glob' 'Run this command to temporarily enable the * wildcard on the bash prompt'
+mymsg2 'trash <file/folder>' 'Instead of rm a file, trash it, in case you need it back'
+
+for file in /yoda/bin/*; do
+	if [ ! -x "$file" -o ! -f "$file" ]; then
+		continue
+	fi
+	HELP=$(cat "$file" | head -n2 | tail -n1)
+	if [[ $(echo "$HELP" | grep -c -P '^# ') != "1" ]]; then
+		continue
+	fi
+	mymsg2 `basename $file` "${HELP:1}"
+done
+
+echo
+
+mymsg 'Note: You probably dont have access to most of these commands'
+
+exit 0

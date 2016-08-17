@@ -1,0 +1,4 @@
+#!/bin/bash
+LASTLOG=$(ls /www/xdebug -1 | tail -n2 | head -n1)
+cat /www/xdebug/$LASTLOG
+

@@ -1,0 +1,8 @@
+Run ./compile.sh to compile and install Apache with ARP support automatically.
+Edit the compile.conf file, adding, removing, or commenting out the parameters you want for your apache setup.
+This file is parsed by the compile.sh script.
+####
+Run ./install.sh to do same but with downloading fresh official apache and arp tar.
+
+!Run the script directly from this directory.
+cd into!!

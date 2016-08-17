@@ -1,0 +1,10 @@
+#!/bin/bash
+# Text message JENS
+
+source /yoda/bin/inc/init
+
+test -z "$1" && Usage "$1" '<message>'
+
+echo "$@"
+echo "$@" | /bin/mail -s "SERVERS" ******@vtext.com
+

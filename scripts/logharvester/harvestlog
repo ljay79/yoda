@@ -1,0 +1,108 @@
+#!/bin/bash
+#
+# Jens Rosemeier
+# 2012-05-22
+#
+# Runs Daily
+#
+
+BASEDIR=`dirname $(readlink -f $0)`
+
+source /yoda/bin/inc/init
+source $BASEDIR/read_ini.sh
+source $BASEDIR/read_projects.sh
+source $BASEDIR/harvestlog_fn
+
+read_ini $BASEDIR/harvestlog.ini
+configfile="projects.conf"
+
+# first passed argument can specify which project config is used, default "projects.conf"
+if [ ! "x$1" = "x" ]; then
+    # try to read specific conf file
+    _cfgfile="$1.conf"
+    if [ ! -e $BASEDIR"/"$_cfgfile ]; then
+        echo "Uknown/Invalid config file '$1' [$BASEDIR/$_cfgfile]!"
+        exit 1
+    else 
+        configfile="$_cfgfile"
+    fi
+fi
+
+# Read project config file
+read_projects $BASEDIR/$configfile
+
+# init SSH+SCP commands
+setCommands
+
+# runtime variables
+logdate=`date +%Y%m%d`
+destination_dir=""
+
+echo "`date '+%Y-%m-%d %H:%M:%S'`	INIT	Starting harvesting process"
+
+for project in "${PROJECTS[@]}"
+do
+#    echo "========================"
+#    echo "# $project #"
+
+    varname=${project}"_modes"
+    eval "modes=(\${"${varname}"[@]})"
+    unset -f varname
+#    echo "  modes: ${modes[@]}"
+    for mode in "${modes[@]}"
+    do
+        varname="${project}${mode}_categories"
+        eval "categories=(\${"${varname}"[@]})"
+        unset -f varname
+
+        if [ ! "$categories" = "" ]; then
+
+            for pcat in "${categories[@]}"
+            do
+                varname="${project}__${mode}__${pcat}__harvest"
+                eval "harvests=(\${"${varname}"[@]})"
+                varname="${project}__${mode}__${pcat}__server"
+                eval "server=\${"${varname}"}"
+                unset -f varname
+                for harvestloc in "${harvests[@]}"
+                do
+                    echo "`date '+%Y-%m-%d %H:%M:%S'`	SETUP	$project $mode ($pcat) $server : $harvestloc"
+                    harvest $server $harvestloc
+                done
+
+                unset -f harvests harvestloc
+
+            done
+
+	    pcat=
+            unset -f pcat
+
+        else
+        
+    	    pcat="all"
+
+            varname="${project}__${mode}____harvest"
+            eval "harvests=(\${"${varname}"[@]})"
+            varname="${project}__${mode}____server"
+            eval "server=\${"${varname}"}"
+            unset -f varname
+            for harvestloc in "${harvests[@]}"
+            do
+                echo "`date '+%Y-%m-%d %H:%M:%S'`	SETUP	$project $mode () $server : $harvestloc"
+                harvest $server $harvestloc
+            done
+
+            unset -f harvests harvestloc
+        fi
+
+        unset -f categories
+
+    done
+
+    unset -f modes mode
+
+done
+
+echo "`date '+%Y-%m-%d %H:%M:%S'`	END	Done"
+
+exit 0

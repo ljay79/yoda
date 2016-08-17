@@ -1,0 +1,15 @@
+
+## /etc/sudoers.d drop-in file foer allowing yOda users of group wheel to use sudo
+
+## Allows people in group wheel to run all commands
+%wheel	ALL=(ALL)	ALL
+
+## Same thing without a password
+%wheel	ALL=(ALL)	NOPASSWD: ALL
+
+Cmnd_Alias YODA_STUFF = /yoda/bin/suedit /yoda/bin/deploy /yoda/bin/errors /yoda/bin/striptags
+
+# Deployment permissions for User "deploy" in order to be able to proper deploy per script from dev01
+Cmnd_Alias DEPLOY_STUFF = /bin/chown, /bin/chgrp, /bin/chmod, /bin/tar, /bin/cp, /bin/rm, /bin/echo, /bin/chdir, /bin/mkdir, /usr/bin/xargs, /bin/bash
+deploy  ALL = NOPASSWD: DEPLOY_STUFF
+%deploy ALL = NOPASSWD: DEPLOY_STUFF

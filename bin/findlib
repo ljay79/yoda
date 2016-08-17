@@ -1,0 +1,14 @@
+#!/bin/bash
+# Search the linux lib filder for a .so library
+
+LOOK=$(find / -type d -regex '.*/lib6?4?')
+for o in $LOOK; do
+	FOUND=$(ls -l $o | grep ".so" | grep "$@")
+	if [ "$FOUND" != "" ]
+	then
+		echo $o
+		echo "--------"
+		ls -l $o | grep ".so" | grep "$@"
+		echo 
+	fi
+done;
