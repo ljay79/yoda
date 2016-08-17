@@ -1,6 +1,6 @@
 #!/bin/bash
 # Global after-boot script.
-# Server SPECIFIC scripts go in: /yoda/rclocal-local.sh 
+# Server SPECIFIC scripts go in: /yoda/etc/startup/rclocal-local.sh 
 # DO NOT EDIT #
 
 touch /var/lock/subsys/local
@@ -18,7 +18,7 @@ export SERVER
 
 sleep 1
 
-/bin/logger 'Running /yoda/rclocal.sh'
+/bin/logger 'Running /yoda/etc/startup/rclocal.sh'
 
 /sbin/service sshd start
 
@@ -30,8 +30,8 @@ sleep 1
 
 /sbin/service sendmail start
 
-if [ -f /yoda/rclocal-local.sh ]; then
-	. /yoda/rclocal-local.sh
-elif [ -f /yoda/startup.sh ]; then
-	. /yoda/startup.sh
+if [ -f /yoda/etc/startup/rclocal-local.sh ]; then
+	. /yoda/etc/startup/rclocal-local.sh
+elif [ -f /yoda/etc/startup/startup.sh ]; then
+	. /yoda/etc/startup/startup.sh
 fi
